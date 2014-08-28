@@ -9,10 +9,11 @@
 	</parent>
 
 	<groupId>com.terradue.tag</groupId>
-	<artifactId>doc-developer-sandbox</artifactId>
+	<artifactId>TepQWArch</artifactId>
 	<packaging>rpm</packaging>
-	<description>Documentation for developer sandbox</description>
-	<version>1.1-SNAPSHOT</version>
+	<description>Tep QuickWin Architecture</description>
+	<version>1.0-SNAPSHOT</version>
+
 
 	<dependencies>
 		<dependency>
@@ -24,10 +25,16 @@
 		</dependency>
 	</dependencies>
 
+	<properties>
+		<github.global.server>github</github.global.server>
+		<github.site.repositoryName>TepQWArch</github.site.repositoryName>
+		<github.site.repositoryOwner>Terradue</github.site.repositoryOwner>
+	</properties>
+
 	<scm>
-		<connection>scm:git:git@github.com:Terradue/doc-developer-sandbox.git</connection>
-		<developerConnection>scm:git:git@github.com:Terradue/doc-developer-sandbox.git</developerConnection>
-		<url>https://github.com/Terradue/doc-developer-sandbox</url>
+		<connection>scm:git:git@github.com:Terradue/TepQWArch.git</connection>
+		<developerConnection>scm:git:git@github.com:Terradue/TepQWArch.git</developerConnection>
+		<url>https://github.com/Terradue/TepQWArch</url>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -69,14 +76,24 @@
 							<arguments>
 								<argument>clean</argument>
 								<argument>html</argument>
-								<argument>man</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>generate-nojekyll</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<workingDirectory>${basedir}/_build/html</workingDirectory>
+							<executable>touch</executable>
+							<arguments>
+								<argument>.nojekyll</argument>
 							</arguments>
 						</configuration>
 					</execution>
 				</executions>
-				<configuration>
-					<frameworkVersion>4.0</frameworkVersion>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -125,7 +142,6 @@
 						<configuration>
 							<descriptors>
 								<descriptor>${basedir}/source/assembly/package-html.xml</descriptor>
-								<descriptor>${basedir}/source/assembly/package-man.xml</descriptor>
 							</descriptors>
 							<appendAssemblyId>true</appendAssemblyId>
 						</configuration>
@@ -152,7 +168,7 @@
 					</defineStatements>
 					<mappings>
 						<mapping>
-							<directory>/var/www/html/developer-sandbox</directory>
+							<directory>/var/www/html/TepQWArch</directory>
 							<filemode>755</filemode>
 							<sources>
 								<source>
@@ -206,6 +222,34 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.github.github</groupId>
+				<artifactId>site-maven-plugin</artifactId>
+				<version>0.9</version>
+				<configuration>
+					<message>Creating site for ${project.version}</message>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>site</goal>
+						</goals>
+						<phase>site-deploy</phase>
+						<configuration>
+							<outputDirectory>${basedir}/_build/html</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<skip>true</skip>
+					<skipDeploy>true</skipDeploy>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
