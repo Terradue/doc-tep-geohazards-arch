@@ -6,10 +6,11 @@ Contents:
 .. toctree::
    :maxdepth: 2
    
-   Community concepts <community>
-   Application workflow <workflow>
-   Processing nodes & parallelisme <nodes>
-   Streaming executable design patterns <streaming>
-   Data sources <data>
-   Version management <version>
-   Exploitation goals <exploitation>
+   Community concepts <purpose>
+   Targeted operational processes <scope>
+   Policies <policies>
+   Design constraints <interactions>
+   Requirements - CEOS Pilot on Seismic Hazards <reqs-seismic>
+   Requirements - CEOS Pilot on Volcanoes <reqs-volcanoes>
+   Requirements - GEO Supersites and Natural Laboratories <reqs-gsnl>
+   Summary
