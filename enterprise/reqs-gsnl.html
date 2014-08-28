@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Processing nodes &amp; parallelism &mdash; Tep QuickWin Architecture v1.0 documentation</title>
+    <title>Enterprise Viewpoint - Requirements - GEO Supersites and Natural Laboratories &mdash; Tep QuickWin Architecture v1.0 documentation</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
@@ -29,6 +29,9 @@
     <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Tep QuickWin Architecture v1.0 documentation" href="../index.html" />
+    <link rel="up" title="Enterprise Viewpoint" href="index.html" />
+    <link rel="next" title="Information Viewpoint" href="../information/index.html" />
+    <link rel="prev" title="Enterprise Viewpoint - Requirements - CEOS Pilot on Volcanoes" href="reqs-volcanoes.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
   
@@ -84,8 +87,15 @@
      href="../index.html">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="simple">
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="purpose.html">Community concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scope.html">Targeted operational processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="policies.html">Policies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactions.html">Design constraints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Requirements - GEO Supersites and Natural Laboratories</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../information/index.html">Information Viewpoint</a><ul>
@@ -135,10 +145,7 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Processing nodes &amp; parallelism</a><ul>
-<li><a class="reference internal" href="#several-processing-tasks">Several processing tasks</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Enterprise Viewpoint - Requirements - GEO Supersites and Natural Laboratories</a></li>
 </ul>
 </ul>
 </li>
@@ -147,13 +154,21 @@
             
               
                 
+  <li>
+    <a href="reqs-volcanoes.html" title="Previous Chapter: Enterprise Viewpoint - Requirements - CEOS Pilot on Volcanoes"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Enterprise Viewp...</span>
+    </a>
+  </li>
+  <li>
+    <a href="../information/index.html" title="Next Chapter: Information Viewpoint"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Information View... &raquo;</span>
+    </a>
+  </li>
               
             
             
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/Terradue/TepQwArch/blob/master/source/enterprise/nodes.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/Terradue/TepQwArch/blob/master/source/enterprise/reqs-gsnl.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -175,15 +190,24 @@
 </div>-->
 
       <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Enterprise Viewpoint</a></li>
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="purpose.html">Community concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scope.html">Targeted operational processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="policies.html">Policies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactions.html">Design constraints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Requirements - GEO Supersites and Natural Laboratories</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../information/index.html">Information Viewpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../computational/index.html">Computational Viewpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../engineering/index.html">Engineering Viewpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technology/index.html">Technology Viewpoint</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/Terradue/TepQwArch/blob/master/source/enterprise/nodes.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/Terradue/TepQwArch/blob/master/source/enterprise/reqs-gsnl.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../search.html" method="get">
  <div class="form-group">
@@ -197,106 +221,9 @@
 
     <div class="col-md-9">
       
-  <div class="section" id="processing-nodes-parallelism">
-<h1>Processing nodes &amp; parallelism<a class="headerlink" href="#processing-nodes-parallelism" title="Permalink to this headline">¶</a></h1>
-<p>As introduced in the workflow section, the processing nodes are the edges of a Directed Acyclic Graph and they can be run in parallel.</p>
-<p>This section explains what can be done within a processing node.</p>
-<p>The processing node can be executed as several processing tasks or a single processing task.</p>
-<p>While the single processing task doesn&#8217;t change the understanding of the workflow where a node will process a single task, an example of a node breaking down into several processing tasks is show below.</p>
-<div class="section" id="several-processing-tasks">
-<h2>Several processing tasks<a class="headerlink" href="#several-processing-tasks" title="Permalink to this headline">¶</a></h2>
-<p>In the previous <a class="reference internal" href="workflow.html"><em>workflow example</em></a>:</p>
-<p class="plantuml">
-<img src="../_images/plantuml-69b0a2d07b7c1e4f8a13e9da01396eef91f15688.png" alt=" !define DIAG_NAME Workflow example
-
- !include includes/skins.iuml
-
- skinparam backgroundColor #FFFFFF
- skinparam componentStyle uml2
-
-start
-
-:Node A;
-
-fork
-  :Node B;
-fork again
-  :Node C;
-end fork
-  :Node D;
-
-stop" />
-</p>
-<p>Let&#8217;s say Node A and Node C break-down into several processing task.</p>
-<p>Node A is executed as:</p>
-<p class="plantuml">
-<img src="../_images/plantuml-92073c7206da41909cc96a118bceb8520b8f0cc6.png" alt="!define DIAG_NAME Node A breakdown
-
-!include includes/skins.iuml
-
-skinparam backgroundColor #FFFFFF
-skinparam componentStyle uml2
-
-fork
-  :Task A.1;
-fork again
-  :Task A.2;
-fork again
-  :...;
-fork again
-  :Task A.n;
-end fork" />
-</p>
-<p>The complete workflow is executed as:</p>
-<p class="plantuml">
-<img src="../_images/plantuml-8239b79f3827d884da9712b4f828da14b0a05ad5.png" alt="!define DIAG_NAME Workflow example
-
-!include includes/skins.iuml
-
-skinparam backgroundColor #FFFFFF
-skinparam componentStyle uml2
-
-start
-
-fork
-  :Task A.1;
-fork again
-  :Task A.2;
-fork again
-  :...;
-fork again
-  :Task A.n;
-end fork
-
-fork
-  :Task B;
-fork again
-  fork
-    :Task C.1;
-  fork again
-    :Task C.2;
-  fork again
-    :...;
-  fork again
-    :Task C.n;
-  end fork
-end fork
-  :Task D;
-
-stop" />
-</p>
-<div class="admonition tip">
-<p class="first admonition-title">Tip</p>
-<dl class="last docutils">
-<dt>There two levels of parallelism:</dt>
-<dd><ul class="first last simple">
-<li>The first is at workflow level where two nodes can run concurrently (fork and join)</li>
-<li>The second is at node level where the execution can be split in several tasks, each processing a subset of the inputs</li>
-</ul>
-</dd>
-</dl>
-</div>
-</div>
+  <div class="section" id="enterprise-viewpoint-requirements-geo-supersites-and-natural-laboratories">
+<h1>Enterprise Viewpoint - Requirements - GEO Supersites and Natural Laboratories<a class="headerlink" href="#enterprise-viewpoint-requirements-geo-supersites-and-natural-laboratories" title="Permalink to this headline">¶</a></h1>
+<p>This section is under development.</p>
 </div>
 
 

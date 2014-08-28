@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Run executable design patterns &mdash; Tep QuickWin Architecture v1.0 documentation</title>
+    <title>Enterprise Viewpoint - Interactions between roles &mdash; Tep QuickWin Architecture v1.0 documentation</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
@@ -29,6 +29,9 @@
     <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Tep QuickWin Architecture v1.0 documentation" href="../index.html" />
+    <link rel="up" title="Enterprise Viewpoint" href="index.html" />
+    <link rel="next" title="Enterprise Viewpoint - Requirements - CEOS Pilot on Seismic Hazards" href="reqs-seismic.html" />
+    <link rel="prev" title="Enterprise Viewpoint - Policies governing the system design" href="policies.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
   
@@ -84,8 +87,15 @@
      href="../index.html">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="simple">
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="purpose.html">Community concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scope.html">Targeted operational processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="policies.html">Policies</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Design constraints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reqs-gsnl.html">Requirements - GEO Supersites and Natural Laboratories</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../information/index.html">Information Viewpoint</a><ul>
@@ -135,12 +145,7 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Run executable design patterns</a><ul>
-<li><a class="reference internal" href="#process-n-inputs-and-generate-n-or-m-outputs">Process n inputs and generate n (or m) outputs</a></li>
-<li><a class="reference internal" href="#process-n-inputs-to-generate-one-output">Process n inputs to generate one output</a></li>
-<li><a class="reference internal" href="#auxiliary-nodes">Auxiliary nodes</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Enterprise Viewpoint - Interactions between roles</a></li>
 </ul>
 </ul>
 </li>
@@ -149,13 +154,21 @@
             
               
                 
+  <li>
+    <a href="policies.html" title="Previous Chapter: Enterprise Viewpoint - Policies governing the system design"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Enterprise Viewp...</span>
+    </a>
+  </li>
+  <li>
+    <a href="reqs-seismic.html" title="Next Chapter: Enterprise Viewpoint - Requirements - CEOS Pilot on Seismic Hazards"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Enterprise Viewp... &raquo;</span>
+    </a>
+  </li>
               
             
             
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/Terradue/TepQwArch/blob/master/source/enterprise/streaming.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/Terradue/TepQwArch/blob/master/source/enterprise/interactions.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -177,15 +190,24 @@
 </div>-->
 
       <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Enterprise Viewpoint</a></li>
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="purpose.html">Community concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scope.html">Targeted operational processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="policies.html">Policies</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Design constraints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reqs-gsnl.html">Requirements - GEO Supersites and Natural Laboratories</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../information/index.html">Information Viewpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../computational/index.html">Computational Viewpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../engineering/index.html">Engineering Viewpoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../technology/index.html">Technology Viewpoint</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/Terradue/TepQwArch/blob/master/source/enterprise/streaming.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/Terradue/TepQwArch/blob/master/source/enterprise/interactions.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../search.html" method="get">
  <div class="form-group">
@@ -199,96 +221,9 @@
 
     <div class="col-md-9">
       
-  <div class="section" id="run-executable-design-patterns">
-<h1>Run executable design patterns<a class="headerlink" href="#run-executable-design-patterns" title="Permalink to this headline">¶</a></h1>
-<p>A processing task triggers the execution of a <em>run executable</em>.</p>
-<p>The run executable reads the inputs via the stdin channel as if one would do:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span><span class="nb">echo</span> <span class="s2">&quot;file1\nfile2&quot;</span> | myExecutable
-</pre></div>
-</div>
-<p>This section defines typical design patterns which include:</p>
-<ul class="simple">
-<li>sourcing the required libraries (bash, R are available; Python in development)</li>
-<li>get parameter values</li>
-<li>reading the stdin</li>
-<li>stage-in/out</li>
-<li>apply user processing</li>
-</ul>
-<p>There are two standard design patterns:</p>
-<ul class="simple">
-<li>Process n inputs to generate n (or m) outputs (parallel)</li>
-<li>Process n inputs to generate one output (aggregation)</li>
-</ul>
-<p>And there auxiliary nodes that do not process the inputs but arrange and/or combine them for subsequent nodes in the workflow.</p>
-<div class="section" id="process-n-inputs-and-generate-n-or-m-outputs">
-<h2>Process n inputs and generate n (or m) outputs<a class="headerlink" href="#process-n-inputs-and-generate-n-or-m-outputs" title="Permalink to this headline">¶</a></h2>
-<p>This design pattern processes inputs independently from one another. There will several processing task processing a number of inputs each.</p>
-<p>The typical structure of such a run executable is:</p>
-<p class="plantuml">
-<img src="../_images/plantuml-f0c8028b12ad6843696903b4b3cb2549d68c57b5.png" alt="!define DIAG_NAME Workflow example
-
-!include includes/skins.iuml
-
-skinparam backgroundColor #FFFFFF
-skinparam componentStyle uml2
-
-start
-
-:Source libraries;
-
-:Get parameter values;
-
-while (check stdin?) is (line)
-  :Stage-in data;
-  :Apply user application;
-  :Stage-out result;
-endwhile (empty)
-
-stop" />
-</p>
-<p>Below you find templates implementing this design pattern:</p>
-<p><tt class="xref download docutils literal"><span class="pre">Bash</span> <span class="pre">streaming</span> <span class="pre">executable</span></tt></p>
-<p><tt class="xref download docutils literal"><span class="pre">R</span> <span class="pre">streaming</span> <span class="pre">executable</span></tt></p>
-<p><tt class="xref download docutils literal"><span class="pre">Python</span> <span class="pre">streaming</span> <span class="pre">executable</span></tt></p>
-</div>
-<div class="section" id="process-n-inputs-to-generate-one-output">
-<h2>Process n inputs to generate one output<a class="headerlink" href="#process-n-inputs-to-generate-one-output" title="Permalink to this headline">¶</a></h2>
-<p>This design pattern processes all inputs to generate the result. There will one single processing task processing all the inputs.</p>
-<p>The typical structure of such a run executable is:</p>
-<p class="plantuml">
-<img src="../_images/plantuml-b740dfb3ae56aeaa23203c5fc8407388a8dff663.png" alt="!define DIAG_NAME Workflow example
-
-!include includes/skins.iuml
-
-skinparam backgroundColor #FFFFFF
-skinparam componentStyle uml2
-
-start
-
-:Source libraries;
-
-:Get parameter values;
-
-while (check stdin?) is (line)
-  :Stage-in data;
-endwhile (empty)
-
-:Apply user application;
-:Stage-out result;
-
-stop" />
-</p>
-</div>
-<div class="section" id="auxiliary-nodes">
-<h2>Auxiliary nodes<a class="headerlink" href="#auxiliary-nodes" title="Permalink to this headline">¶</a></h2>
-<p>Auxiliary nodes are needed when the output of a node cannot be directly processed by the subsequent nodes (e.g. parallel processing would not be possible).</p>
-<p>These nodes usually process the data by reference (no stage-in) and combines or arranges these references and provides those references as outputs.</p>
-<p>Typical examples are:</p>
-<ul class="simple">
-<li>Group catalogue products by periods of time (e.g. produce daily aggregated products)</li>
-<li>Couple RADAR SAR master/slave images in the interferometry domain</li>
-</ul>
-</div>
+  <div class="section" id="enterprise-viewpoint-interactions-between-roles">
+<h1>Enterprise Viewpoint - Interactions between roles<a class="headerlink" href="#enterprise-viewpoint-interactions-between-roles" title="Permalink to this headline">¶</a></h1>
+<p>This section is under development.</p>
 </div>
 
 
