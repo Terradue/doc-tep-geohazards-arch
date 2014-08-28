@@ -6,6 +6,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   Introduction <introduction>
-   GitHub <github/index>
+   Deployment constraints <ev-purpose>
+   Engineering nodes <ev-nodes>
+   Engineering channels <ev-channels>
+   Summary <ev-summary>
 
