@@ -8,5 +8,5 @@ Contents:
    
    Level of abstraction <cv-purpose>
    Items configurations <cv-configurations>
-   Interfaces (cv-interfaces>
+   Interfaces <cv-interfaces>
    Summary <cv-summary>
