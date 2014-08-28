@@ -1,0 +1,14 @@
+<assembly>
+	<id>man</id>
+	<formats>
+		<format>tar.gz</format>
+	</formats>
+
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<fileSets>
+		<fileSet>
+			<directory>_build/man</directory>
+			<outputDirectory>/</outputDirectory>
+		</fileSet>
+	</fileSets>
+</assembly>
