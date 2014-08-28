@@ -1,10 +1,12 @@
 Information Viewpoint
-=====================
+#####################
 
 Contents:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    
-   General Notes <general_notes>
-..   
+   Distributed processing concepts <iv-purpose>
+   Information objects <iv-informations>
+   State changes <iv-states>
+   Summary <iv-summary>
