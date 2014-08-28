@@ -76,6 +76,7 @@
 							<arguments>
 								<argument>clean</argument>
 								<argument>html</argument>
+<<<<<<< HEAD
 							</arguments>
 						</configuration>
 					</execution>
@@ -90,6 +91,8 @@
 							<executable>touch</executable>
 							<arguments>
 								<argument>.nojekyll</argument>
+=======
+>>>>>>> 95b20906a42285edb1120e624e5331b83aecdc24
 							</arguments>
 						</configuration>
 					</execution>

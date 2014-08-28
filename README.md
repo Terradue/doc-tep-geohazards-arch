@@ -1,5 +1,7 @@
 # Tep QuickWin Architecture Documentation
 
+[![Build Status](https://build.terradue.com/buildStatus/icon?job=tep.TepQWArch)](https://build.terradue.com/job/tep.TepQWArch/)
+
 This is the official repository of the Tep QuickWin Architecture. 
 
 This documentation is live at:
