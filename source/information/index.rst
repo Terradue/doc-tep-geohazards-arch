@@ -6,7 +6,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
    
-   Distributed processing concepts <informations>
-   Information objects <informations>
-   State changes <states>
+   Distributed processing concepts <iv-purpose>
+   Information objects <iv-informations>
+   State changes <iv-states>
    Summary <iv-summary>
