@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>General Notes &mdash; Tep QuickWin Architecture 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Tep QuickWin Architecture 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Information Viewpoint" href="index.html" />
+    <link rel="next" title="Computational Viewpoint" href="../computational/index.html" />
+    <link rel="prev" title="Information Viewpoint" href="index.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body>
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+        <!--<a class="navbar-brand" href="../index.html"><img class="navbar-brand-logo" src="../_static/sandboxLogo.png" alt="sandbox-logo"/></a>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/dcs-logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>1.0</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">Enterprise Viewpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../enterprise/workflow.html">Application workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enterprise/nodes.html">Processing nodes &amp; parallelisme</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../enterprise/nodes.html#several-processing-tasks">Several processing tasks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../enterprise/streaming.html">Streaming executable design patterns</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../enterprise/streaming.html#process-n-inputs-and-generate-n-or-m-outputs">Process n inputs and generate n (or m) outputs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../enterprise/streaming.html#process-n-inputs-to-generate-one-output">Process n inputs to generate one output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../enterprise/streaming.html#auxiliary-nodes">Auxiliary nodes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../enterprise/data.html">Data sources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../enterprise/data.html#local-file">Local file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../enterprise/data.html#comma-separated-values">Comma-separated values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../enterprise/data.html#reference-to-a-catalogue">Reference to a catalogue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../enterprise/version.html">Version management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../enterprise/exploitation.html">Exploitation goals</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Information Viewpoint</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">General Notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-code-examples">Using the code examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-additional-software">Install additional software</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../computational/index.html">Computational Viewpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../engineering/index.html">Engineering Viewpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../engineering/github/index.html">GitHub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../engineering/github/index.html#laboratories-and-github-organizations">Laboratories and GitHub organizations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../engineering/github/index.html#organizing-the-github-teams">Organizing the GitHub teams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../engineering/github/index.html#organizing-the-repository">Organizing the repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../engineering/github/index.html#the-typical-application-development-workflow">The typical application development workflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#cloning-an-existing-repository">Cloning an existing repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#creating-a-new-repository-on-github-com">Creating a new repository on github.com</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#building-the-application">Building the application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#updating-files">Updating files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#releasing-the-application">Releasing the application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#documenting-the-application">Documenting the application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#documenting-the-application-with-sphinx">Documenting the application with Sphinx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#documenting-the-application-with-r-gitbook">Documenting the application with R Gitbook</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../engineering/github/index.html#going-further">Going further</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/index.html">Technology Viewpoint</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">General Notes</a><ul>
+<li><a class="reference internal" href="#getting-started">Getting started</a></li>
+<li><a class="reference internal" href="#using-the-code-examples">Using the code examples</a></li>
+<li><a class="reference internal" href="#install-additional-software">Install additional software</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="index.html" title="Previous Chapter: Information Viewpoint"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Information View...</span>
+    </a>
+  </li>
+  <li>
+    <a href="../computational/index.html" title="Next Chapter: Computational Viewpoint"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Computational Vi... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/Terradue/TepQwArch/blob/master/source/information/general_notes.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../enterprise/index.html">Enterprise Viewpoint</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Information Viewpoint</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">General Notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-code-examples">Using the code examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-additional-software">Install additional software</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../computational/index.html">Computational Viewpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../engineering/index.html">Engineering Viewpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/index.html">Technology Viewpoint</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/Terradue/TepQwArch/blob/master/source/information/general_notes.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="general-notes">
+<span id="id1"></span><h1>General Notes<a class="headerlink" href="#general-notes" title="Permalink to this headline">¶</a></h1>
+<p>The Sandbox, short of <em>Terradue&#8217;s Developer Cloud Sandbox</em>, is a Virtual Machine (VM) running the CentOS 6.5 Linux distribution. This VM has the complete set of tools of the CIOP framework (the &#8216;ciop&#8217; command line tools). Furthermore it has CDH (Cloudera&#8217;s Distribution of Apache Hadoop) installed in Pseudo-Distributed mode <a class="footnote-reference" href="#f1" id="id2">[1]</a>.</p>
+<div class="section" id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The Sandbox is set to automatically login as the user <em>&lt;sandbox_user&gt;</em>. Please refer to the section <tt class="xref doc docutils literal"><span class="pre">Connect</span> <span class="pre">to</span> <span class="pre">your</span> <span class="pre">Sandbox</span></tt>.</li>
+</ul>
+</div>
+<div class="section" id="using-the-code-examples">
+<h2>Using the code examples<a class="headerlink" href="#using-the-code-examples" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>In some command-line steps in the exercises, you will see lines like this:</li>
+</ul>
+<div class="highlight-console"><div class="highlight"><pre><span class="go">ciop-simjob -n my_node</span>
+</pre></div>
+</div>
+<p>The dollar sign ($) at the beginning of each line indicates the Linux shell prompt. The actual prompt will include additional information (e.g. <em>[user&#64;sb-10-15-10-10.terradue.int]$</em> ) but it is omitted from these instructions for brevity.</p>
+<ul class="simple">
+<li>If not otherwise specified, all the commands of these Hands-On refer to the $_CIOP_APPLICATION_PATH path:</li>
+</ul>
+<div class="highlight-console"><div class="highlight"><pre><span class="go">echo $_CIOP_APPLICATION_PATH</span>
+</pre></div>
+</div>
+<div class="highlight-console-output"><div class="highlight"><pre>/application
+</pre></div>
+</div>
+<ul class="simple">
+<li>Sometimes the Hands-On refer to the variable <em>$HOSTNAME</em>. To obtain its value type:</li>
+</ul>
+<div class="highlight-console"><div class="highlight"><pre><span class="go">echo $HOSTNAME</span>
+</pre></div>
+</div>
+<p>The output will be similar to:</p>
+<div class="highlight-console-output"><div class="highlight"><pre>sb-xx-xx-xx-xx.lab.terradue.int
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-additional-software">
+<h2>Install additional software<a class="headerlink" href="#install-additional-software" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>You can install the software you need by using the <em>yum</em> command since the user <em>&lt;sandbox_user&gt;</em> has sudo privileges for <em>yum</em>:</li>
+</ul>
+<div class="highlight-console"><div class="highlight"><pre><span class="go">sudo yum install &lt;package name&gt;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">As the exercises progress and you gain more familiarity with the CIOP framework, the Hadoop and the MapReduce, we provide fewer step by step instructions. You feel free to ask to us for explainations or doubts using our Support Site <a class="reference external" href="https://support.terradue.com">https://support.terradue.com</a>. We&#8217;ll be happy to help !</p>
+</div>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>Pseudo-distributed mode is a method of running Hadoop whereby all Hadoop daemons run on the same machine. It is a cluster consisting of a single machine. It works just like a larger cluster, the only key difference (apart from the speed, of course !) being that the block replication factor is set to 1 (normally in a Hadoop Cluster the blocks on HDFS have a replication factor of 3).</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Processing nodes &amp; parallelism &mdash; Tep QuickWin Architecture 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Tep QuickWin Architecture 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Enterprise Viewpoint" href="index.html" />
+    <link rel="next" title="Run executable design patterns" href="streaming.html" />
+    <link rel="prev" title="Application workflow" href="workflow.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body>
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+        <!--<a class="navbar-brand" href="../index.html"><img class="navbar-brand-logo" src="../_static/sandboxLogo.png" alt="sandbox-logo"/></a>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/dcs-logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>1.0</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="workflow.html">Application workflow</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Processing nodes &amp; parallelisme</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#several-processing-tasks">Several processing tasks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="streaming.html">Streaming executable design patterns</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="streaming.html#process-n-inputs-and-generate-n-or-m-outputs">Process n inputs and generate n (or m) outputs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="streaming.html#process-n-inputs-to-generate-one-output">Process n inputs to generate one output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="streaming.html#auxiliary-nodes">Auxiliary nodes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data.html">Data sources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data.html#local-file">Local file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data.html#comma-separated-values">Comma-separated values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data.html#reference-to-a-catalogue">Reference to a catalogue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="version.html">Version management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exploitation.html">Exploitation goals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../information/index.html">Information Viewpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../information/general_notes.html">General Notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../information/general_notes.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../information/general_notes.html#using-the-code-examples">Using the code examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../information/general_notes.html#install-additional-software">Install additional software</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../computational/index.html">Computational Viewpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../engineering/index.html">Engineering Viewpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../engineering/github/index.html">GitHub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../engineering/github/index.html#laboratories-and-github-organizations">Laboratories and GitHub organizations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../engineering/github/index.html#organizing-the-github-teams">Organizing the GitHub teams</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../engineering/github/index.html#organizing-the-repository">Organizing the repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../engineering/github/index.html#the-typical-application-development-workflow">The typical application development workflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#cloning-an-existing-repository">Cloning an existing repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#creating-a-new-repository-on-github-com">Creating a new repository on github.com</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#building-the-application">Building the application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#updating-files">Updating files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#releasing-the-application">Releasing the application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#documenting-the-application">Documenting the application</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#documenting-the-application-with-sphinx">Documenting the application with Sphinx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../engineering/github/index.html#documenting-the-application-with-r-gitbook">Documenting the application with R Gitbook</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../engineering/github/index.html#going-further">Going further</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/index.html">Technology Viewpoint</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Processing nodes &amp; parallelism</a><ul>
+<li><a class="reference internal" href="#several-processing-tasks">Several processing tasks</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="workflow.html" title="Previous Chapter: Application workflow"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Application work...</span>
+    </a>
+  </li>
+  <li>
+    <a href="streaming.html" title="Next Chapter: Run executable design patterns"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Run executable d... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/Terradue/TepQwArch/blob/master/source/enterprise/nodes.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="workflow.html">Application workflow</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Processing nodes &amp; parallelisme</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#several-processing-tasks">Several processing tasks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="streaming.html">Streaming executable design patterns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html">Data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="version.html">Version management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exploitation.html">Exploitation goals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../information/index.html">Information Viewpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../computational/index.html">Computational Viewpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../engineering/index.html">Engineering Viewpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../technology/index.html">Technology Viewpoint</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/Terradue/TepQwArch/blob/master/source/enterprise/nodes.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="processing-nodes-parallelism">
+<h1>Processing nodes &amp; parallelism<a class="headerlink" href="#processing-nodes-parallelism" title="Permalink to this headline">¶</a></h1>
+<p>As introduced in the workflow section, the processing nodes are the edges of a Directed Acyclic Graph and they can be run in parallel.</p>
+<p>This section explains what can be done within a processing node.</p>
+<p>The processing node can be executed as several processing tasks or a single processing task.</p>
+<p>While the single processing task doesn&#8217;t change the understanding of the workflow where a node will process a single task, an example of a node breaking down into several processing tasks is show below.</p>
+<div class="section" id="several-processing-tasks">
+<h2>Several processing tasks<a class="headerlink" href="#several-processing-tasks" title="Permalink to this headline">¶</a></h2>
+<p>In the previous <a class="reference internal" href="workflow.html"><em>workflow example</em></a>:</p>
+<p class="plantuml">
+<img src="../_images/plantuml-69b0a2d07b7c1e4f8a13e9da01396eef91f15688.png" alt=" !define DIAG_NAME Workflow example
+
+ !include includes/skins.iuml
+
+ skinparam backgroundColor #FFFFFF
+ skinparam componentStyle uml2
+
+start
+
+:Node A;
+
+fork
+  :Node B;
+fork again
+  :Node C;
+end fork
+  :Node D;
+
+stop" />
+</p>
+<p>Let&#8217;s say Node A and Node C break-down into several processing task.</p>
+<p>Node A is executed as:</p>
+<p class="plantuml">
+<img src="../_images/plantuml-92073c7206da41909cc96a118bceb8520b8f0cc6.png" alt="!define DIAG_NAME Node A breakdown
+
+!include includes/skins.iuml
+
+skinparam backgroundColor #FFFFFF
+skinparam componentStyle uml2
+
+fork
+  :Task A.1;
+fork again
+  :Task A.2;
+fork again
+  :...;
+fork again
+  :Task A.n;
+end fork" />
+</p>
+<p>The complete workflow is executed as:</p>
+<p class="plantuml">
+<img src="../_images/plantuml-8239b79f3827d884da9712b4f828da14b0a05ad5.png" alt="!define DIAG_NAME Workflow example
+
+!include includes/skins.iuml
+
+skinparam backgroundColor #FFFFFF
+skinparam componentStyle uml2
+
+start
+
+fork
+  :Task A.1;
+fork again
+  :Task A.2;
+fork again
+  :...;
+fork again
+  :Task A.n;
+end fork
+
+fork
+  :Task B;
+fork again
+  fork
+    :Task C.1;
+  fork again
+    :Task C.2;
+  fork again
+    :...;
+  fork again
+    :Task C.n;
+  end fork
+end fork
+  :Task D;
+
+stop" />
+</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<dl class="last docutils">
+<dt>There two levels of parallelism:</dt>
+<dd><ul class="first last simple">
+<li>The first is at workflow level where two nodes can run concurrently (fork and join)</li>
+<li>The second is at node level where the execution can be split in several tasks, each processing a subset of the inputs</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>
