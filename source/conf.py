@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Tep QuickWin Architecture'
+project = u'Geohazards Thematic Exploitation Platform Architecture'
 copyright = u'2014, Terradue'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -90,7 +90,7 @@ pygments_style = 'sphinx'
 #modindex_common_prefix = []
 
 # Github path
-github_repo = "https://github.com/Terradue/TepQwArch"
+github_repo = "https://github.com/Terradue/doc-tep-geohazards-arch"
 github_branch = "master"
 
 # -- Options for HTML output ---------------------------------------------------
