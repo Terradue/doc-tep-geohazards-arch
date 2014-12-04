@@ -1,11 +1,11 @@
-# Tep QuickWin Architecture Documentation
+# Geohazards Thematic Exploitation Platform Architecture
 
-[![Build Status](https://build.terradue.com/buildStatus/icon?job=tep.TepQWArch)](https://build.terradue.com/job/tep.TepQWArch/)
+[![Build Status](https://build.terradue.com/buildStatus/icon?job=tep.doc-tep-geohazards-arch)](https://build.terradue.com/job/tep.doc-tep-geohazards-arch/)
 
 This is the official repository of the Tep QuickWin Architecture. 
 
 This documentation is live at:
-[http://terradue.github.io/TepQWArch](http://terradue.github.io/TepQWArch)
+[http://terradue.github.io/TepQWArch](http://terradue.github.io/doc-tep-geohazards-arch)
 
 You are encouraged to fork this repo and send us pull requests!
 
@@ -38,7 +38,7 @@ with:
 maxdepth=theme_globaltoc_depth
 ```
 
-```
+```bash
 # Install plantuml
 $ wget --no-check-certificate https://pypi.python.org/packages/source/s/sphinxcontrib-plantuml/sphinxcontrib-plantuml-0.3.tar.gz
 $ tar xvzf sphinxcontrib-plantuml-0.3.tar.gz 
@@ -54,9 +54,9 @@ $ chmod +x /usr/bin/plantuml
 $ git clone git@github.com:Terradue/doc-developer-sandbox.git
 ```
 
-If needed, set your github information
+If needed, set your github information:
 
-```
+```bash
 $ git config --global user.name <github username>
 $ git config --global user.email <email address>
 ```
@@ -74,12 +74,12 @@ As root, do:
 
 ```
 $ sudo cd /var/www/html
-$ ln -s $GIT_CLONE_DIR/TepQWArch/build/html/ TepQWArch
-$ chown -R apache:apache TepQWArch
-$ chmod -R g+w TepQWArch
+$ ln -s $GIT_CLONE_DIR/doc-tep-geohazards-arch/build/html/ doc-tep-geohazards-arch
+$ chown -R apache:apache doc-tep-geohazards-arch
+$ chmod -R g+w doc-tep-geohazards-arch
 ```
 > Replace $GIT_CLONE_DIR with the path to the folder where you have cloned the repository
 
-Open you browser at the address http://127.0.0.1/TepQWArch
+Open you browser at the address http://127.0.0.1/doc-tep-geohazards-arch
 
 #### This documentation is built with [sphinx](http://sphinx-doc.org/).
