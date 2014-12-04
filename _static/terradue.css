@@ -137,6 +137,12 @@ body {
 	padding: 9px;
 }
 
+/* only for t2 logo */
+#navbar .navbar-header .navbar-brand > img {
+	width: 102px;
+	margin-top: 3px;
+}
+
 #sidebar {
 	background-color: #eee;
 }
