@@ -1,15 +1,15 @@
-# Geohazards Thematic Exploitation Platform Architecture
+## Geohazards Thematic Exploitation Platform Architecture
 
 [![Build Status](https://build.terradue.com/buildStatus/icon?job=tep.doc-tep-geohazards-arch)](https://build.terradue.com/job/tep.doc-tep-geohazards-arch/)
 
 This is the official repository of the Tep QuickWin Architecture. 
 
 This documentation is live at:
-[http://terradue.github.io/TepQWArch](http://terradue.github.io/doc-tep-geohazards-arch)
+[http://terradue.github.io/doc-tep-geohazards-arch](http://terradue.github.io/doc-tep-geohazards-arch)
 
 You are encouraged to fork this repo and send us pull requests!
 
-## Getting started
+### Getting started
 
 Here's the procedure to install the required packages on a CentOS 6.x
 
@@ -61,12 +61,12 @@ $ git config --global user.name <github username>
 $ git config --global user.email <email address>
 ```
 
-## Building
+### Building
 
 Build the documentation by running ``make html``.
 
 
-## Publish the documentation
+### Publish the documentation
 
 ``make html`` creates a ``build`` folder in the doc-developer-sandbox local repository.
 
