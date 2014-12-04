@@ -168,7 +168,7 @@
 					</defineStatements>
 					<mappings>
 						<mapping>
-							<directory>/var/www/html/doc-tep-geohazards-arch</directory>
+							<directory>/var/www/html/tep-geohazards-arch</directory>
 							<filemode>755</filemode>
 							<sources>
 								<source>
