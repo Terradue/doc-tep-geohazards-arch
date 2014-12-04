@@ -9,9 +9,9 @@
 	</parent>
 
 	<groupId>com.terradue.tag</groupId>
-	<artifactId>TepQWArch</artifactId>
+	<artifactId>doc-tep-geohazards-arch</artifactId>
 	<packaging>rpm</packaging>
-	<description>Tep QuickWin Architecture</description>
+	<description>Geohazards thematic exploitation platform architecture</description>
 	<version>1.0-SNAPSHOT</version>
 
 
@@ -27,14 +27,14 @@
 
 	<properties>
 		<github.global.server>github</github.global.server>
-		<github.site.repositoryName>TepQWArch</github.site.repositoryName>
+		<github.site.repositoryName>doc-tep-geohazards-arch</github.site.repositoryName>
 		<github.site.repositoryOwner>Terradue</github.site.repositoryOwner>
 	</properties>
 
 	<scm>
-		<connection>scm:git:git@github.com:Terradue/TepQWArch.git</connection>
-		<developerConnection>scm:git:git@github.com:Terradue/TepQWArch.git</developerConnection>
-		<url>https://github.com/Terradue/TepQWArch</url>
+		<connection>scm:git:git@github.com:Terradue/doc-tep-geohazards-arch.git</connection>
+		<developerConnection>scm:git:git@github.com:Terradue/doc-tep-geohazards-arch.git</developerConnection>
+		<url>https://github.com/Terradue/doc-tep-geohazards-arch</url>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -168,7 +168,7 @@
 					</defineStatements>
 					<mappings>
 						<mapping>
-							<directory>/var/www/html/TepQWArch</directory>
+							<directory>/var/www/html/doc-tep-geohazards-arch</directory>
 							<filemode>755</filemode>
 							<sources>
 								<source>
