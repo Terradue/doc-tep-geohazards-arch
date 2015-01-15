@@ -1,5 +1,5 @@
-Definitions
-===========
+Enterprise Viewpoint - Definitions
+##################################
 
 We present here the Enterprise Viewpoint describing the Geohazards Thematic Exploitation Platform (TEP). 
 This viewpoint defines the purpose, scope and policies governing the activities supported by the Platform accross the GEO and CEOS initiatives.
