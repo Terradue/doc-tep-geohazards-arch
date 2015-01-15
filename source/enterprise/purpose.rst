@@ -38,22 +38,33 @@ The vision for the Platform was inspired by the Scientific & Technical Memorandu
 Beyond operational users with a mandate in seismic risk management, there is a range of geoscience users in research institutes and universities and focused on the scientific use of data with the main goal of understanding the physics of earthquakes thereby improving our ability to characterize, understand, and model seismic risk.
 
 The Satellite EO for Geohazards community includes a range of different actors, including:
+
 * Satellite data providers
-** Satellite data providers are typically national or international space agencies like ESA, which operate satellites. 
-** They may also be commercial satellite operators or commercial suppliers of data.
+
+  * Satellite data providers are typically national or international space agencies like ESA, which operate satellites. 
+  * They may also be commercial satellite operators or commercial suppliers of data.
+
 * Value-added or value-adding companies (or VACs)
-** Value-added companies use satellite data to generate information products that can be used directly by end users to address a need. 
-** Value-added companies are active in a wide range of information sectors ranging from oil and gas industries to environmental applications, disaster risk management and many others.
+
+  * Value-added companies use satellite data to generate information products that can be used directly by end users to address a need. 
+  * Value-added companies are active in a wide range of information sectors ranging from oil and gas industries to environmental applications, disaster risk management and many others.
+
 * Research institute and academia
-** Either involved under government-sponsored grants for basic research 
-** Or in support of applied research objectives
+
+  * Either involved under government-sponsored grants for basic research 
+  * Or in support of applied research objectives
+
 * Industrial partners with an interest in geohazards research.
+
 * Operational geohazards actors including
-** National and regional civil protection agencies
-** Seismological centres and national and local authorities in charge of seismic risk management activities 
+
+  * National and regional civil protection agencies
+  * Seismological centres and national and local authorities in charge of seismic risk management activities 
+
 * Actors also include other forms of association of researchers
-** Community of researchers active in the Geohazard Supersites and Natural Laboratories (GSNL)
-** the European Plate Observing System (EPOS)
+
+  * Community of researchers active in the Geohazard Supersites and Natural Laboratories (GSNL)
+  * the European Plate Observing System (EPOS)
 
 The CEOS Working Group on Disasters is committed to support and enhance the access to in-situ and satellite observations ...
 
