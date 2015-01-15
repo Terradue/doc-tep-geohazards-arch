@@ -44,10 +44,10 @@ The Satellite EO for Geohazards community includes a range of different actors, 
   * Satellite data providers are typically national or international space agencies like ESA, which operate satellites. 
   * They may also be commercial satellite operators or commercial suppliers of data.
 
-* Value-added or value-adding companies (or VACs)
+* Value-adder companies (or VACs)
 
-  * Value-added companies use satellite data to generate information products that can be used directly by end users to address a need. 
-  * Value-added companies are active in a wide range of information sectors ranging from oil and gas industries to environmental applications, disaster risk management and many others.
+  * Value-adder companies using satellite data to generate information products that can be used directly by end users to address a need. 
+  * Value-adder companies active in a wide range of information sectors ranging from oil and gas industries to environmental applications, disaster risk management and many others.
 
 * Research institute and academia
 
