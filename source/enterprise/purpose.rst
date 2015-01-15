@@ -5,26 +5,33 @@ We present here the Enterprise Viewpoint describing the Geohazards Thematic Expl
 This viewpoint defines the purpose, scope and policies governing the activities supported by the Platform accross the GEO and CEOS initiatives.
 It provides the basis for checking the conformance of the Platform implementation.
 
-community concepts that are structuring the Geohazards TEP platform's approach.
+According to RM-ODP, the Geohazards TEP's Enterprise Viewpoint specification is structured in terms of communities and community objects.
+The community is modeled with the following concepts and their relationships:
 
-Definition of the Enterprise Viewpoint elements:
+**Objectives of the community**
 
-**Objectives**
+An objective is specified in a community contract (e.g. a charter, a directive, ...) in terms of a foreseen community achievement that the Platform will support by enabling a collective behaviour.
 
-* EV_Objective:
-* EV_Objective:
-* EV_Objective:
-* EV_Objective:
+* EV_Objective (gsnl1): support collaboration of space and in-situ data providers
+* EV_Objective (gnsl2):
+* EV_Objective ():
+* EV_Objective ():
+* EV_Objective (seismic1):
+* EV_Objective (seismic2):
+* EV_Objective ():
+* EV_Objective ():
+* EV_Objective (volcano1):
+* EV_Objective (volcano2):
+* EV_Objective ():
+* EV_Objective ():
 
-**Roles and community behaviours**
+**Roles and Processes of the community behaviours**
 
-These roles model, for example, the users, the owners and the providers of data or informations processed by the system.
+The roles model, for example, the users, the owners and the providers of data or informations processed by the system.
+The processes model, for example, the sequence of actions carried out to fulfill an objective.
 
 * EV_Role:
 * EV_Behaviour:
-
-**Processes**
-
 * EV_Process:
 
 **Policies**
