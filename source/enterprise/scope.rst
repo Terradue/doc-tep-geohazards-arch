@@ -8,6 +8,7 @@ The targeted operational processes are:
 * Data access
 * Processor integration
 * Cloud bursting
+* Visualization
 * Reproducible Science
 * Capacity Building through Data Sharing 
 
