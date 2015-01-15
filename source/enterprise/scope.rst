@@ -3,7 +3,13 @@ Enterprise Viewpoint - Scope of the system
 
 Describes the Platform expected behaviour, i.e., the way it is supposed to work and interact with its environment in the TEP context.
 
-The targeted operational processes are ...
+The targeted operational processes are:
+
+* Data access
+* Processor integration
+* Cloud bursting
+* Reproducible Science
+* Capacity Building through Data Sharing 
 
 Within RM-ODP, the scope of the system is modelled as the set of roles it fulfils.
 
