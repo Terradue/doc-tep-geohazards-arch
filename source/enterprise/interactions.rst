@@ -1,4 +1,4 @@
 Enterprise Viewpoint - Interactions between roles
 #################################################
 
-This section is under development.
+The design contraints and the required interactions between roles are...
