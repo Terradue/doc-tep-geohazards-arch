@@ -5,6 +5,9 @@ We present here the Enterprise Viewpoint describing the Geohazards Thematic Expl
 This viewpoint defines the purpose, scope and policies governing the activities supported by the Platform accross the GEO and CEOS initiatives.
 It provides the basis for checking the conformance of the Platform implementation.
 
+Standards and services supporting the user requirements and the data access and sharing policies expressed in this RM-ODP Enterprise Model and in the RM-ODP Information Model are identified in the RM-ODP Computational Model.
+Software packaging and deployment constraints are compiled in the RM-ODP Technology Viewpoint and the RM-ODP Engineering Viewpoint.
+
 Definitions
 -----------
 
@@ -32,19 +35,25 @@ In particular, the community will benefit from a cloud-based workspace, allowing
 Each partner brings their tools and processing chains, but also has access in the same workspace to large data sets and shared processing tools. 
 The vision for the Platform was inspired by the Scientific & Technical Memorandum of the the International Forum on Satellite EO for Geohazards [R1]_.
 
-The Satellite EO for Geohazards community includes a range of different actors, including satellite data providers, value-added or value-adding companies (or VACs), research institute and academia, and industrial partners with an interest in geohazards research.
-
-Satellite data providers are typically national or international space agencies like ESA, which operate satellites. They may also be commercial satellite operators or commercial suppliers of data.
-
-Value-added companies use satellite data to generate information products that can be used directly by end users to address a need. Value-added companies are active in a wide range of information sectors ranging from oil and gas industries to environmental applications, disaster risk management and many others.
-
-Research institutes and universities are involved in academic research into geohazards, either under government-sponsored grants for basic research or in support of applied research objectives.
-
-Other geohazards users include national and regional civil protection agencies, seismological centres and national and local authorities in charge of seismic risk management activities are all concerned with disaster risk management.
-
 Beyond operational users with a mandate in seismic risk management, there is a range of geoscience users in research institutes and universities and focused on the scientific use of data with the main goal of understanding the physics of earthquakes thereby improving our ability to characterize, understand, and model seismic risk.
 
-Users also include other forms of association of researchers, such as for instance the community of researchers active in the Geohazard Supersites and Natural Laboratories (GSNL), or the European Plate Observing System (EPOS).
+The Satellite EO for Geohazards community includes a range of different actors, including:
+* Satellite data providers
+** Satellite data providers are typically national or international space agencies like ESA, which operate satellites. 
+** They may also be commercial satellite operators or commercial suppliers of data.
+* Value-added or value-adding companies (or VACs)
+** Value-added companies use satellite data to generate information products that can be used directly by end users to address a need. 
+** Value-added companies are active in a wide range of information sectors ranging from oil and gas industries to environmental applications, disaster risk management and many others.
+* Research institute and academia
+** Either involved under government-sponsored grants for basic research 
+** Or in support of applied research objectives
+* Industrial partners with an interest in geohazards research.
+* Operational geohazards actors including
+** National and regional civil protection agencies
+** Seismological centres and national and local authorities in charge of seismic risk management activities 
+* Actors also include other forms of association of researchers
+** Community of researchers active in the Geohazard Supersites and Natural Laboratories (GSNL)
+** the European Plate Observing System (EPOS)
 
 The CEOS Working Group on Disasters is committed to support and enhance the access to in-situ and satellite observations ...
 
