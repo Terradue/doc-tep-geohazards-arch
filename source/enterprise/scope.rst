@@ -2,7 +2,10 @@ Enterprise Viewpoint - Scope of the system
 ##########################################
 
 Describes the Platform expected behaviour, i.e., the way it is supposed to work and interact with its environment in the TEP context.
+
 The targeted operational processes are ...
+
+Within RM-ODP, the scope of the system is modelled as the set of roles it fulfils.
 
 System Capabilities
 -------------------
