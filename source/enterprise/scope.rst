@@ -18,3 +18,8 @@ The PaaS enables users to perform their data exploitation activities with large 
 Users can, therefore, use their virtual hosts to efficiently access data and processing services and immediately elaborate results using analysis and visualization tools available from the PaaS or directly installed in virtual hosts by themselves. 
 In addition users can also open their own accounts on a commercial Cloud Provider and directly provision their virtual hosts independently (through the Geohazards Platform Services).
 
+<< Enterprise_Spec >>
+Community Roles
+
+<< Enterprise_Spec >>
+Community Processes
