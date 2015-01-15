@@ -1,15 +1,15 @@
 Enterprise Viewpoint - Definitions
 ##################################
 
-We present here the Enterprise Viewpoint describing the Geohazards Thematic Exploitation Platform (TEP). 
+We present hereafter the Enterprise Viewpoint describing the Geohazards Thematic Exploitation Platform (TEP). 
 This viewpoint defines the purpose, scope and policies governing the activities supported by the Platform accross the GEO and CEOS initiatives.
 It provides the basis for checking the conformance of the Platform implementation.
 
 Standards and services supporting the user requirements and the data access and sharing policies expressed in this RM-ODP Enterprise Model and in the RM-ODP Information Model are identified in the RM-ODP Computational Model.
 Software packaging and deployment constraints are compiled in the RM-ODP Technology Viewpoint and the RM-ODP Engineering Viewpoint.
 
-Definitions
------------
+Modeling concepts
+-----------------
 
 According to RM-ODP, the Geohazards TEP's Enterprise Viewpoint specification is structured in terms of communities and community objects.
 The community is modeled with the following concepts and their relationships:
