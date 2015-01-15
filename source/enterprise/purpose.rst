@@ -1,4 +1,4 @@
 Enterprise Viewpoint - Purpose of the system
 ############################################
 
-This section is under development.
+We present here the community concepts that are structuring the Geohazards TEP platform's contents.
