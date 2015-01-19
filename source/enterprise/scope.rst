@@ -58,3 +58,25 @@ Community Processes
        Foo1 -> Foo3 : To control
        Foo1 -> Foo4 : To entity
        Foo1 -> Foo5 : To database
+       
+.. uml::
+
+       participant User
+
+       User -> A: DoWork
+       activate A
+
+       A -> B: << createRequest >>
+       activate B
+
+       B -> C: DoWork
+       activate C
+       C --> B: WorkDone
+       destroy C
+
+       B --> A: RequestCreated
+       deactivate B
+
+       A -> User: Done
+       deactivate A
+
