@@ -43,5 +43,7 @@ Community Processes
        Alice->Bob: Authentication Request
        note right of Bob: Bob thinks about it
        Bob->Alice: Authentication Response
-
+       title Second Sequence
+       Mike->Beth: Hello
+       Mike<-Beth: Hi, how are you !
        
