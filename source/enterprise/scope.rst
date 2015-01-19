@@ -82,7 +82,9 @@ Community Processes
 
 .. uml::
 
-       title Activity diagram
-       (*) --> "First Activity"
-       "First Activity" --> (*)
+       start
+       :Hello world;
+       :This is on defined on
+       several **lines**;
+       stop
        
