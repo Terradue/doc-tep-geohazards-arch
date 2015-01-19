@@ -80,3 +80,9 @@ Community Processes
        A -> User: Done
        deactivate A
 
+.. uml::
+
+       title Activity diagram
+       (*) --> "First Activity"
+       "First Activity" --> (*)
+       
