@@ -47,3 +47,14 @@ Community Processes
        Mike->Beth: Hello
        Mike<-Beth: Hi, how are you !
        
+.. uml::
+
+       actor Foo1
+       boundary Foo2
+       control Foo3
+       entity Foo4
+       database Foo5
+       Foo1 -> Foo2 : To boundary
+       Foo1 -> Foo3 : To control
+       Foo1 -> Foo4 : To entity
+       Foo1 -> Foo5 : To database
