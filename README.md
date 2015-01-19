@@ -68,7 +68,7 @@ Build the documentation by running ``make html``.
 
 ### Publish the documentation
 
-``make html`` creates a ``build`` folder in the doc-developer-sandbox local repository.
+``make html`` creates a ``build`` folder in the doc-tep-geohazards-arch local repository.
 
 As root, do:
 
