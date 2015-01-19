@@ -31,9 +31,15 @@ In addition users can also open their own accounts on a commercial Cloud Provide
 * EV_Behaviour:
 * EV_Process:
 
-
 << Enterprise_Spec >>
 Community Roles
 
 << Enterprise_Spec >>
 Community Processes
+
+.. uml::
+        
+               Alice -> Bob: Hi!
+               Alice <- Bob: How are you?
+  
+
