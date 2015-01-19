@@ -38,17 +38,14 @@ Community Roles
 Community Processes
 
 .. uml::
-        
-|Swimlane1|
-start
-:foo1;
-|#AntiqueWhite|Swimlane2|
-:foo2;
-:foo3;
-|Swimlane1|
-:foo4;
-|Swimlane2|
-:foo5;
-stop
-  
 
+               (*) --> "Initialization"
+               if "Some Test" then
+               -->[true] "Some Activity"
+               --> "Another activity"
+               -right-> (*)
+               else
+               ->[false] "Something else"
+               -->[Ending process] (*)
+               endif
+       
