@@ -90,11 +90,15 @@ Community Processes
        
 .. uml::
 
-       [*] --> State1
-       State1 --> [*]
-       State1 : this is a string
-       State1 : this is another string
-       
-       State1 -> State2
-       State2 --> [*]
-       
+       start
+       if (multiprocessor?) then (yes)
+         fork
+           :Treatment 1;
+         fork again
+           :Treatment 2;
+         end fork
+       else (monoproc)
+         :Treatment 1;
+         :Treatment 2;
+       endif
+
