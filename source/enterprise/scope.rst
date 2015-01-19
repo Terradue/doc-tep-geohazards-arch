@@ -39,13 +39,11 @@ Community Processes
 
 .. uml::
 
-               (*) --> "Initialization"
-               if "Some Test" then
-               -->[true] "Some Activity"
-               --> "Another activity"
-               -right-> (*)
-               else
-               ->[false] "Something else"
-               -->[Ending process] (*)
-               endif
+title Authentication Sequence
+
+Alice->Bob: Authentication Request
+note right of Bob: Bob thinks about it
+Bob->Alice: Authentication Response
+
+
        
