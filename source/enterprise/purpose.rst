@@ -1,6 +1,8 @@
 Enterprise Viewpoint - Purpose of the system
 ############################################
 
+The Enterprise Viewpoint describes the G-TEP science and business requirements and how to meet them.
+
 Community contract
 ------------------
 
@@ -58,16 +60,7 @@ The CEOS Working Group on Disasters is committed to support and enhance the acce
 * EV_Objective ():
 * EV_Objective ():
 
-**Roles and Processes**
 
-* EV_Role:
-* EV_Behaviour:
-* EV_Process:
-
-**Policies**
-
-* EV_Policy_Envelop:
-* EV_Policy_Value:
 
 
 
