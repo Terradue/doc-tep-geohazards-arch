@@ -5,6 +5,9 @@ We present hereafter the Enterprise Viewpoint describing the Geohazards Thematic
 This viewpoint defines the purpose, scope and policies governing the activities supported by the Platform accross the GEO and CEOS initiatives.
 It provides the basis for checking the conformance of the Platform implementation.
 
+Architecture viewpoints
+-----------------------
+
 Standards and services supporting the user requirements and the data access and sharing policies expressed in this RM-ODP Enterprise Model and in the RM-ODP Information Model are identified in the RM-ODP Computational Model.
 
 Software packaging and infrastructure deployment constraints are compiled in the RM-ODP Technology Viewpoint and the RM-ODP Engineering Viewpoint.
