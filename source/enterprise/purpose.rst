@@ -6,6 +6,12 @@ The Enterprise Viewpoint describes the G-TEP science and business requirements a
 Community contract
 ------------------
 
+The objective of the community is expressed in a contract that specifies how the objective can be met. This contract:
+– states the objective for which the community exists;
+– governs the structure, the behaviour and the policies of the community;
+– constrains the behaviour of the members of the community;
+– states the rules for the assignment of enterprise objects to roles.
+
 The satellite EO and geohazards community is growing in size and importance, with the advent of large new initiatives and projects of global interest. 
 The geohazard platform or GEP offers this expanding community a unique set of tools to forge new applications in direct collaboration with large numbers of actors. 
 In particular, the community will benefit from a cloud-based workspace, allowing advanced EO data exploitation activities and offering access to a broad range of shared processing tools. 
