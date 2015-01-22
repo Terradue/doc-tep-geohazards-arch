@@ -104,6 +104,7 @@ Community Processes
        
 
 .. uml::
+
        title runJob - On-demand processing
        actor endUser
        ' Boundary (view in MVC) Objects that interface with system actors   
@@ -141,14 +142,14 @@ Community Processes
        
 .. uml::
 
-title runJob - web processing service
-actor endUser
-' Boundary (view in MVC) Objects that interface with system actors   
+       title runJob - web processing service
+       actor endUser
+       ' Boundary (view in MVC) Objects that interface with system actors   
        boundary geoBrowser 
-' Entity (model in MVC): Objects representing system data
+       ' Entity (model in MVC): Objects representing system data
        entity processingServices
        entity eoDataContext
-' Control (controller in MVC): Objects that mediate between boundaries and entities
+       ' Control (controller in MVC): Objects that mediate between boundaries and entities
        control cloudControler
 
        endUser <-> geoBrowser: interact
