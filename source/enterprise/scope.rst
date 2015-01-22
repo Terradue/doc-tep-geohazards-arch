@@ -43,7 +43,7 @@ Users define input data and select a results location (e.g. portal, cloud block 
 
 .. uml::
 
-       title runJob - On-demand processing
+       title runJob - On-demand cloud appliance
        actor endUser
        ' Boundary (view in MVC) Objects that interface with system actors   
        boundary geoBrowser 
@@ -68,7 +68,7 @@ Users define input data and select a results location (e.g. portal, cloud block 
        endUser -> geoBrowser: Allocate selected input data
        endUser -> geoBrowser: runJob
 
-       geoBrowser -> cloudControler: provision Appliance with processor and input data
+       geoBrowser -> cloudControler: provision Cloud appliance with processor and input data
        activate cloudControler
        cloudControler->cloudControler: validate request against user quota
        ref over cloudControler: warning if quota exceeded
@@ -84,7 +84,7 @@ Users define input data and select a results location (e.g. portal, cloud block 
 
 .. uml::
 
-       title runJob - web processing service
+       title runJob - On-demand computing element
        actor endUser
        ' Boundary (view in MVC) Objects that interface with system actors   
        boundary geoBrowser 
@@ -109,7 +109,7 @@ Users define input data and select a results location (e.g. portal, cloud block 
        endUser -> geoBrowser: Allocate selected input data
        endUser -> geoBrowser: runJob
 
-       geoBrowser -> cloudControler: start WPS with input data parameter
+       geoBrowser -> cloudControler: provision grid computing element with input data parameter
        activate cloudControler
        cloudControler->cloudControler: validate request against user quota
        ref over cloudControler: warning if quota exceeded
