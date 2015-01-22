@@ -101,4 +101,26 @@ Community Processes
          :Treatment 1;
          :Treatment 2;
        endif
+       
+
+.. uml::
+
+       participant End-User
+
+       End-User -> A Processing service: DoWork
+       activate A Processing service
+
+       A Processing service -> B: << createRequest >>
+       activate B
+
+       B -> C: DoWork
+       activate C
+       C --> B: WorkDone
+       destroy C
+
+       B --> A: RequestCreated
+       deactivate B
+
+       A -> End-User: Done
+       deactivate A
 
