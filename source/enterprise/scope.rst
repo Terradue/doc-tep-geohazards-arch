@@ -105,23 +105,34 @@ Community Processes
 
 .. uml::
 
-       participant endUser
+       actor endUser
+       ' Boundary (view in MVC) Objects that interface with system actors   
+       boundary geoBrowser 
+       ' Entity (model in MVC): Objects representing system data
+       entity processingServices
+       entity eoDataContext
+       ' Control (controller in MVC): Objects that mediate between boundaries and entities
+       control cloudControler
 
-       endUser -> geoBrowser: interact
-       geoBrowser -> processorsCatalog: selectProcessor
-       activate processorsCatalog
-       geoBrowser <- processorsCatalog: selected 
-       deactivate processorsCatalog
+       endUser <-> geoBrowser: interact
+       geoBrowser -> processingServices: selectProcessor
+       activate processingServices
+       geoBrowser <-- processingServices: selected 
+       deactivate processingServices
 
-       geoBrowser -> dataCatalog: selectDatasets
-       activate dataCatalog
-       geoBrowser <- dataCatalog: selected
-       deactivate dataCatalog
+       geoBrowser -> eoDataContext: selectDatasets
+       activate eoDataContext
+       geoBrowser <-- eoDataContext: selected
+       deactivate eoDataContext
 
-       endUser -> geoBrowser: triggerProcessing
-       geoBrowser -> cloudAppliance: provisionProcessor
-       activate cloudAppliance
-       geoBrowser -> cloudAppliance: provisionDataPackage
-       cloudAppliance --> geoBrowser: Done
-       deactivate cloudAppliance
+       endUser -> geoBrowser: Allocate selected input data
+       endUser -> geoBrowser: runJob
+
+       geoBrowser -> cloudControler: provision Appliance with processor and input data
+       activate cloudControler
+       cloudControler->cloudControler: validate request against user quota
+       ref over cloudControler: warning if quota exceeded
+       cloudControler --> userCloudStorage: Deliver results
+       geoBrowser <-- cloudControler: Reference to results
+       deactivate cloudControler
 
