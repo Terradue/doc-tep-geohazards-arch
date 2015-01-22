@@ -104,7 +104,7 @@ Community Processes
        
 
 .. uml::
-
+       title runJob - On-demand processing
        actor endUser
        ' Boundary (view in MVC) Objects that interface with system actors   
        boundary geoBrowser 
@@ -136,3 +136,42 @@ Community Processes
        geoBrowser <-- cloudControler: Reference to results
        deactivate cloudControler
 
+       endUser -> userCloudStorage: access the generated EO-based products
+       endUser -> geoBrowser: publish the generated eO-based products
+       
+.. uml::
+
+title runJob - web processing service
+actor endUser
+' Boundary (view in MVC) Objects that interface with system actors   
+       boundary geoBrowser 
+' Entity (model in MVC): Objects representing system data
+       entity processingServices
+       entity eoDataContext
+' Control (controller in MVC): Objects that mediate between boundaries and entities
+       control cloudControler
+
+       endUser <-> geoBrowser: interact
+       geoBrowser -> processingServices: selectProcessor
+       activate processingServices
+       geoBrowser <-- processingServices: selected 
+       deactivate processingServices
+
+       geoBrowser -> eoDataContext: selectDatasets
+       activate eoDataContext
+       geoBrowser <-- eoDataContext: selected
+       deactivate eoDataContext
+
+       endUser -> geoBrowser: Allocate selected input data
+       endUser -> geoBrowser: runJob
+
+       geoBrowser -> cloudControler: start WPS with input data parameter
+       activate cloudControler
+       cloudControler->cloudControler: validate request against user quota
+       ref over cloudControler: warning if quota exceeded
+       cloudControler --> userCloudStorage: Deliver results
+       geoBrowser <-- cloudControler: Reference to results
+       deactivate cloudControler
+
+       endUser -> userCloudStorage: access generated EO-based products
+       endUser -> geoBrowser: publish generated EO-based products
