@@ -107,7 +107,7 @@ Community Processes
 
        participant endUser
 
-       EndUser -> processingService: DoWork
+       endUser -> processingService: DoWork
        activate processingService
 
        processingService -> B: << createRequest >>
@@ -118,9 +118,9 @@ Community Processes
        C --> B: WorkDone
        destroy C
 
-       B --> A: RequestCreated
+       B --> endUser: RequestCreated
        deactivate B
 
-       A -> End-User: Done
-       deactivate A
+       processingService -> endUser: Done
+       deactivate processingService
 
