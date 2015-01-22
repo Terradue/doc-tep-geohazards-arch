@@ -1,7 +1,7 @@
 Enterprise Viewpoint - Scope of the system
 ##########################################
 
-With the scope, we describe the Platform expected behaviour, i.e., the way it is supposed to work and interact with its environment in the TEP context.
+With the scope of the system, we describe the Platform expected behaviour, i.e., the way it is supposed to work and interact with its environment in the TEP context.
 
 The targeted operational processes are:
 
