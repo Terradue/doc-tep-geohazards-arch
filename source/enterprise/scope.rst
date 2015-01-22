@@ -107,20 +107,21 @@ Community Processes
 
        participant endUser
 
-       endUser -> processingService: selectProcessor
-       deactivate processingService
+       endUser -> geoBrowser: interact
+       geoBrowser -> processorsCatalog: selectProcessor
+       activate processorsCatalog
+       geoBrowser <- processorsCatalog: selected 
+       deactivate processorsCatalog
 
-       endUser -> dataPackageService: selectDatasets
-       deactivate dataPackageService
+       geoBrowser -> dataCatalog: selectDatasets
+       activate dataCatalog
+       geoBrowser <- dataCatalog: selected
+       deactivate dataCatalog
 
-       dataPackageService -> C: DoWork
-       activate C
-       C --> dataPackageService: WorkDone
-       destroy C
-
-       dataPackageService --> endUser: RequestCreated
-       deactivate dataPackageService
-
-       processingService -> endUser: Done
-       deactivate processingService
+       endUser -> geoBrowser: triggerProcessing
+       geoBrowser -> cloudAppliance: provisionProcessor
+       activate cloudAppliance
+       geoBrowser -> cloudAppliance: provisionDataPackage
+       cloudAppliance --> geoBrowser: Done
+       deactivate cloudAppliance
 
