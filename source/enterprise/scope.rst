@@ -110,16 +110,16 @@ Community Processes
        endUser -> processingService: DoWork
        activate processingService
 
-       processingService -> B: << createRequest >>
-       activate B
+       processingService -> dataPackageService: << createRequest >>
+       activate dataPackageService
 
-       B -> C: DoWork
+       dataPackageService -> C: DoWork
        activate C
-       C --> B: WorkDone
+       C --> dataPackageService: WorkDone
        destroy C
 
-       B --> endUser: RequestCreated
-       deactivate B
+       dataPackageService --> endUser: RequestCreated
+       deactivate dataPackageService
 
        processingService -> endUser: Done
        deactivate processingService
