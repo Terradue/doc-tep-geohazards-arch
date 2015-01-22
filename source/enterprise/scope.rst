@@ -76,8 +76,8 @@ Users define input data and select a results location (e.g. portal, cloud block 
        geoBrowser <-- cloudControler: Reference to results
        deactivate cloudControler
 
-       endUser -> userCloudStorage: access the generated EO-based products
-       endUser -> geoBrowser: publish the generated eO-based products
+       endUser -> userCloudStorage: access generated EO-based products
+       endUser -> geoBrowser: share generated eO-based products
       
 Users can run existing processing services (e.g. G-POD services) and and invoke the processing via the OGC Web Processing Service interface.
 Users define input data and select a results location (e.g. portal, cloud block storage, dropbox, google drive, ...)
@@ -118,4 +118,4 @@ Users define input data and select a results location (e.g. portal, cloud block 
        deactivate cloudControler
 
        endUser -> userCloudStorage: access generated EO-based products
-       endUser -> geoBrowser: publish generated EO-based products
+       endUser -> geoBrowser: share generated EO-based products
