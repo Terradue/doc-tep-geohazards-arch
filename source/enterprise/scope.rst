@@ -37,71 +37,8 @@ Community Roles
 << Enterprise_Spec >>
 Community Processes
 
-.. uml::
 
-       title Authentication Sequence
-       Alice->Bob: Authentication Request
-       note right of Bob: Bob thinks about it
-       Bob->Alice: Authentication Response
-       title Second Sequence
-       Mike->Beth: Hello
-       Mike<-Beth: Hi, how are you !
-       
-.. uml::
-
-       actor Foo1
-       boundary Foo2
-       control Foo3
-       entity Foo4
-       database Foo5
-       Foo1 -> Foo2 : To boundary
-       Foo1 -> Foo3 : To control
-       Foo1 -> Foo4 : To entity
-       Foo1 -> Foo5 : To database
-       
-.. uml::
-
-       participant User
-
-       User -> A: DoWork
-       activate A
-
-       A -> B: << createRequest >>
-       activate B
-
-       B -> C: DoWork
-       activate C
-       C --> B: WorkDone
-       destroy C
-
-       B --> A: RequestCreated
-       deactivate B
-
-       A -> User: Done
-       deactivate A
-
-.. uml::
-
-       start
-       :Hello world;
-       :This is on defined on
-       several **lines**;
-       stop
-       
-.. uml::
-
-       start
-       if (multiprocessor?) then (yes)
-         fork
-           :Treatment 1;
-         fork again
-           :Treatment 2;
-         end fork
-       else (monoproc)
-         :Treatment 1;
-         :Treatment 2;
-       endif
-       
+Users can instantiate new processing services (on-demand) and provision them on a pre-configured Cloud Provider.
 
 .. uml::
 
@@ -139,7 +76,9 @@ Community Processes
 
        endUser -> userCloudStorage: access the generated EO-based products
        endUser -> geoBrowser: publish the generated eO-based products
-       
+      
+Users can run existing processing services (e.g. G-POD services) and invoke them via the OGC Web Processing Service interface.
+
 .. uml::
 
        title runJob - web processing service
