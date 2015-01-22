@@ -38,7 +38,8 @@ Community Roles
 Community Processes
 
 
-Users can instantiate new processing services (on-demand) and provision them on a pre-configured Cloud Provider.
+Users can instantiate (on-demand) a processing service appliance, provision the appliance on a pre-configured Cloud Provider and invoke the processing via the OGC Web Processing Service interface.
+Users define input data and select a results location (e.g. portal, cloud block storage, dropbox, google drive, ...)
 
 .. uml::
 
@@ -78,7 +79,8 @@ Users can instantiate new processing services (on-demand) and provision them on 
        endUser -> userCloudStorage: access the generated EO-based products
        endUser -> geoBrowser: publish the generated eO-based products
       
-Users can run existing processing services (e.g. G-POD services) and invoke them via the OGC Web Processing Service interface.
+Users can run existing processing services (e.g. G-POD services) and and invoke the processing via the OGC Web Processing Service interface.
+Users define input data and select a results location (e.g. portal, cloud block storage, dropbox, google drive, ...)
 
 .. uml::
 
