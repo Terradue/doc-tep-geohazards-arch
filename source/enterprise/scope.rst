@@ -47,9 +47,10 @@ Users can instantiate new processing services (on-demand) and provision them on 
        ' Boundary (view in MVC) Objects that interface with system actors   
        boundary geoBrowser 
        ' Entity (model in MVC): Objects representing system data
-       entity processingServices
-       entity eoDataContext
+       ' model descriptions are delegated to the Information viewpoint
        ' Control (controller in MVC): Objects that mediate between boundaries and entities
+       control processingServices
+       control eoDataContext
        control cloudControler
 
        endUser <-> geoBrowser: interact
@@ -86,9 +87,10 @@ Users can run existing processing services (e.g. G-POD services) and invoke them
        ' Boundary (view in MVC) Objects that interface with system actors   
        boundary geoBrowser 
        ' Entity (model in MVC): Objects representing system data
-       entity processingServices
-       entity eoDataContext
+       ' model descriptions are delegated to the Information viewpoint
        ' Control (controller in MVC): Objects that mediate between boundaries and entities
+       control processingServices
+       control eoDataContext
        control cloudControler
 
        endUser <-> geoBrowser: interact
