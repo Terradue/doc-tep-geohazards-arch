@@ -25,12 +25,12 @@ Different services
        Users <-> cloudDashboard: interact
        Users <-> cloudSandbox: interact
 
-Data providers and Administrator users
---------------------------------------
+Constraints on Data providers | Administrators interactions
+------------------------------------------------------------
 
 TBD
 
-Processor integrators and end-users
------------------------------------
+Constraints on Processor integrators | end-users interactions
+--------------------------------------------------------------
 
 TBD
