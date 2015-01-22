@@ -107,11 +107,11 @@ Community Processes
 
        participant endUser
 
-       endUser -> processingService: DoWork
-       activate processingService
+       endUser -> processingService: selectProcessor
+       deactivate processingService
 
-       processingService -> dataPackageService: << createRequest >>
-       activate dataPackageService
+       endUser -> dataPackageService: selectDatasets
+       deactivate dataPackageService
 
        dataPackageService -> C: DoWork
        activate C
