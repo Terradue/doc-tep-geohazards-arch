@@ -105,12 +105,12 @@ Community Processes
 
 .. uml::
 
-       participant End-User
+       participant endUser
 
-       End-User -> A Processing service: DoWork
-       activate A Processing service
+       EndUser -> processingService: DoWork
+       activate processingService
 
-       A Processing service -> B: << createRequest >>
+       processingService -> B: << createRequest >>
        activate B
 
        B -> C: DoWork
