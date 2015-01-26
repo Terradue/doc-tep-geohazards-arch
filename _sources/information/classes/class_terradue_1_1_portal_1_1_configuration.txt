@@ -4,6 +4,7 @@ Terradue::Portal::Configuration
 Represents the set of portal configuration variables. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

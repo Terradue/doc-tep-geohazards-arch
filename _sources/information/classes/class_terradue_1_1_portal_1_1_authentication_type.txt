@@ -4,6 +4,7 @@ Terradue::Portal::AuthenticationType
 Represents an authentication type. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

@@ -4,6 +4,7 @@ Terradue::Portal::WpsProcessOffering
 Represents a WPS process offering on a remote WPS server. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

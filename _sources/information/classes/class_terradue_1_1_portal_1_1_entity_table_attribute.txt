@@ -4,6 +4,7 @@ Terradue::Portal::EntityTableAttribute
 Attribute that allows to link a subclass of   to a database table. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

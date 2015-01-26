@@ -4,6 +4,7 @@ Terradue::Portal::Service
 Abstract base class for processing services. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

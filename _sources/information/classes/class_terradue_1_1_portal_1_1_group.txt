@@ -4,6 +4,7 @@ Terradue::Portal::Group
 Represents a user group. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

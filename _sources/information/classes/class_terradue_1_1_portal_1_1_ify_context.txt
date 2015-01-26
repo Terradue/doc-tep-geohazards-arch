@@ -4,6 +4,7 @@ Terradue::Portal::IfyContext
 Represents the execution environment context and manages the client connection, database access and other resources. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

@@ -4,6 +4,7 @@ Terradue::Portal::Scheduler
 Abstract class that represents an operation that is repeated at regular intervals. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

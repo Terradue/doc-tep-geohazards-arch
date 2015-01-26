@@ -198,6 +198,14 @@
   <div class="section" id="terradue-portal-authenticationtype">
 <h1>Terradue::Portal::AuthenticationType<a class="headerlink" href="#terradue-portal-authenticationtype" title="Permalink to this headline">¶</a></h1>
 <p>Represents an authentication type.</p>
+<p class="plantuml">
+<object data="../../_images/plantuml-4a39527d12a6849815b5a05a509e6747113caade.svg" type="image/svg+xml" style="width:283px;height:166px;">
+<img src="../../_images/plantuml-4a39527d12a6849815b5a05a509e6747113caade.png" alt="!include includes/skins.iuml
+skinparam backgroundColor #FFFFFF
+skinparam componentStyle uml2
+!include target/rst/in/class_terradue_1_1_portal_1_1_authentication_type.iuml" />
+
+</object></p>
 <p>This class provides an abstract model for basic functionality of internal and external authentication methods. Implementing classes must provide a method to recognise a user identity from an HTTP request (if automatic user detection is possible) and may implement a method that checks whether an external session is still active. Implementing classes may also implement specific methods, especially for the initiation of an authentication process, such as an HTTP redirect to an external sign-in page.</p>
 <p>+NormalAccountRule:RuleApplicationType
 +ExternalSessionRefreshPeriod:int

@@ -4,6 +4,7 @@ Terradue::Portal::ComputingResource
 Represents a computing resource that can be used for the processing of tasks. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

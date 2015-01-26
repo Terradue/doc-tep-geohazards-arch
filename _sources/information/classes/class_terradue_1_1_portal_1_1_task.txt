@@ -4,6 +4,7 @@ Terradue::Portal::Task
 Represents an Ify processing task. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

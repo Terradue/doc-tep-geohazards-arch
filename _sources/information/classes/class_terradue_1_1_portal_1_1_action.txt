@@ -4,6 +4,7 @@ Terradue::Portal::Action
 Represents an action that is executed by the background agent. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

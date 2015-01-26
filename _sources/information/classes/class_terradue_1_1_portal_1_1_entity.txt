@@ -4,6 +4,7 @@ Terradue::Portal::Entity
 Abstract base class of all entity types that usually correspond to real-world entities. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

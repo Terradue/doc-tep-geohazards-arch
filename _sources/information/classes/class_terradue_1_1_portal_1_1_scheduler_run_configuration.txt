@@ -4,6 +4,7 @@ Terradue::Portal::SchedulerRunConfiguration
 Abstract class representing a collection of scheduler parameters and settings for generating subsequent runs of the scheduler. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

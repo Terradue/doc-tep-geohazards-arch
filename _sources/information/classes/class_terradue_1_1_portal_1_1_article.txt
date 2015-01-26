@@ -4,6 +4,7 @@ Terradue::Portal::Article
 Represents a news article published on the portal. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

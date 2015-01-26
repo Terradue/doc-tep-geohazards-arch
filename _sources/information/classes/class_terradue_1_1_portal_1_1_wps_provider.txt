@@ -4,6 +4,7 @@ Terradue::Portal::WpsProvider
 Represents a remote provider of a Web Processing  . 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

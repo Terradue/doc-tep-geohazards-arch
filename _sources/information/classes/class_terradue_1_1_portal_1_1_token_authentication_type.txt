@@ -4,6 +4,7 @@ Terradue::Portal::TokenAuthenticationType
 Token authentication type. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

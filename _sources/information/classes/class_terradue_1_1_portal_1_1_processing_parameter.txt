@@ -4,6 +4,7 @@ Terradue::Portal::ProcessingParameter
 Represents a task or job parameter. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

@@ -4,6 +4,7 @@ Terradue::Portal::Image
 Represents a featured image on the portal. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2

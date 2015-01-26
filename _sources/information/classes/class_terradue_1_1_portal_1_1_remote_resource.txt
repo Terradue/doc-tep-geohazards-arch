@@ -4,6 +4,7 @@ Terradue::Portal::RemoteResource
 Remote resource. 
 
 .. uml::
+
   !include includes/skins.iuml
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2
