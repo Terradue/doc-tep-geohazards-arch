@@ -160,6 +160,28 @@
 				</executions>
 			</plugin>
 			<plugin>
+	           <groupId>com.google.code.maven-replacer-plugin</groupId>
+	           <artifactId>replacer</artifactId>
+	           <version>1.5.3</version>
+	           <executions>
+	               <execution>
+	                   <phase>process-classes</phase>
+	                   <goals>
+	                       <goal>replace</goal>
+	                   </goals>                   
+	               </execution>
+	           </executions>
+	           <configuration>
+	               <filesToInclude>${basedir}/_build/html/**/*.svg</filesToInclude>
+	               <replacements>
+	                   <replacement>
+	                       <token><![CDATA[<a]]></token>
+	                       <value><![CDATA[<a target="_top"]]></value>
+	                   </replacement>         
+	               </replacements>
+	           </configuration>
+	       </plugin>
+			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>1.2.1</version>
