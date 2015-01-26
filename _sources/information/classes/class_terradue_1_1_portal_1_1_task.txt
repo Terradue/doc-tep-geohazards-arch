@@ -1,0 +1,17 @@
+Terradue::Portal::Task
+======================
+
+Represents an Ify processing task. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_task.iuml
+This class provides information on an Ify processing task including properties for execution and status details and methods for the execution control. An instance of the   class maintains a list of all its processing jobs. A   object sends requests to the Grid engine via the wsServer interface (on the Grid engine side). 
+ The tasks are stored in the database table  . 
+
++Service:Terradue::Portal::Service <class_terradue_1_1_portal_1_1_service>
++ComputingResource:Terradue::Portal::ComputingResource <class_terradue_1_1_portal_1_1_computing_resource>
++Priority:double
++Scheduler:Terradue::Portal::Scheduler <class_terradue_1_1_portal_1_1_scheduler>

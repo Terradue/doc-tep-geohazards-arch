@@ -1,0 +1,17 @@
+Terradue::Portal::Feature
+=========================
+
+. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_feature.iuml
+
++Title:string
++Description:string
++Image:string
++ImageStyle:string
++ButtonText:string
++ButtonLink:string

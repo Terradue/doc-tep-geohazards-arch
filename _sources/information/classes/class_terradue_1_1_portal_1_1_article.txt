@@ -1,0 +1,18 @@
+Terradue::Portal::Article
+=========================
+
+Represents a news article published on the portal. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_article.iuml
+
++Title:string
++Abstract:string
++Content:string
++Time:DateTime
++Url:string
++Author:string
++Tags:string

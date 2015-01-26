@@ -1,0 +1,13 @@
+Terradue::Portal::WpsProcessOffering
+====================================
+
+Represents a WPS process offering on a remote WPS server. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_wps_process_offering.iuml
+
++Provider:Terradue::Portal::WpsProvider <class_terradue_1_1_portal_1_1_wps_provider>
++FixedComputingResource:override 

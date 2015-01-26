@@ -1,0 +1,19 @@
+Terradue::Portal::Service
+=========================
+
+Abstract base class for processing services. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_service.iuml
+
++Description:string
++Version:string
++Url:string
++IconUrl:string
++Rating:int
++ClassId:int
++Categories:[]
++OnBuildTask:BuildTaskCallbackType

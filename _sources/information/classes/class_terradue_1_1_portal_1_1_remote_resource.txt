@@ -1,0 +1,13 @@
+Terradue::Portal::RemoteResource
+================================
+
+Remote resource. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_remote_resource.iuml
+
++ResourceSet:Terradue::Portal::RemoteResourceSet <class_terradue_1_1_portal_1_1_remote_resource_set>
++Location:string

@@ -1,0 +1,38 @@
+Terradue::Portal::IfyContext
+============================
+
+Represents the execution environment context and manages the client connection, database access and other resources. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_ify_context.iuml
+
++IsInteractive:bool
++LogLevel:int
++DebugLevel:int
++UserId:int
++OwnerId:int
++IsUserIdentified:bool
++IsUserAuthenticated:bool
++AuthenticationMethod:AuthenticationMethod
++UserLevel:int
++UserCaption:string
++Username:string
++Open()
++Close()
++LoadConfiguration()
++StartTransaction()
++GetConfigValue()
++EndImpersonation()
++SendMailAlert()
++CreateLogger()
++LogDebug()
++LogError()
++LogFatalError()
++LogInfo()
++LogWarning()
++LogStat()
+-SetReporter()
+-SetOriginator()

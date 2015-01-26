@@ -1,0 +1,20 @@
+Terradue::Portal::Entity
+========================
+
+Abstract base class of all entity types that usually correspond to real-world entities. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_entity.iuml
+The class provides generic interaction with data that is persistently stored in a relational database. The data location and structure are defined in the subclasses which represent real-world entities.
+
++Identifier:string
++Name:string
++Load()
++Store()
++StoreGlobalPrivileges()
++RemoveGlobalPrivileges()
++Delete()
++GetAllowedAdministratorOperations()

@@ -1,0 +1,18 @@
+Terradue::Portal::Scheduler
+===========================
+
+Abstract class that represents an operation that is repeated at regular intervals. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_scheduler.iuml
+A task scheduler creates tasks according to variable and fixed parameters and the scheduling mode.
+There are two scheduling modes: 
+In order to work automatically, the background agent must be running and the   action must be enabled.
+Alternatively, for debug purposes, the scheduler can be advanced manually and the resulting tasks can be submitted manually. 
++Status:SchedulingStatus
++RunConfiguration:Terradue::Portal::SchedulerRunConfiguration <class_terradue_1_1_portal_1_1_scheduler_run_configuration>
++MaxSubmissions:int
++Inputs:List< 

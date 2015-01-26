@@ -1,0 +1,15 @@
+Terradue::Portal::Series
+========================
+
+Represents a series of data sets that are available from a catalogue. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_series.iuml
+
++Description:string
++CatalogueDescriptionUrl:string
++Catalogue:Terradue::Portal::Catalogue <class_terradue_1_1_portal_1_1_catalogue>
++GetLocalOpenSearchDescription()

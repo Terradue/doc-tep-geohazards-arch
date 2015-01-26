@@ -1,0 +1,14 @@
+Terradue::Portal::Group
+=======================
+
+Represents a user group. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_group.iuml
+
++Name:override string
++Description:string
++Priority:int

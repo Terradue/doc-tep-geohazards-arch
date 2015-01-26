@@ -1,0 +1,11 @@
+Terradue::Portal::ProcessingParameterSet
+========================================
+
+Represents a collection of task or job parameters. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_processing_parameter_set.iuml
+

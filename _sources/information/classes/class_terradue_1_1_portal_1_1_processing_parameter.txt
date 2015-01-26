@@ -1,0 +1,15 @@
+Terradue::Portal::ProcessingParameter
+=====================================
+
+Represents a task or job parameter. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_processing_parameter.iuml
+
++Name:string
++Type:string
++Value:string
++Values:string[]

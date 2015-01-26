@@ -1,0 +1,15 @@
+Terradue::Portal::AuthenticationType
+====================================
+
+Represents an authentication type. 
+
+.. uml::
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_portal_1_1_authentication_type.iuml
+This class provides an abstract model for basic functionality of internal and external authentication methods. Implementing classes must provide a method to recognise a user identity from an HTTP request (if automatic user detection is possible) and may implement a method that checks whether an external session is still active. Implementing classes may also implement specific methods, especially for the initiation of an authentication process, such as an HTTP redirect to an external sign-in page.
+
++NormalAccountRule:RuleApplicationType
++ExternalSessionRefreshPeriod:int
++UsesExternalIdentityProvider:abstract bool
