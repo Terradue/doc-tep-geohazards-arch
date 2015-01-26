@@ -213,3 +213,7 @@ latex_documents = [
 
 # If true, show URL addresses after external links.
 #man_show_urls = False
+
+# -- Options for plantuml output --------------------------------------------
+
+plantuml_output_format = 'svg'
