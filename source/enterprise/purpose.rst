@@ -51,7 +51,8 @@ The Satellite EO for Geohazards community includes a range of different actors, 
 
 The CEOS Working Group on Disasters is committed to support and enhance the access to in-situ and satellite observations ...
 
-**Objectives**
+Objectives
+----------
 
 * EV_Objective (gsnl1): support collaboration of space and in-situ data providers
 * EV_Objective (gnsl2):
