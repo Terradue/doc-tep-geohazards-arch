@@ -54,20 +54,56 @@ The CEOS Working Group on Disasters is committed to support and enhance the acce
 Objectives
 ----------
 
+**Community platform**
+
+* EV_Objective (comm1): Evolve SSEP to promote a reference platform for the TEPs
+* EV_Objective (comm2): Measure community validated usages of EO data 
+* EV_Objective (comm3): Demonstrate optimal data access strategy (direct remote data access, synchronisation with remote repositories 'data mirroring', and local caching)
+* EV_Objective (comm4): Investigate means for accessing and exploiting commercial data assets
+* EV_Objective (comm5): Involve stakeholders for long term sustainable operations
+
+**Processor integration**
+
+* EV_Objective (integ1): Support processor integration for massive parallel processing
+* EV_Objective (integ2): Demonstrate Cloud appliance preparation for cluster processing
+* EV_Objective (integ3): Investigate means for accessing and exploiting commercial processor assets
+
+**Cloud bursting**
+
+* EV_Objective (burst1): Support Cloud appliance deployment on selected Cluster
+* EV_Objective (burst2): Demonstrate user selected Cloud Provider for processing
+* EV_Objective (burst3): Demonstrate an exploitation approach based on a pay-per-use model
+
+**Digital science**
+
+* EV_Objective (digit1): Allow the rapid creation and web-publication of added-value science products (e.g. co-seismic interferograms)
+* EV_Objective (digit2): Review, re-produce and qualify science products from 3rd parties 
+* EV_Objective (digit3): Support increased access to EO derived information, through inter-disciplinary exchange and cooperation
+
+**CEOS Pilots**
+
+* EV_Objective (ceos1): 
+* EV_Objective (ceos2): 
+* EV_Objective (ceos3): 
+* EV_Objective (ceos4): 
+
+**Geohazards Supersites and Natural Laboratories**
+
 * EV_Objective (gsnl1): support collaboration of space and in-situ data providers
-* EV_Objective (gnsl2):
-* EV_Objective ():
-* EV_Objective ():
-* EV_Objective (seismic1):
-* EV_Objective (seismic2):
-* EV_Objective ():
-* EV_Objective ():
-* EV_Objective (volcano1):
-* EV_Objective (volcano2):
-* EV_Objective ():
-* EV_Objective ():
+* EV_Objective (gnsl2): 
+* EV_Objective (gnsl3): 
+* EV_Objective (gnsl4): 
 
+**Seismic hazards**
 
+* EV_Objective (seismic1): 
+* EV_Objective (seismic2): 
+* EV_Objective (seismic3): 
+
+**Volcanic eruptions**
+
+* EV_Objective (volcano1): 
+* EV_Objective (volcano2): 
 
 
 
