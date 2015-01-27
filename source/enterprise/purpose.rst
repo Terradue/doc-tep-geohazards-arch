@@ -82,28 +82,27 @@ Objectives
 
 **CEOS Pilots**
 
-* EV_Objective (ceos1): 
-* EV_Objective (ceos2): 
-* EV_Objective (ceos3): 
-* EV_Objective (ceos4): 
+* EV_Objective (ceos1): Foster EO resource & knowledge sharing for capacity building at global scale
+* EV_Objective (ceos2): Provide EO data (InSAR, optical) and processing capacities to existing initiatives
+* EV_Objective (ceos3): Demonstrate advanced science products for rapid earthquake response & and reduce impact and risk from volcanic eruptions
 
 **Geohazards Supersites and Natural Laboratories**
 
-* EV_Objective (gsnl1): support collaboration of space and in-situ data providers
-* EV_Objective (gnsl2): 
-* EV_Objective (gnsl3): 
-* EV_Objective (gnsl4): 
+* EV_Objective (gsnl1): Map hazard prone land surfaces in geologically active regions
+* EV_Objective (gnsl2): Monitor terrain deformations in geologically active regions
+* EV_Objective (gnsl3): Ensure easy access to Earth Science data to promote their use and advance scientific research
+* EV_Objective (gnsl4): Manage Permanent Supersites, Candidate Supersites, Event Supersites, and Natural Laboratories
 
 **Seismic hazards**
 
-* EV_Objective (seismic1): 
-* EV_Objective (seismic2): 
-* EV_Objective (seismic3): 
+* EV_Objective (seismic1): Support production of new observations of the seismic belts (~15% of land surface)
+* EV_Objective (seismic2): Contribute to improved understanding of seismic events
+* EV_Objective (seismic3): Support Geoscience users to characterize, understand, and model seismic risk
 
 **Volcanic eruptions**
 
-* EV_Objective (volcano1): 
-* EV_Objective (volcano2): 
+* EV_Objective (volcano1): Support monitoring of all Holocene era volcanoes on a global basis (~1500 vocanoes)
+* EV_Objective (volcano2): Involve National and Regional Civil Protection authorities, Seismological centers, National & Local authorities
 
 
 
