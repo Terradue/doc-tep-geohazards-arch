@@ -63,7 +63,7 @@ As a summary, the community is modeled in the RM-ODP Enterprise Specification as
 
 << EV_Community >>
 
-Community Objectives
+Community objectives
 --------------------
 
 **Exploitation and collaboration**
