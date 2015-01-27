@@ -7,9 +7,13 @@ Community contract
 ------------------
 
 The main purpose of the system gathering together the GEP community is expressed in a contract that specifies how the community objective can be met. This contract:
+
 – states the objective for which the community exists;
+
 – governs the structure, the behaviour and the policies of the community;
+
 – constrains the behaviour of the members of the community;
+
 – states the rules for the assignment of enterprise objects to roles.
 
 The satellite EO and geohazards community is growing in size and importance, with the advent of large new initiatives and projects of global interest. 
