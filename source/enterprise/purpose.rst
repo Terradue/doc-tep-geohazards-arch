@@ -52,8 +52,8 @@ Overall, the Satellite EO for Geohazards community encompasses the following act
   * Community of researchers active in the Geohazard Supersites and Natural Laboratories (GSNL)
   * the European Plate Observing System (EPOS)
 
-The CEOS Working Group on Disasters is committed to support and enhance the access to in-situ and satellite observations, at the global scale.
-This is the main goal of the Geohazards Thematic Exploitation Platform community, that we refine hereafter into a set of objectives.
+The CEOS Working Group on Disasters is committed to support and enhance the access to in-situ and satellite observations, at the global scale, for the geohazards community.
+This is defining the main purpose of the Geohazards Thematic Exploitation Platform, that we refine hereafter into a set of community objectives.
 The system is then designed in terms of processes that meet these objectives. 
 Such processes (see the next section "Scope of the system) allow the system actors to interact and behave in order to fulfill the stated goal and objectives.
 According to the RM-ODP approach, the complete behaviour for a role in the community is modelled by the actions for that role in a number of processes.
@@ -63,10 +63,10 @@ As a summary, the community is modeled in the RM-ODP Enterprise Specification as
 
 << EV_Community >>
 
-Objectives
-----------
+Community Objectives
+--------------------
 
-**Community platform**
+**Exploitation and collaboration**
 
 * EV_Objective **comm1**: Evolve SSEP to promote a reference platform for the TEPs
 * EV_Objective **comm2**: Measure community validated usages of EO data 
@@ -92,26 +92,26 @@ Objectives
 * EV_Objective **digit2**: Review, re-produce and qualify science products from 3rd parties 
 * EV_Objective **digit3**: Support increased access to EO derived information, through inter-disciplinary exchange and cooperation
 
-**CEOS Pilots**
+**CEOS Pilots synergy**
 
 * EV_Objective **ceos1**: Foster EO resource & knowledge sharing for capacity building at global scale
 * EV_Objective **ceos2**: Provide EO data (InSAR, optical) and processing capacities to existing initiatives
 * EV_Objective **ceos3**: Demonstrate advanced science products for rapid earthquake response & and reduce impact and risk from volcanic eruptions
 
-**Geohazards Supersites and Natural Laboratories**
+**Geohazards Supersites and Natural Laboratories synergy**
 
 * EV_Objective **gsnl1**: Map hazard prone land surfaces in geologically active regions
 * EV_Objective **gnsl2**: Monitor terrain deformations in geologically active regions
 * EV_Objective **gnsl3**: Ensure easy access to Earth Science data to promote their use and advance scientific research
 * EV_Objective **gnsl4**: Manage Permanent Supersites, Candidate Supersites, Event Supersites, and Natural Laboratories
 
-**Seismic hazards**
+**Seismic hazards knowledge**
 
 * EV_Objective **seismic1**: Support production of new observations of the seismic belts (~15% of land surface)
 * EV_Objective **seismic2**: Contribute to improved understanding of seismic events
 * EV_Objective **seismic3**: Support Geoscience users to characterize, understand, and model seismic risk
 
-**Volcanic eruptions**
+**Volcanic eruptions monitoring**
 
 * EV_Objective **volcano1**: Support monitoring of all Holocene era volcanoes on a global basis (~1500 vocanoes)
 * EV_Objective **volcano2**: Involve National and Regional Civil Protection authorities, Seismological centers, National & Local authorities
