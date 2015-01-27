@@ -6,7 +6,7 @@ The Enterprise Viewpoint describes the Geohazards Exploitation Platform's scienc
 Community contract
 ------------------
 
-The main objective of the community gathered together through GEP is expressed in a contract that specifies how the objective can be met. This contract:
+The main purpose of the system gathering together the GEP community is expressed in a contract that specifies how the community objective can be met. This contract:
 – states the objective for which the community exists;
 – governs the structure, the behaviour and the policies of the community;
 – constrains the behaviour of the members of the community;
