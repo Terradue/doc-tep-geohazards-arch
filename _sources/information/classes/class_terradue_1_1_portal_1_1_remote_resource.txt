@@ -10,5 +10,12 @@ Remote resource.
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_remote_resource.iuml
 
-+ResourceSet:Terradue::Portal::RemoteResourceSet <class_terradue_1_1_portal_1_1_remote_resource_set>
-+Location:string
+
+
+Properties
+----------
+============================================================================================== =========== ==============================
+`:doc:Terradue::Portal::RemoteResourceSet <class_terradue_1_1_portal_1_1_remote_resource_set>` ResourceSet Gets or sets the resource set.
+============================================================================================== =========== ==============================
+string                                                                                         Location    Gets or sets the location.
+

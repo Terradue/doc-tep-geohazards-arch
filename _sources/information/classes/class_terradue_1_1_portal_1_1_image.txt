@@ -10,7 +10,16 @@ Represents a featured image on the portal.
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_image.iuml
 
-+Caption:string
-+Description:string
-+Url:string
-+SmallUrl:string
+
+
+Properties
+----------
+====== =========== =============================
+string Caption     Gets or sets the caption.
+====== =========== =============================
+string Description Gets or sets the description.
+====== =========== =============================
+string Url         Gets or sets the URL.
+====== =========== =============================
+string SmallUrl    Gets or sets the small URL.
+

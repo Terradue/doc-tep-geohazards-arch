@@ -10,6 +10,14 @@ Represents a task or job parameter.
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_execution_parameter.iuml
 
-+Name:string
-+Type:string
-+Value:string
+
+
+Properties
+----------
+====== ===== ======================================================
+string Name  Gets the name of the task or job parameter.
+====== ===== ======================================================
+string Type  Gets the type identifier of the task or job parameter.
+====== ===== ======================================================
+string Value Gets or sets the value of the task or job parameter.
+

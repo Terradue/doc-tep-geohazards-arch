@@ -136,7 +136,10 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Terradue::Portal::Task</a></li>
+<li><a class="reference internal" href="#">Terradue::Portal::Task</a><ul>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -199,7 +202,7 @@
 <h1>Terradue::Portal::Task<a class="headerlink" href="#terradue-portal-task" title="Permalink to this headline">¶</a></h1>
 <p>Represents an Ify processing task.</p>
 <p class="plantuml">
-<object data="../../_images/plantuml-6aeb8d1da30b4dca26baa23d1138f078377b23ad.svg" type="image/svg+xml" style="width:559px;height:306px;">
+<object data="../../_images/plantuml-6aeb8d1da30b4dca26baa23d1138f078377b23ad.svg" type="image/svg+xml" style="width:652px;height:306px;">
 <img src="../../_images/plantuml-6aeb8d1da30b4dca26baa23d1138f078377b23ad.png" alt="!include includes/skins.iuml
 skinparam backgroundColor #FFFFFF
 skinparam componentStyle uml2
@@ -210,10 +213,31 @@ skinparam componentStyle uml2
 <dt>This class provides information on an Ify processing task including properties for execution and status details and methods for the execution control. An instance of the   class maintains a list of all its processing jobs. A   object sends requests to the Grid engine via the wsServer interface (on the Grid engine side).</dt>
 <dd>The tasks are stored in the database table  .</dd>
 </dl>
-<p>+Service:Terradue::Portal::Service &lt;class_terradue_1_1_portal_1_1_service&gt;
-+ComputingResource:Terradue::Portal::ComputingResource &lt;class_terradue_1_1_portal_1_1_computing_resource&gt;
-+Priority:double
-+Scheduler:Terradue::Portal::Scheduler &lt;class_terradue_1_1_portal_1_1_scheduler&gt;</p>
+<div class="section" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="10%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head"><cite>:doc:Terradue::Portal::Service &lt;class_terradue_1_1_portal_1_1_service&gt;</cite></th>
+<th class="head">Service</th>
+<th class="head">Gets the service that defines the derivate.</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><cite>:doc:Terradue::Portal::ComputingResource &lt;class_terradue_1_1_portal_1_1_computing_resource&gt;</cite></td>
+<td>ComputingResource</td>
+<td>Gets or sets the computing resource assigned to the derivate.</td>
+</tr>
+</tbody>
+</table>
+<p>double                                                                                        Priority          Gets or sets the processing priority value of the service derivate.
+============================================================================================= ================= ===================================================================
+<cite>:doc:Terradue::Portal::Scheduler &lt;class_terradue_1_1_portal_1_1_scheduler&gt;</cite>                  Scheduler         Get or sets the scheduler that produced this task.</p>
+</div>
 </div>
 
 

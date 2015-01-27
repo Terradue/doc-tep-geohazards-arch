@@ -10,7 +10,19 @@ Represents a series of data sets that are available from a catalogue.
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_series.iuml
 
-+Description:string
-+CatalogueDescriptionUrl:string
-+Catalogue:Terradue::Portal::Catalogue <class_terradue_1_1_portal_1_1_catalogue>
-+GetLocalOpenSearchDescription()
+
+
+Properties
+----------
+============================================================================ ======================= ==================================================
+string                                                                       Description             Gets the detailed description of the series.
+============================================================================ ======================= ==================================================
+string                                                                       CatalogueDescriptionUrl Gets the OpenSearch description URL of the series.
+============================================================================ ======================= ==================================================
+`:doc:Terradue::Portal::Catalogue <class_terradue_1_1_portal_1_1_catalogue>` Catalogue               Gets or sets the catalogue.
+
+Methods
+-------
+===================== =============================== ===================================================
+OpenSearchDescription GetLocalOpenSearchDescription() Generates the corresponding OpenSearch description.
+

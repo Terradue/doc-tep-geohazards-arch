@@ -136,7 +136,11 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Terradue::Portal::ComputingResource</a></li>
+<li><a class="reference internal" href="#">Terradue::Portal::ComputingResource</a><ul>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -199,7 +203,7 @@
 <h1>Terradue::Portal::ComputingResource<a class="headerlink" href="#terradue-portal-computingresource" title="Permalink to this headline">¶</a></h1>
 <p>Represents a computing resource that can be used for the processing of tasks.</p>
 <p class="plantuml">
-<object data="../../_images/plantuml-91848b39069660cb6458fb095f536602fb4a242a.svg" type="image/svg+xml" style="width:193px;height:228px;">
+<object data="../../_images/plantuml-91848b39069660cb6458fb095f536602fb4a242a.svg" type="image/svg+xml" style="width:646px;height:352px;">
 <img src="../../_images/plantuml-91848b39069660cb6458fb095f536602fb4a242a.png" alt="!include includes/skins.iuml
 skinparam backgroundColor #FFFFFF
 skinparam componentStyle uml2
@@ -208,14 +212,40 @@ skinparam componentStyle uml2
 </object></p>
 <p>This is an abstract class that defines properties and methods to provide a common interface for all types of computing resources.
 The most important part of the defined members regard task- and job-related operations. Members of derived classes are usually not called directly by custom code, but by the core classes that the operation is performed on (e.g.   and  ).</p>
-<p>+IsAvailable:bool
-+Description:string
-+Hostname:string
-+MaxCapacity:int
-+TotalCapacity:int
-+FreeCapacity:int
-+UserCreditControl:bool
-+GetStatus()</p>
+<div class="section" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="5%" />
+<col width="13%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">bool</th>
+<th class="head">IsAvailable</th>
+<th class="head">Indicates whether the computing resource is available to common users.</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>string</td>
+<td>Description</td>
+<td>Gets the description of the computing resource.</td>
+</tr>
+</tbody>
+</table>
+<p>string Hostname          Gets the fully qualified DNS hostname for the computing resource.
+====== ================= =========================================================================================================
+int    MaxCapacity       Gets or sets the maximum processing capacity of the computing resource.
+====== ================= =========================================================================================================
+int    TotalCapacity     Gets or sets the current total processing capacity of the computing resource.
+====== ================= =========================================================================================================
+int    FreeCapacity      Gets the free processing capacity of the computing resource.
+====== ================= =========================================================================================================
+bool   UserCreditControl Indicates whether the computing resource has a credit control where credits are configured for each user.</p>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 

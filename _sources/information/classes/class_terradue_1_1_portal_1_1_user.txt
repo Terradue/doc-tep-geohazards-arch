@@ -10,4 +10,10 @@ Terradue::Portal::User
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_user.iuml
 
-+AccountStatus:int
+
+
+Properties
+----------
+=== ============= =======================================================
+int AccountStatus Gets or sets the activation status of the user account.
+

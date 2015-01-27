@@ -10,7 +10,19 @@ A list of entities of a specific type.
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_entity_list_3_01_t_01_4.iuml
 
-+Items:override IEnumerable< T >
-+Count:override int
-+Clear()
-#IncludeInternal()
+
+
+Properties
+----------
+========================= ===== ===========================================
+override IEnumerable< T > Items Gets the items.
+========================= ===== ===========================================
+override int              Count Gets the number of items in the collection.
+
+Methods
+-------
+============= ================= ================================
+override void Clear()           Removes all items from the list.
+============= ================= ================================
+override void IncludeInternal() Includes an item in the list.
+

@@ -10,3 +10,5 @@ Represents the set of portal configuration variables.
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_configuration.iuml
 
+
+

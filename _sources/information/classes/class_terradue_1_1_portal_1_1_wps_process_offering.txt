@@ -10,5 +10,12 @@ Represents a WPS process offering on a remote WPS server.
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_wps_process_offering.iuml
 
-+Provider:Terradue::Portal::WpsProvider <class_terradue_1_1_portal_1_1_wps_provider>
-+FixedComputingResource:override 
+
+
+Properties
+----------
+============================================================================================= ====================== ==================================================================================
+`:doc:Terradue::Portal::WpsProvider <class_terradue_1_1_portal_1_1_wps_provider>`             Provider               Gets or sets the WPS provider to which the WPS process offering belongs.
+============================================================================================= ====================== ==================================================================================
+`:doc:Terradue::Portal::ComputingResource <class_terradue_1_1_portal_1_1_computing_resource>` FixedComputingResource Gets or sets the computing resource that must be used by the WPS process offering.
+

@@ -10,6 +10,14 @@ Remote resource set.
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_remote_resource_set.iuml
 
-+AccessKey:string
-+Resources:EntityList< 
-+OpenSearchEngine:OpenSearchEngine
+
+
+Properties
+----------
+======================================================================================= ================ ====================================
+string                                                                                  AccessKey        Gets or sets the key.
+======================================================================================= ================ ====================================
+`:doc:Terradue::Portal::RemoteResource <class_terradue_1_1_portal_1_1_remote_resource>` Resources        Gets or sets the resources.
+======================================================================================= ================ ====================================
+OpenSearchEngine                                                                        OpenSearchEngine Gets or sets the open search engine.
+

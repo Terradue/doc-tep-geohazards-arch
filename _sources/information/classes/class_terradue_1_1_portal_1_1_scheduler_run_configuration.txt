@@ -9,5 +9,11 @@ Abstract class representing a collection of scheduler parameters and settings fo
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_scheduler_run_configuration.iuml
+
 All schedulers require a run configuration to manage the advancing of its parameters. 
-+Scheduler:Terradue::Portal::Scheduler <class_terradue_1_1_portal_1_1_scheduler>
+
+Properties
+----------
+============================================================================ ========= ===========================
+`:doc:Terradue::Portal::Scheduler <class_terradue_1_1_portal_1_1_scheduler>` Scheduler Gets or sets the scheduler.
+

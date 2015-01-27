@@ -10,9 +10,20 @@ Terradue::Portal::Feature
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_feature.iuml
 
-+Title:string
-+Description:string
-+Image:string
-+ImageStyle:string
-+ButtonText:string
-+ButtonLink:string
+
+
+Properties
+----------
+====== =========== ====================================================================
+string Title       Gets or sets the title.
+====== =========== ====================================================================
+string Description Gets or sets the description.
+====== =========== ====================================================================
+string Image       Gets or sets the image.
+====== =========== ====================================================================
+string ImageStyle  Gets or sets the image style, used to customize the image apperance.
+====== =========== ====================================================================
+string ButtonText  Gets or sets the button text.
+====== =========== ====================================================================
+string ButtonLink  Gets or sets the button link.
+

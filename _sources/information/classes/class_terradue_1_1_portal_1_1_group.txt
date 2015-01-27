@@ -10,6 +10,14 @@ Represents a user group.
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_group.iuml
 
-+Name:override string
-+Description:string
-+Priority:int
+
+
+Properties
+----------
+=============== =========== ============================================================
+override string Name        Gets or sets the name, the unique identifier, of this group.
+=============== =========== ============================================================
+string          Description Gets or sets the long description of this group.
+=============== =========== ============================================================
+int             Priority    Gets or sets the optional privilege level of this group.
+

@@ -9,14 +9,30 @@ Represents a computing resource that can be used for the processing of tasks.
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_computing_resource.iuml
+
 This is an abstract class that defines properties and methods to provide a common interface for all types of computing resources. 
 The most important part of the defined members regard task- and job-related operations. Members of derived classes are usually not called directly by custom code, but by the core classes that the operation is performed on (e.g.   and  ).
 
-+IsAvailable:bool
-+Description:string
-+Hostname:string
-+MaxCapacity:int
-+TotalCapacity:int
-+FreeCapacity:int
-+UserCreditControl:bool
-+GetStatus()
+
+Properties
+----------
+====== ================= =========================================================================================================
+bool   IsAvailable       Indicates whether the computing resource is available to common users.
+====== ================= =========================================================================================================
+string Description       Gets the description of the computing resource.
+====== ================= =========================================================================================================
+string Hostname          Gets the fully qualified DNS hostname for the computing resource.
+====== ================= =========================================================================================================
+int    MaxCapacity       Gets or sets the maximum processing capacity of the computing resource.
+====== ================= =========================================================================================================
+int    TotalCapacity     Gets or sets the current total processing capacity of the computing resource.
+====== ================= =========================================================================================================
+int    FreeCapacity      Gets the free processing capacity of the computing resource.
+====== ================= =========================================================================================================
+bool   UserCreditControl Indicates whether the computing resource has a credit control where credits are configured for each user.
+
+Methods
+-------
+==== =========== ==============================================================================
+void GetStatus() In a derived class, obtains the status information for the computing resource.
+

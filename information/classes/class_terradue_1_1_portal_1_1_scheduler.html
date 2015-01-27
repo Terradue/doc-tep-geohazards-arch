@@ -136,7 +136,10 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Terradue::Portal::Scheduler</a></li>
+<li><a class="reference internal" href="#">Terradue::Portal::Scheduler</a><ul>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -199,7 +202,7 @@
 <h1>Terradue::Portal::Scheduler<a class="headerlink" href="#terradue-portal-scheduler" title="Permalink to this headline">¶</a></h1>
 <p>Abstract class that represents an operation that is repeated at regular intervals.</p>
 <p class="plantuml">
-<object data="../../_images/plantuml-a80ec9ed55a6626b79e63eaa5b4e0de50a097770.svg" type="image/svg+xml" style="width:275px;height:332px;">
+<object data="../../_images/plantuml-a80ec9ed55a6626b79e63eaa5b4e0de50a097770.svg" type="image/svg+xml" style="width:521px;height:332px;">
 <img src="../../_images/plantuml-a80ec9ed55a6626b79e63eaa5b4e0de50a097770.png" alt="!include includes/skins.iuml
 skinparam backgroundColor #FFFFFF
 skinparam componentStyle uml2
@@ -209,11 +212,32 @@ skinparam componentStyle uml2
 <p>A task scheduler creates tasks according to variable and fixed parameters and the scheduling mode.
 There are two scheduling modes:
 In order to work automatically, the background agent must be running and the   action must be enabled.
-Alternatively, for debug purposes, the scheduler can be advanced manually and the resulting tasks can be submitted manually.
-+Status:SchedulingStatus
-+RunConfiguration:Terradue::Portal::SchedulerRunConfiguration &lt;class_terradue_1_1_portal_1_1_scheduler_run_configuration&gt;
-+MaxSubmissions:int
-+Inputs:List&lt;</p>
+Alternatively, for debug purposes, the scheduler can be advanced manually and the resulting tasks can be submitted manually.</p>
+<div class="section" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="55%" />
+<col width="8%" />
+<col width="37%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">SchedulingStatus</th>
+<th class="head">Status</th>
+<th class="head">Gets or sets the status.</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><cite>:doc:Terradue::Portal::SchedulerRunConfiguration &lt;class_terradue_1_1_portal_1_1_scheduler_run_configuration&gt;</cite></td>
+<td>RunConfiguration</td>
+<td>Gets or sets the run configuration.</td>
+</tr>
+</tbody>
+</table>
+<p>int                                                                                                            MaxSubmissions   Gets or sets the maximum number of runs per cycle of the scheduler daemon.
+============================================================================================================== ================ ==========================================================================
+<cite>:doc:Terradue::Portal::ProcessingInputSet &lt;class_terradue_1_1_portal_1_1_processing_input_set&gt;</cite>               Inputs           Gets or sets the inputs.</p>
+</div>
 </div>
 
 

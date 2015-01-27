@@ -9,6 +9,16 @@ Represents a remote provider of a Web Processing  .
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_wps_provider.iuml
+
 This class is used as the computing resource on which WPS processes, which are equivalent to tasks, run. 
-+Proxy:bool
-+StoreProcessOfferings()
+
+Properties
+----------
+==== ===== ===============================================
+bool Proxy Define if the provider is to be proxied or not.
+
+Methods
+-------
+==== ======================= ==============================================================
+void StoreProcessOfferings() Get and stores the process offerings from GetCapabilities url.
+

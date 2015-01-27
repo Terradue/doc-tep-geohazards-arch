@@ -9,7 +9,14 @@ Attribute that allows to link a subclass of   to a database table.
   skinparam backgroundColor #FFFFFF
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_entity_table_attribute.iuml
+
 This attribute is used in combination with the   attributes at property level.
 
-+Name:string
-+HasExtensions:bool
+
+Properties
+----------
+====== ============= ===============================================================================
+string Name          Gets or sets the name of the database table that holds the items of the entity.
+====== ============= ===============================================================================
+bool   HasExtensions Indicates whether the entity is designed to have specialized extensions.
+

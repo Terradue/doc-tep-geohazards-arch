@@ -136,7 +136,11 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Terradue::Portal::IfyContext</a></li>
+<li><a class="reference internal" href="#">Terradue::Portal::IfyContext</a><ul>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+<li><a class="reference internal" href="#methods">Methods</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -199,40 +203,101 @@
 <h1>Terradue::Portal::IfyContext<a class="headerlink" href="#terradue-portal-ifycontext" title="Permalink to this headline">¶</a></h1>
 <p>Represents the execution environment context and manages the client connection, database access and other resources.</p>
 <p class="plantuml">
-<object data="../../_images/plantuml-e26537860cacf0742d8dfef21e99a2bc65b73aad.svg" type="image/svg+xml" style="width:293px;height:462px;">
+<object data="../../_images/plantuml-e26537860cacf0742d8dfef21e99a2bc65b73aad.svg" type="image/svg+xml" style="width:308px;height:586px;">
 <img src="../../_images/plantuml-e26537860cacf0742d8dfef21e99a2bc65b73aad.png" alt="!include includes/skins.iuml
 skinparam backgroundColor #FFFFFF
 skinparam componentStyle uml2
 !include target/rst/in/class_terradue_1_1_portal_1_1_ify_context.iuml" />
 
 </object></p>
-<p>+IsInteractive:bool
-+LogLevel:int
-+DebugLevel:int
-+UserId:int
-+OwnerId:int
-+IsUserIdentified:bool
-+IsUserAuthenticated:bool
-+AuthenticationMethod:AuthenticationMethod
-+UserLevel:int
-+UserCaption:string
-+Username:string
-+Open()
-+Close()
-+LoadConfiguration()
-+StartTransaction()
-+GetConfigValue()
-+EndImpersonation()
-+SendMailAlert()
-+CreateLogger()
-+LogDebug()
-+LogError()
-+LogFatalError()
-+LogInfo()
-+LogWarning()
-+LogStat()
--SetReporter()
--SetOriginator()</p>
+<div class="section" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="19%" />
+<col width="19%" />
+<col width="62%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">bool</th>
+<th class="head">IsInteractive</th>
+<th class="head">Gets a value indicating whether this instance is interactive.</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>int</td>
+<td>LogLevel</td>
+<td>Gets or sets the log level.</td>
+</tr>
+</tbody>
+</table>
+<p>int                  DebugLevel           Gets or sets the debug level.
+==================== ==================== ================================================================
+int                  UserId               Gets the ID of the logged or impersonated user.
+==================== ==================== ================================================================
+int                  OwnerId              Gets or sets the ID of the user for whom new items are created.
+==================== ==================== ================================================================
+bool                 IsUserIdentified     Indicates whether the request originates from a registered user.
+==================== ==================== ================================================================
+bool                 IsUserAuthenticated  Indicates whether the request originates from a registered user.
+==================== ==================== ================================================================
+AuthenticationMethod AuthenticationMethod Gets or sets the authentication method.
+==================== ==================== ================================================================
+int                  UserLevel            Gets the level of the logged or impersonated user.
+==================== ==================== ================================================================
+string               UserCaption          Gets the displayed name of the logged or impersonated user.
+==================== ==================== ================================================================
+string               Username             Gets the login name of the logged or impersonated user.</p>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="6%" />
+<col width="20%" />
+<col width="73%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">void</th>
+<th class="head">Open()</th>
+<th class="head">Opens the database connection.</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>void</td>
+<td>Close()</td>
+<td>Closes all open database connection and releases other resources.</td>
+</tr>
+</tbody>
+</table>
+<p>void   LoadConfiguration() Loads the configuration.
+====== =================== =====================================================================
+void   StartTransaction()  Starts a database transaction.
+====== =================== =====================================================================
+string GetConfigValue()    Returns the value of the specified configuration variable.
+====== =================== =====================================================================
+void   EndImpersonation()  Returns to the HTTP session information of the original user account.
+====== =================== =====================================================================
+bool   SendMailAlert()     Sends a mail alert to an administrator.
+====== =================== =====================================================================
+void   CreateLogger()      Configures the logging object.
+====== =================== =====================================================================
+void   LogDebug()          Loging Debug level.
+====== =================== =====================================================================
+void   LogError()          Loging Error level.
+====== =================== =====================================================================
+void   LogFatalError()     Loging Fatal level.
+====== =================== =====================================================================
+void   LogInfo()           Loging Info level.
+====== =================== =====================================================================
+void   LogWarning()        Loging Warning level.
+====== =================== =====================================================================
+void   LogStat()           Loging Statistical level.
+====== =================== =====================================================================
+void   SetReporter()       add a custom property
+====== =================== =====================================================================
+void   SetOriginator()     add a custom property</p>
+</div>
 </div>
 
 

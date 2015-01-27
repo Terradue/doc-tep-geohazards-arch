@@ -10,30 +10,65 @@ Represents the execution environment context and manages the client connection, 
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_ify_context.iuml
 
-+IsInteractive:bool
-+LogLevel:int
-+DebugLevel:int
-+UserId:int
-+OwnerId:int
-+IsUserIdentified:bool
-+IsUserAuthenticated:bool
-+AuthenticationMethod:AuthenticationMethod
-+UserLevel:int
-+UserCaption:string
-+Username:string
-+Open()
-+Close()
-+LoadConfiguration()
-+StartTransaction()
-+GetConfigValue()
-+EndImpersonation()
-+SendMailAlert()
-+CreateLogger()
-+LogDebug()
-+LogError()
-+LogFatalError()
-+LogInfo()
-+LogWarning()
-+LogStat()
--SetReporter()
--SetOriginator()
+
+
+Properties
+----------
+==================== ==================== ================================================================
+bool                 IsInteractive        Gets a value indicating whether this instance is interactive.
+==================== ==================== ================================================================
+int                  LogLevel             Gets or sets the log level.
+==================== ==================== ================================================================
+int                  DebugLevel           Gets or sets the debug level.
+==================== ==================== ================================================================
+int                  UserId               Gets the ID of the logged or impersonated user.
+==================== ==================== ================================================================
+int                  OwnerId              Gets or sets the ID of the user for whom new items are created.
+==================== ==================== ================================================================
+bool                 IsUserIdentified     Indicates whether the request originates from a registered user.
+==================== ==================== ================================================================
+bool                 IsUserAuthenticated  Indicates whether the request originates from a registered user.
+==================== ==================== ================================================================
+AuthenticationMethod AuthenticationMethod Gets or sets the authentication method.
+==================== ==================== ================================================================
+int                  UserLevel            Gets the level of the logged or impersonated user.
+==================== ==================== ================================================================
+string               UserCaption          Gets the displayed name of the logged or impersonated user.
+==================== ==================== ================================================================
+string               Username             Gets the login name of the logged or impersonated user.
+
+Methods
+-------
+====== =================== =====================================================================
+void   Open()              Opens the database connection.
+====== =================== =====================================================================
+void   Close()             Closes all open database connection and releases other resources.
+====== =================== =====================================================================
+void   LoadConfiguration() Loads the configuration.
+====== =================== =====================================================================
+void   StartTransaction()  Starts a database transaction.
+====== =================== =====================================================================
+string GetConfigValue()    Returns the value of the specified configuration variable.
+====== =================== =====================================================================
+void   EndImpersonation()  Returns to the HTTP session information of the original user account.
+====== =================== =====================================================================
+bool   SendMailAlert()     Sends a mail alert to an administrator.
+====== =================== =====================================================================
+void   CreateLogger()      Configures the logging object.
+====== =================== =====================================================================
+void   LogDebug()          Loging Debug level.
+====== =================== =====================================================================
+void   LogError()          Loging Error level.
+====== =================== =====================================================================
+void   LogFatalError()     Loging Fatal level.
+====== =================== =====================================================================
+void   LogInfo()           Loging Info level.
+====== =================== =====================================================================
+void   LogWarning()        Loging Warning level.
+====== =================== =====================================================================
+void   LogStat()           Loging Statistical level.
+====== =================== =====================================================================
+void   SetReporter()       add a custom property
+====== =================== =====================================================================
+void   SetOriginator()     add a custom property
+

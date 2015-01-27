@@ -136,7 +136,10 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Terradue::Portal::Entity</a></li>
+<li><a class="reference internal" href="#">Terradue::Portal::Entity</a><ul>
+<li><a class="reference internal" href="#properties">Properties</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -199,7 +202,7 @@
 <h1>Terradue::Portal::Entity<a class="headerlink" href="#terradue-portal-entity" title="Permalink to this headline">¶</a></h1>
 <p>Abstract base class of all entity types that usually correspond to real-world entities.</p>
 <p class="plantuml">
-<object data="../../_images/plantuml-a8011f3cd66f8919fe738e3de30917a9811d068a.svg" type="image/svg+xml" style="width:257px;height:228px;">
+<object data="../../_images/plantuml-a8011f3cd66f8919fe738e3de30917a9811d068a.svg" type="image/svg+xml" style="width:7845px;height:352px;">
 <img src="../../_images/plantuml-a8011f3cd66f8919fe738e3de30917a9811d068a.png" alt="!include includes/skins.iuml
 skinparam backgroundColor #FFFFFF
 skinparam componentStyle uml2
@@ -207,14 +210,20 @@ skinparam componentStyle uml2
 
 </object></p>
 <p>The class provides generic interaction with data that is persistently stored in a relational database. The data location and structure are defined in the subclasses which represent real-world entities.</p>
-<p>+Identifier:string
-+Name:string
-+Load()
-+Store()
-+StoreGlobalPrivileges()
-+RemoveGlobalPrivileges()
-+Delete()
-+GetAllowedAdministratorOperations()</p>
+<div class="section" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>void Load()                              Reads the information of an item using the specified IDataReader.
+==== =================================== ======================================================================================================================================
+void Store()                             Writes the item to the database.
+==== =================================== ======================================================================================================================================
+void StoreGlobalPrivileges()             Sets global privileges on the resource represented by the instance that will apply to all users according to the privilege properties.
+==== =================================== ======================================================================================================================================
+void RemoveGlobalPrivileges()            Sets global privileges on the resource represented by the instance that will apply to all users according to the privilege properties.
+==== =================================== ======================================================================================================================================
+void Delete()
+==== =================================== ======================================================================================================================================
+void GetAllowedAdministratorOperations()</p>
+</div>
 </div>
 
 
