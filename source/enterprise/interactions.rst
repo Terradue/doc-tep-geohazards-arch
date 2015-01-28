@@ -10,13 +10,11 @@ Test UML Use Case
 
   left to right direction
   skinparam packageStyle rect
-  actor customer
-  actor clerk
-  rectangle checkout {
-    customer -- (checkout)
-    (checkout) .> (payment) : include
-    (help) .> (checkout) : extends
-    (checkout) -- clerk
+  actor Users
+  rectangle Platform {
+    customer -- (interact with)
+    customer -- (interact with)
+    customer -- (interact with)
   }
 
 
