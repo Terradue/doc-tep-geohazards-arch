@@ -16,7 +16,9 @@ This attribute is used in combination with the   attributes at property level.
 Properties
 ----------
 ====== ============= ===============================================================================
-string Name          Gets or sets the name of the database table that holds the items of the entity.
+Type   Name          Summary
 ====== ============= ===============================================================================
+string Name          Gets or sets the name of the database table that holds the items of the entity.
 bool   HasExtensions Indicates whether the entity is designed to have specialized extensions.
+====== ============= ===============================================================================
 

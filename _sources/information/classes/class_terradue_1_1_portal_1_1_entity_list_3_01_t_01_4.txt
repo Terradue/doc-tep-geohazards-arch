@@ -15,14 +15,18 @@ A list of entities of a specific type.
 Properties
 ----------
 ========================= ===== ===========================================
-override IEnumerable< T > Items Gets the items.
+Type                      Name  Summary
 ========================= ===== ===========================================
+override IEnumerable< T > Items Gets the items.
 override int              Count Gets the number of items in the collection.
+========================= ===== ===========================================
 
 Methods
 -------
 ============= ================= ================================
-override void Clear()           Removes all items from the list.
+Type          Name              Summary
 ============= ================= ================================
+override void Clear()           Removes all items from the list.
 override void IncludeInternal() Includes an item in the list.
+============= ================= ================================
 

@@ -203,7 +203,7 @@
 <h1>Terradue::Portal::Series<a class="headerlink" href="#terradue-portal-series" title="Permalink to this headline">¶</a></h1>
 <p>Represents a series of data sets that are available from a catalogue.</p>
 <p class="plantuml">
-<object data="../../_images/plantuml-990ad72568511b2f0134097f5970fbd2e94a5aa9.svg" type="image/svg+xml" style="width:419px;height:332px;">
+<object data="../../_images/plantuml-990ad72568511b2f0134097f5970fbd2e94a5aa9.svg" type="image/svg+xml" style="width:284px;height:332px;">
 <img src="../../_images/plantuml-990ad72568511b2f0134097f5970fbd2e94a5aa9.png" alt="!include includes/skins.iuml
 skinparam backgroundColor #FFFFFF
 skinparam componentStyle uml2
@@ -219,22 +219,48 @@ skinparam componentStyle uml2
 <col width="34%" />
 </colgroup>
 <thead valign="bottom">
-<tr><th class="head">string</th>
-<th class="head">Description</th>
-<th class="head">Gets the detailed description of the series.</th>
+<tr><th class="head">Type</th>
+<th class="head">Name</th>
+<th class="head">Summary</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr><td>string</td>
+<td>Description</td>
+<td>Gets the detailed description of the series.</td>
+</tr>
+<tr><td>string</td>
 <td>CatalogueDescriptionUrl</td>
 <td>Gets the OpenSearch description URL of the series.</td>
 </tr>
+<tr><td><cite>:doc:Terradue::Portal::Catalogue &lt;class_terradue_1_1_portal_1_1_catalogue&gt;</cite></td>
+<td>Catalogue</td>
+<td>Gets or sets the catalogue.</td>
+</tr>
 </tbody>
 </table>
-<p><cite>:doc:Terradue::Portal::Catalogue &lt;class_terradue_1_1_portal_1_1_catalogue&gt;</cite> Catalogue               Gets or sets the catalogue.</p>
 </div>
 <div class="section" id="methods">
 <h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%" />
+<col width="30%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Type</th>
+<th class="head">Name</th>
+<th class="head">Summary</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>OpenSearchDescription</td>
+<td>GetLocalOpenSearchDescription()</td>
+<td>Generates the corresponding OpenSearch description.</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

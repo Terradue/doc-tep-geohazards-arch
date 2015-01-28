@@ -202,7 +202,7 @@
 <h1>Terradue::Portal::Scheduler<a class="headerlink" href="#terradue-portal-scheduler" title="Permalink to this headline">¶</a></h1>
 <p>Abstract class that represents an operation that is repeated at regular intervals.</p>
 <p class="plantuml">
-<object data="../../_images/plantuml-a80ec9ed55a6626b79e63eaa5b4e0de50a097770.svg" type="image/svg+xml" style="width:521px;height:332px;">
+<object data="../../_images/plantuml-a80ec9ed55a6626b79e63eaa5b4e0de50a097770.svg" type="image/svg+xml" style="width:368px;height:332px;">
 <img src="../../_images/plantuml-a80ec9ed55a6626b79e63eaa5b4e0de50a097770.png" alt="!include includes/skins.iuml
 skinparam backgroundColor #FFFFFF
 skinparam componentStyle uml2
@@ -222,21 +222,30 @@ Alternatively, for debug purposes, the scheduler can be advanced manually and th
 <col width="37%" />
 </colgroup>
 <thead valign="bottom">
-<tr><th class="head">SchedulingStatus</th>
-<th class="head">Status</th>
-<th class="head">Gets or sets the status.</th>
+<tr><th class="head">Type</th>
+<th class="head">Name</th>
+<th class="head">Summary</th>
 </tr>
 </thead>
 <tbody valign="top">
+<tr><td>SchedulingStatus</td>
+<td>Status</td>
+<td>Gets or sets the status.</td>
+</tr>
 <tr><td><cite>:doc:Terradue::Portal::SchedulerRunConfiguration &lt;class_terradue_1_1_portal_1_1_scheduler_run_configuration&gt;</cite></td>
 <td>RunConfiguration</td>
 <td>Gets or sets the run configuration.</td>
 </tr>
+<tr><td>int</td>
+<td>MaxSubmissions</td>
+<td>Gets or sets the maximum number of runs per cycle of the scheduler daemon.</td>
+</tr>
+<tr><td><cite>:doc:Terradue::Portal::ProcessingInputSet &lt;class_terradue_1_1_portal_1_1_processing_input_set&gt;</cite></td>
+<td>Inputs</td>
+<td>Gets or sets the inputs.</td>
+</tr>
 </tbody>
 </table>
-<p>int                                                                                                            MaxSubmissions   Gets or sets the maximum number of runs per cycle of the scheduler daemon.
-============================================================================================================== ================ ==========================================================================
-<cite>:doc:Terradue::Portal::ProcessingInputSet &lt;class_terradue_1_1_portal_1_1_processing_input_set&gt;</cite>               Inputs           Gets or sets the inputs.</p>
 </div>
 </div>
 

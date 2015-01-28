@@ -202,7 +202,7 @@
 <h1>Terradue::Portal::Service<a class="headerlink" href="#terradue-portal-service" title="Permalink to this headline">¶</a></h1>
 <p>Abstract base class for processing services.</p>
 <p class="plantuml">
-<object data="../../_images/plantuml-9e159e4d5156586801e7ad5bae9ff816f14f5418.svg" type="image/svg+xml" style="width:763px;height:352px;">
+<object data="../../_images/plantuml-9e159e4d5156586801e7ad5bae9ff816f14f5418.svg" type="image/svg+xml" style="width:255px;height:352px;">
 <img src="../../_images/plantuml-9e159e4d5156586801e7ad5bae9ff816f14f5418.png" alt="!include includes/skins.iuml
 skinparam backgroundColor #FFFFFF
 skinparam componentStyle uml2
@@ -218,29 +218,46 @@ skinparam componentStyle uml2
 <col width="63%" />
 </colgroup>
 <thead valign="bottom">
-<tr><th class="head">string</th>
-<th class="head">Description</th>
-<th class="head">Gets the service description.</th>
+<tr><th class="head">Type</th>
+<th class="head">Name</th>
+<th class="head">Summary</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr><td>string</td>
+<td>Description</td>
+<td>Gets the service description.</td>
+</tr>
+<tr><td>string</td>
 <td>Version</td>
 <td>Gets the service version.</td>
 </tr>
+<tr><td>string</td>
+<td>Url</td>
+<td>Gets or sets the URL.</td>
+</tr>
+<tr><td>string</td>
+<td>IconUrl</td>
+<td>Gets or sets the icon URL.</td>
+</tr>
+<tr><td>int</td>
+<td>Rating</td>
+<td>Gets the service rating.</td>
+</tr>
+<tr><td>int</td>
+<td>ClassId</td>
+<td>Gets the service class ID.</td>
+</tr>
+<tr><td><cite>:doc:Terradue::Portal::Service::Category &lt;struct_terradue_1_1_portal_1_1_service_1_1_category&gt;</cite></td>
+<td>Categories</td>
+<td>Gets the service categories.</td>
+</tr>
+<tr><td>BuildTaskCallbackType</td>
+<td>OnBuildTask</td>
+<td>Gets or sets the callback method that is called for building a task from the given parameter values, which should include the creation of jobs and the calculation of required resources.</td>
+</tr>
 </tbody>
 </table>
-<p>string                                                                                           Url         Gets or sets the URL.
-================================================================================================ =========== =========================================================================================================================================================================================
-string                                                                                           IconUrl     Gets or sets the icon URL.
-================================================================================================ =========== =========================================================================================================================================================================================
-int                                                                                              Rating      Gets the service rating.
-================================================================================================ =========== =========================================================================================================================================================================================
-int                                                                                              ClassId     Gets the service class ID.
-================================================================================================ =========== =========================================================================================================================================================================================
-<cite>:doc:Terradue::Portal::Service::Category &lt;struct_terradue_1_1_portal_1_1_service_1_1_category&gt;</cite> Categories  Gets the service categories.
-================================================================================================ =========== =========================================================================================================================================================================================
-BuildTaskCallbackType                                                                            OnBuildTask Gets or sets the callback method that is called for building a task from the given parameter values, which should include the creation of jobs and the calculation of required resources.</p>
 </div>
 </div>
 

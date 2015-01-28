@@ -15,5 +15,8 @@ All schedulers require a run configuration to manage the advancing of its parame
 Properties
 ----------
 ============================================================================ ========= ===========================
+Type                                                                         Name      Summary
+============================================================================ ========= ===========================
 `:doc:Terradue::Portal::Scheduler <class_terradue_1_1_portal_1_1_scheduler>` Scheduler Gets or sets the scheduler.
+============================================================================ ========= ===========================
 

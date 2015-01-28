@@ -202,7 +202,7 @@
 <h1>Terradue::Portal::AuthenticationType<a class="headerlink" href="#terradue-portal-authenticationtype" title="Permalink to this headline">¶</a></h1>
 <p>Represents an authentication type.</p>
 <p class="plantuml">
-<object data="../../_images/plantuml-4a39527d12a6849815b5a05a509e6747113caade.svg" type="image/svg+xml" style="width:947px;height:290px;">
+<object data="../../_images/plantuml-4a39527d12a6849815b5a05a509e6747113caade.svg" type="image/svg+xml" style="width:283px;height:290px;">
 <img src="../../_images/plantuml-4a39527d12a6849815b5a05a509e6747113caade.png" alt="!include includes/skins.iuml
 skinparam backgroundColor #FFFFFF
 skinparam componentStyle uml2
@@ -219,19 +219,26 @@ skinparam componentStyle uml2
 <col width="74%" />
 </colgroup>
 <thead valign="bottom">
-<tr><th class="head">RuleApplicationType</th>
-<th class="head">NormalAccountRule</th>
-<th class="head">Gets or sets (protected) the rule whether and how the authentication type is applicable to new normal user accounts.</th>
+<tr><th class="head">Type</th>
+<th class="head">Name</th>
+<th class="head">Summary</th>
 </tr>
 </thead>
 <tbody valign="top">
+<tr><td>RuleApplicationType</td>
+<td>NormalAccountRule</td>
+<td>Gets or sets (protected) the rule whether and how the authentication type is applicable to new normal user accounts.</td>
+</tr>
 <tr><td>int</td>
 <td>ExternalSessionRefreshPeriod</td>
 <td>Gets or sets (protected) the period in seconds after which the external session created with this authentication type must be refreshed.</td>
 </tr>
+<tr><td>abstract bool</td>
+<td>UsesExternalIdentityProvider</td>
+<td>Indicates whether the authentication type depends on external identity providers.</td>
+</tr>
 </tbody>
 </table>
-<p>abstract bool       UsesExternalIdentityProvider Indicates whether the authentication type depends on external identity providers.</p>
 </div>
 </div>
 

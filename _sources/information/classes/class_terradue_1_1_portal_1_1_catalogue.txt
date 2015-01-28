@@ -18,9 +18,10 @@ Note that there is ongoing confusion between the terms series (or dataset) on on
 Properties
 ----------
 ====== ======================== =====================================================================================
+Type   Name                     Summary
+====== ======================== =====================================================================================
 string OpenSearchDescriptionUrl Gets or sets the URL of the top-level OpenSearch document.
-====== ======================== =====================================================================================
 string BaseUrl                  Gets or sets the base URL part that precedes all relative URLs to series or datasets.
-====== ======================== =====================================================================================
 string SeriesIngestionUrl       Gets or sets the REST URL at which new series are ingested.
+====== ======================== =====================================================================================
 

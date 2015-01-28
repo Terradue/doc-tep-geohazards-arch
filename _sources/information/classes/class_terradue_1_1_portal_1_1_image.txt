@@ -15,11 +15,11 @@ Represents a featured image on the portal.
 Properties
 ----------
 ====== =========== =============================
+Type   Name        Summary
+====== =========== =============================
 string Caption     Gets or sets the caption.
-====== =========== =============================
 string Description Gets or sets the description.
-====== =========== =============================
 string Url         Gets or sets the URL.
-====== =========== =============================
 string SmallUrl    Gets or sets the small URL.
+====== =========== =============================
 

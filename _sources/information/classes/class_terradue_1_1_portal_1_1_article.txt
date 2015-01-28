@@ -15,17 +15,14 @@ Represents a news article published on the portal.
 Properties
 ----------
 ======== ======== ==========================================================
+Type     Name     Summary
+======== ======== ==========================================================
 string   Title    Gets or sets the title of the article.
-======== ======== ==========================================================
 string   Abstract Gets or sets the abstract of the article.
-======== ======== ==========================================================
 string   Content  Gets or sets the article content.
-======== ======== ==========================================================
 DateTime Time     Gets or sets the publication time.
-======== ======== ==========================================================
 string   Url      Gets or sets the URL at which the article can be accessed.
-======== ======== ==========================================================
 string   Author   Gets or sets the article author.
-======== ======== ==========================================================
 string   Tags     Gets or sets the tags for the article.
+======== ======== ==========================================================
 

@@ -17,22 +17,22 @@ The most important part of the defined members regard task- and job-related oper
 Properties
 ----------
 ====== ================= =========================================================================================================
+Type   Name              Summary
+====== ================= =========================================================================================================
 bool   IsAvailable       Indicates whether the computing resource is available to common users.
-====== ================= =========================================================================================================
 string Description       Gets the description of the computing resource.
-====== ================= =========================================================================================================
 string Hostname          Gets the fully qualified DNS hostname for the computing resource.
-====== ================= =========================================================================================================
 int    MaxCapacity       Gets or sets the maximum processing capacity of the computing resource.
-====== ================= =========================================================================================================
 int    TotalCapacity     Gets or sets the current total processing capacity of the computing resource.
-====== ================= =========================================================================================================
 int    FreeCapacity      Gets the free processing capacity of the computing resource.
-====== ================= =========================================================================================================
 bool   UserCreditControl Indicates whether the computing resource has a credit control where credits are configured for each user.
+====== ================= =========================================================================================================
 
 Methods
 -------
 ==== =========== ==============================================================================
+Type Name        Summary
+==== =========== ==============================================================================
 void GetStatus() In a derived class, obtains the status information for the computing resource.
+==== =========== ==============================================================================
 

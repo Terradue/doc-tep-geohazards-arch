@@ -15,11 +15,11 @@ Represents a task or job parameter.
 Properties
 ----------
 ======== ====== ======================================================
+Type     Name   Summary
+======== ====== ======================================================
 string   Name   Gets the name of the task or job parameter.
-======== ====== ======================================================
 string   Type   Gets the type identifier of the task or job parameter.
-======== ====== ======================================================
 string   Value  Gets or sets the value of the task or job parameter.
-======== ====== ======================================================
 string[] Values Gets or sets the value of the task or job parameter.
+======== ====== ======================================================
 

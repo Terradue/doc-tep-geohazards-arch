@@ -15,7 +15,9 @@ Represents a WPS process offering on a remote WPS server.
 Properties
 ----------
 ============================================================================================= ====================== ==================================================================================
-`:doc:Terradue::Portal::WpsProvider <class_terradue_1_1_portal_1_1_wps_provider>`             Provider               Gets or sets the WPS provider to which the WPS process offering belongs.
+Type                                                                                          Name                   Summary
 ============================================================================================= ====================== ==================================================================================
+`:doc:Terradue::Portal::WpsProvider <class_terradue_1_1_portal_1_1_wps_provider>`             Provider               Gets or sets the WPS provider to which the WPS process offering belongs.
 `:doc:Terradue::Portal::ComputingResource <class_terradue_1_1_portal_1_1_computing_resource>` FixedComputingResource Gets or sets the computing resource that must be used by the WPS process offering.
+============================================================================================= ====================== ==================================================================================
 

@@ -203,7 +203,7 @@
 <h1>Terradue::Portal::IfyContext<a class="headerlink" href="#terradue-portal-ifycontext" title="Permalink to this headline">¶</a></h1>
 <p>Represents the execution environment context and manages the client connection, database access and other resources.</p>
 <p class="plantuml">
-<object data="../../_images/plantuml-e26537860cacf0742d8dfef21e99a2bc65b73aad.svg" type="image/svg+xml" style="width:308px;height:586px;">
+<object data="../../_images/plantuml-e26537860cacf0742d8dfef21e99a2bc65b73aad.svg" type="image/svg+xml" style="width:293px;height:462px;">
 <img src="../../_images/plantuml-e26537860cacf0742d8dfef21e99a2bc65b73aad.png" alt="!include includes/skins.iuml
 skinparam backgroundColor #FFFFFF
 skinparam componentStyle uml2
@@ -219,35 +219,58 @@ skinparam componentStyle uml2
 <col width="62%" />
 </colgroup>
 <thead valign="bottom">
-<tr><th class="head">bool</th>
-<th class="head">IsInteractive</th>
-<th class="head">Gets a value indicating whether this instance is interactive.</th>
+<tr><th class="head">Type</th>
+<th class="head">Name</th>
+<th class="head">Summary</th>
 </tr>
 </thead>
 <tbody valign="top">
+<tr><td>bool</td>
+<td>IsInteractive</td>
+<td>Gets a value indicating whether this instance is interactive.</td>
+</tr>
 <tr><td>int</td>
 <td>LogLevel</td>
 <td>Gets or sets the log level.</td>
 </tr>
+<tr><td>int</td>
+<td>DebugLevel</td>
+<td>Gets or sets the debug level.</td>
+</tr>
+<tr><td>int</td>
+<td>UserId</td>
+<td>Gets the ID of the logged or impersonated user.</td>
+</tr>
+<tr><td>int</td>
+<td>OwnerId</td>
+<td>Gets or sets the ID of the user for whom new items are created.</td>
+</tr>
+<tr><td>bool</td>
+<td>IsUserIdentified</td>
+<td>Indicates whether the request originates from a registered user.</td>
+</tr>
+<tr><td>bool</td>
+<td>IsUserAuthenticated</td>
+<td>Indicates whether the request originates from a registered user.</td>
+</tr>
+<tr><td>AuthenticationMethod</td>
+<td>AuthenticationMethod</td>
+<td>Gets or sets the authentication method.</td>
+</tr>
+<tr><td>int</td>
+<td>UserLevel</td>
+<td>Gets the level of the logged or impersonated user.</td>
+</tr>
+<tr><td>string</td>
+<td>UserCaption</td>
+<td>Gets the displayed name of the logged or impersonated user.</td>
+</tr>
+<tr><td>string</td>
+<td>Username</td>
+<td>Gets the login name of the logged or impersonated user.</td>
+</tr>
 </tbody>
 </table>
-<p>int                  DebugLevel           Gets or sets the debug level.
-==================== ==================== ================================================================
-int                  UserId               Gets the ID of the logged or impersonated user.
-==================== ==================== ================================================================
-int                  OwnerId              Gets or sets the ID of the user for whom new items are created.
-==================== ==================== ================================================================
-bool                 IsUserIdentified     Indicates whether the request originates from a registered user.
-==================== ==================== ================================================================
-bool                 IsUserAuthenticated  Indicates whether the request originates from a registered user.
-==================== ==================== ================================================================
-AuthenticationMethod AuthenticationMethod Gets or sets the authentication method.
-==================== ==================== ================================================================
-int                  UserLevel            Gets the level of the logged or impersonated user.
-==================== ==================== ================================================================
-string               UserCaption          Gets the displayed name of the logged or impersonated user.
-==================== ==================== ================================================================
-string               Username             Gets the login name of the logged or impersonated user.</p>
 </div>
 <div class="section" id="methods">
 <h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
@@ -258,45 +281,78 @@ string               Username             Gets the login name of the logged or i
 <col width="73%" />
 </colgroup>
 <thead valign="bottom">
-<tr><th class="head">void</th>
-<th class="head">Open()</th>
-<th class="head">Opens the database connection.</th>
+<tr><th class="head">Type</th>
+<th class="head">Name</th>
+<th class="head">Summary</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr><td>void</td>
+<td>Open()</td>
+<td>Opens the database connection.</td>
+</tr>
+<tr><td>void</td>
 <td>Close()</td>
 <td>Closes all open database connection and releases other resources.</td>
 </tr>
+<tr><td>void</td>
+<td>LoadConfiguration()</td>
+<td>Loads the configuration.</td>
+</tr>
+<tr><td>void</td>
+<td>StartTransaction()</td>
+<td>Starts a database transaction.</td>
+</tr>
+<tr><td>string</td>
+<td>GetConfigValue()</td>
+<td>Returns the value of the specified configuration variable.</td>
+</tr>
+<tr><td>void</td>
+<td>EndImpersonation()</td>
+<td>Returns to the HTTP session information of the original user account.</td>
+</tr>
+<tr><td>bool</td>
+<td>SendMailAlert()</td>
+<td>Sends a mail alert to an administrator.</td>
+</tr>
+<tr><td>void</td>
+<td>CreateLogger()</td>
+<td>Configures the logging object.</td>
+</tr>
+<tr><td>void</td>
+<td>LogDebug()</td>
+<td>Loging Debug level.</td>
+</tr>
+<tr><td>void</td>
+<td>LogError()</td>
+<td>Loging Error level.</td>
+</tr>
+<tr><td>void</td>
+<td>LogFatalError()</td>
+<td>Loging Fatal level.</td>
+</tr>
+<tr><td>void</td>
+<td>LogInfo()</td>
+<td>Loging Info level.</td>
+</tr>
+<tr><td>void</td>
+<td>LogWarning()</td>
+<td>Loging Warning level.</td>
+</tr>
+<tr><td>void</td>
+<td>LogStat()</td>
+<td>Loging Statistical level.</td>
+</tr>
+<tr><td>void</td>
+<td>SetReporter()</td>
+<td>add a custom property</td>
+</tr>
+<tr><td>void</td>
+<td>SetOriginator()</td>
+<td>add a custom property</td>
+</tr>
 </tbody>
 </table>
-<p>void   LoadConfiguration() Loads the configuration.
-====== =================== =====================================================================
-void   StartTransaction()  Starts a database transaction.
-====== =================== =====================================================================
-string GetConfigValue()    Returns the value of the specified configuration variable.
-====== =================== =====================================================================
-void   EndImpersonation()  Returns to the HTTP session information of the original user account.
-====== =================== =====================================================================
-bool   SendMailAlert()     Sends a mail alert to an administrator.
-====== =================== =====================================================================
-void   CreateLogger()      Configures the logging object.
-====== =================== =====================================================================
-void   LogDebug()          Loging Debug level.
-====== =================== =====================================================================
-void   LogError()          Loging Error level.
-====== =================== =====================================================================
-void   LogFatalError()     Loging Fatal level.
-====== =================== =====================================================================
-void   LogInfo()           Loging Info level.
-====== =================== =====================================================================
-void   LogWarning()        Loging Warning level.
-====== =================== =====================================================================
-void   LogStat()           Loging Statistical level.
-====== =================== =====================================================================
-void   SetReporter()       add a custom property
-====== =================== =====================================================================
-void   SetOriginator()     add a custom property</p>
 </div>
 </div>
 

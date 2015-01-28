@@ -15,10 +15,16 @@ This class is used as the computing resource on which WPS processes, which are e
 Properties
 ----------
 ==== ===== ===============================================
+Type Name  Summary
+==== ===== ===============================================
 bool Proxy Define if the provider is to be proxied or not.
+==== ===== ===============================================
 
 Methods
 -------
 ==== ======================= ==============================================================
+Type Name                    Summary
+==== ======================= ==============================================================
 void StoreProcessOfferings() Get and stores the process offerings from GetCapabilities url.
+==== ======================= ==============================================================
 

@@ -15,9 +15,10 @@ Represents a user group.
 Properties
 ----------
 =============== =========== ============================================================
+Type            Name        Summary
+=============== =========== ============================================================
 override string Name        Gets or sets the name, the unique identifier, of this group.
-=============== =========== ============================================================
 string          Description Gets or sets the long description of this group.
-=============== =========== ============================================================
 int             Priority    Gets or sets the optional privilege level of this group.
+=============== =========== ============================================================
 

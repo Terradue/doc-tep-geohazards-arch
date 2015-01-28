@@ -16,9 +16,10 @@ This class provides an abstract model for basic functionality of internal and ex
 Properties
 ----------
 =================== ============================ ========================================================================================================================================
+Type                Name                         Summary
+=================== ============================ ========================================================================================================================================
 RuleApplicationType NormalAccountRule            Gets or sets (protected) the rule whether and how the authentication type is applicable to new normal user accounts.
-=================== ============================ ========================================================================================================================================
 int                 ExternalSessionRefreshPeriod Gets or sets (protected) the period in seconds after which the external session created with this authentication type must be refreshed.
-=================== ============================ ========================================================================================================================================
 abstract bool       UsesExternalIdentityProvider Indicates whether the authentication type depends on external identity providers.
+=================== ============================ ========================================================================================================================================
 

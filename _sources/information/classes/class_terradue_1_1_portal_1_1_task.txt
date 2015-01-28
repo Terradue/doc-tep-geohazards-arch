@@ -17,11 +17,11 @@ This class provides information on an Ify processing task including properties f
 Properties
 ----------
 ============================================================================================= ================= ===================================================================
+Type                                                                                          Name              Summary
+============================================================================================= ================= ===================================================================
 `:doc:Terradue::Portal::Service <class_terradue_1_1_portal_1_1_service>`                      Service           Gets the service that defines the derivate.
-============================================================================================= ================= ===================================================================
 `:doc:Terradue::Portal::ComputingResource <class_terradue_1_1_portal_1_1_computing_resource>` ComputingResource Gets or sets the computing resource assigned to the derivate.
-============================================================================================= ================= ===================================================================
 double                                                                                        Priority          Gets or sets the processing priority value of the service derivate.
-============================================================================================= ================= ===================================================================
 `:doc:Terradue::Portal::Scheduler <class_terradue_1_1_portal_1_1_scheduler>`                  Scheduler         Get or sets the scheduler that produced this task.
+============================================================================================= ================= ===================================================================
 
