@@ -12,9 +12,10 @@ Test UML Use Case
   skinparam packageStyle rect
   actor Users
   rectangle Platform {
-    customer -- (interact with)
-    customer -- (interact with)
-    customer -- (interact with)
+    Users -- (interact with websitePages)
+    Users -- (interact with geoBrowser)
+    Users -- (interact with cloudSandbox)
+    Users -- (interact with socialwebHandle)
   }
 
 
