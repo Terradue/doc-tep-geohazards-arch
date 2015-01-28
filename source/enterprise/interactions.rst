@@ -14,6 +14,7 @@ Test UML Use Case
   rectangle Platform {
     Users -- (interact with websitePages)
     Users -- (interact with geoBrowser)
+    Users -- (interact with cloudDashboard)
     Users -- (interact with cloudSandbox)
     Users -- (interact with socialwebHandle)
   }
