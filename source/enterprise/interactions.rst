@@ -3,8 +3,23 @@ Enterprise Viewpoint - Interactions between roles
 
 The design contraints and the required interactions between roles are...
 
-Test UML Use Case
------------------
+
+Different services
+------------------
+
+The users of the platform are provided with several interaction points:
+
+- a website, with pages for the general public and some entry points for the registered users
+
+- a geobrowser, with a Shop Window for the general public, and other features for registered users
+
+- a cloud dashboard for the monitoring of quotas consumption and cloud processing tasks for registered "end-users"
+
+- a cloudSandbox environment for processor integration (or catalogue provisioning) activities for "expert" users
+
+- a social media handle for registered users, with different levels of usage (within the website or towards third party social media platforms)
+
+User profiles are defined to specialize the interactions, in order to map the underlying processes with community objectives.
 
 .. uml::
 
@@ -19,29 +34,6 @@ Test UML Use Case
     Users -- (interact with socialwebHandle)
   }
 
-
-
-Different services
-------------------
-
-.. uml::
-
-       title webPortal entry point
-       actor Users
-       ' Boundary (view in MVC) Objects that interface with system actors   
-       boundary websitePages
-       boundary geoBrowser 
-       boundary cloudDashboard
-       boundary cloudSandbox
-       boundary socialWebHandle
-       ' Entity (model in MVC): Objects representing system data
-       ' model descriptions are delegated to the Information viewpoint
-       ' Control (controller in MVC): Objects that mediate between boundaries and entities
-
-       Users <-> websitePages: interact
-       Users <-> geoBrowser: interact
-       Users <-> cloudDashboard: interact
-       Users <-> cloudSandbox: interact
 
 Constraints on Data providers | Administrators interactions
 ------------------------------------------------------------
