@@ -3,6 +3,24 @@ Enterprise Viewpoint - Interactions between roles
 
 The design contraints and the required interactions between roles are...
 
+Test UML Use Case
+-----------------
+
+.. uml::
+
+left to right direction
+skinparam packageStyle rect
+actor customer
+actor clerk
+rectangle checkout {
+  customer -- (checkout)
+  (checkout) .> (payment) : include
+  (help) .> (checkout) : extends
+  (checkout) -- clerk
+}
+
+
+
 Different services
 ------------------
 
