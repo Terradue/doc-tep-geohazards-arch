@@ -80,9 +80,8 @@ For the GEP community, the designed system has to implement technical processes 
 
 * EV_Objective **comm1**: Evolve SSEP to promote a reference platform for different thematic domains, starting with geohazards
 * EV_Objective **comm2**: Measure community validated usages of EO data 
-* EV_Objective **comm3**: Demonstrate optimal data access strategy (direct remote data access, synchronisation with remote repositories 'data mirroring', and local caching)
-* EV_Objective **comm4**: Investigate means for accessing and exploiting commercial data assets
-* EV_Objective **comm5**: Involve stakeholders for long term sustainable operations
+* EV_Objective **comm3**: Investigate means for accessing and exploiting commercial data assets
+* EV_Objective **comm4**: Involve stakeholders for long term sustainable operations
 
 **Processor integration**
 
