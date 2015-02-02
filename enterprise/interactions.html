@@ -89,14 +89,35 @@
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="purpose.html">Community concepts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="scope.html">Targeted operational processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definitions.html">Definitions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="definitions.html#architecture-viewpoints">Architecture viewpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definitions.html#modeling-concepts">Modeling concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="purpose.html">Community concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="purpose.html#community-contract">Community contract</a></li>
+<li class="toctree-l3"><a class="reference internal" href="purpose.html#community-objectives">Community objectives</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="scope.html">Targeted operational processes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="scope.html#system-capabilities">System Capabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scope.html#data-access">Data access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scope.html#processor-integration">Processor integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scope.html#data-processing-and-cloud-bursting">Data processing and Cloud bursting</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="policies.html">Policies</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Design constraints</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Design constraints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#different-services">Different services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#constraints-on-data-providers-administrators-interactions">Constraints on Data providers | Administrators interactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#constraints-on-processor-integrators-end-users-interactions">Constraints on Processor integrators | end-users interactions</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-gsnl.html">Requirements - GEO Supersites and Natural Laboratories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="summary.html">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../information/index.html">Information Viewpoint</a><ul>
@@ -139,7 +160,12 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Enterprise Viewpoint - Interactions between roles</a></li>
+<li><a class="reference internal" href="#">Enterprise Viewpoint - Interactions between roles</a><ul>
+<li><a class="reference internal" href="#different-services">Different services</a></li>
+<li><a class="reference internal" href="#constraints-on-data-providers-administrators-interactions">Constraints on Data providers | Administrators interactions</a></li>
+<li><a class="reference internal" href="#constraints-on-processor-integrators-end-users-interactions">Constraints on Processor integrators | end-users interactions</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -186,14 +212,21 @@
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="definitions.html">Definitions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="purpose.html">Community concepts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scope.html">Targeted operational processes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="policies.html">Policies</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Design constraints</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Design constraints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#different-services">Different services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#constraints-on-data-providers-administrators-interactions">Constraints on Data providers | Administrators interactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#constraints-on-processor-integrators-end-users-interactions">Constraints on Processor integrators | end-users interactions</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-gsnl.html">Requirements - GEO Supersites and Natural Laboratories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="summary.html">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../information/index.html">Information Viewpoint</a></li>
@@ -218,7 +251,41 @@
       
   <div class="section" id="enterprise-viewpoint-interactions-between-roles">
 <h1>Enterprise Viewpoint - Interactions between roles<a class="headerlink" href="#enterprise-viewpoint-interactions-between-roles" title="Permalink to this headline">¶</a></h1>
-<p>This section is under development.</p>
+<p>The design contraints and the required interactions between roles are...</p>
+<div class="section" id="different-services">
+<h2>Different services<a class="headerlink" href="#different-services" title="Permalink to this headline">¶</a></h2>
+<p>The users of the platform are provided with several interaction points:</p>
+<ul class="simple">
+<li>a website, with pages for the general public and some entry points for the registered users</li>
+<li>a geobrowser, with a Shop Window for the general public, and other features for registered users</li>
+<li>a cloud dashboard for the monitoring of quotas consumption and cloud processing tasks for registered &#8220;end-users&#8221;</li>
+<li>a cloudSandbox environment for processor integration (or catalogue provisioning) activities for &#8220;expert&#8221; users</li>
+<li>a social media handle for registered users, with different levels of usage (within the website or towards third party social media platforms)</li>
+</ul>
+<p>User profiles are defined to specialize the interactions, in order to map the underlying processes with community objectives.</p>
+<p class="plantuml">
+<object data="../_images/plantuml-f9fcfce68e8c3bf628e87b53d3a8fdd32487a289.svg" type="image/svg+xml" style="width:339px;height:447px;">
+<img src="../_images/plantuml-f9fcfce68e8c3bf628e87b53d3a8fdd32487a289.png" alt="left to right direction
+skinparam packageStyle rect
+actor Users
+rectangle Platform {
+  Users -- (interact with websitePages)
+  Users -- (interact with geoBrowser)
+  Users -- (interact with cloudDashboard)
+  Users -- (interact with cloudSandbox)
+  Users -- (interact with socialwebHandle)
+}" />
+
+</object></p>
+</div>
+<div class="section" id="constraints-on-data-providers-administrators-interactions">
+<h2>Constraints on Data providers | Administrators interactions<a class="headerlink" href="#constraints-on-data-providers-administrators-interactions" title="Permalink to this headline">¶</a></h2>
+<p>TBD</p>
+</div>
+<div class="section" id="constraints-on-processor-integrators-end-users-interactions">
+<h2>Constraints on Processor integrators | end-users interactions<a class="headerlink" href="#constraints-on-processor-integrators-end-users-interactions" title="Permalink to this headline">¶</a></h2>
+<p>TBD</p>
+</div>
 </div>
 
 

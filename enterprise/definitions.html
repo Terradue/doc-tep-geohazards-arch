@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Enterprise Viewpoint - Requirements - CEOS Pilot on Seismic Hazards &mdash; Geohazards Thematic Exploitation Platform Architecture v1.0 documentation</title>
+    <title>Enterprise Viewpoint - Definitions &mdash; Geohazards Thematic Exploitation Platform Architecture v1.0 documentation</title>
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
@@ -30,8 +30,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Geohazards Thematic Exploitation Platform Architecture v1.0 documentation" href="../index.html" />
     <link rel="up" title="Enterprise Viewpoint" href="index.html" />
-    <link rel="next" title="Enterprise Viewpoint - Requirements - CEOS Pilot on Volcanoes" href="reqs-volcanoes.html" />
-    <link rel="prev" title="Enterprise Viewpoint - Interactions between roles" href="interactions.html" />
+    <link rel="next" title="Enterprise Viewpoint - Purpose of the system" href="purpose.html" />
+    <link rel="prev" title="Enterprise Viewpoint" href="index.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
   
@@ -89,9 +89,9 @@
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="definitions.html">Definitions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="definitions.html#architecture-viewpoints">Architecture viewpoints</a></li>
-<li class="toctree-l3"><a class="reference internal" href="definitions.html#modeling-concepts">Modeling concepts</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Definitions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#architecture-viewpoints">Architecture viewpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modeling-concepts">Modeling concepts</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="purpose.html">Community concepts</a><ul>
@@ -113,7 +113,7 @@
 <li class="toctree-l3"><a class="reference internal" href="interactions.html#constraints-on-processor-integrators-end-users-interactions">Constraints on Processor integrators | end-users interactions</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Requirements - CEOS Pilot on Seismic Hazards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-gsnl.html">Requirements - GEO Supersites and Natural Laboratories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="summary.html">Summary</a></li>
@@ -160,7 +160,11 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Enterprise Viewpoint - Requirements - CEOS Pilot on Seismic Hazards</a></li>
+<li><a class="reference internal" href="#">Enterprise Viewpoint - Definitions</a><ul>
+<li><a class="reference internal" href="#architecture-viewpoints">Architecture viewpoints</a></li>
+<li><a class="reference internal" href="#modeling-concepts">Modeling concepts</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -170,11 +174,11 @@
               
                 
   <li>
-    <a href="interactions.html" title="Previous Chapter: Enterprise Viewpoint - Interactions between roles"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Enterprise Viewp...</span>
+    <a href="index.html" title="Previous Chapter: Enterprise Viewpoint"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Enterprise Viewp...</span>
     </a>
   </li>
   <li>
-    <a href="reqs-volcanoes.html" title="Next Chapter: Enterprise Viewpoint - Requirements - CEOS Pilot on Volcanoes"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Enterprise Viewp... &raquo;</span>
+    <a href="purpose.html" title="Next Chapter: Enterprise Viewpoint - Purpose of the system"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Enterprise Viewp... &raquo;</span>
     </a>
   </li>
               
@@ -183,7 +187,7 @@
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/Terradue/doc-tep-geohazards-arch/blob/master/source/enterprise/reqs-seismic.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/Terradue/doc-tep-geohazards-arch/blob/master/source/enterprise/definitions.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -207,12 +211,16 @@
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="definitions.html">Definitions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Definitions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#architecture-viewpoints">Architecture viewpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modeling-concepts">Modeling concepts</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="purpose.html">Community concepts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="scope.html">Targeted operational processes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="policies.html">Policies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="interactions.html">Design constraints</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Requirements - CEOS Pilot on Seismic Hazards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-gsnl.html">Requirements - GEO Supersites and Natural Laboratories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="summary.html">Summary</a></li>
@@ -225,7 +233,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../technology/index.html">Technology Viewpoint</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/Terradue/doc-tep-geohazards-arch/blob/master/source/enterprise/reqs-seismic.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/Terradue/doc-tep-geohazards-arch/blob/master/source/enterprise/definitions.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../search.html" method="get">
  <div class="form-group">
@@ -239,9 +247,30 @@
 
     <div class="col-md-9">
       
-  <div class="section" id="enterprise-viewpoint-requirements-ceos-pilot-on-seismic-hazards">
-<h1>Enterprise Viewpoint - Requirements - CEOS Pilot on Seismic Hazards<a class="headerlink" href="#enterprise-viewpoint-requirements-ceos-pilot-on-seismic-hazards" title="Permalink to this headline">¶</a></h1>
-<p>This section is under development.</p>
+  <div class="section" id="enterprise-viewpoint-definitions">
+<h1>Enterprise Viewpoint - Definitions<a class="headerlink" href="#enterprise-viewpoint-definitions" title="Permalink to this headline">¶</a></h1>
+<p>We present hereafter the Enterprise Viewpoint describing the Geohazards Thematic Exploitation Platform (TEP).
+This viewpoint defines the purpose, scope and policies governing the activities supported by the Platform accross the GEO and CEOS initiatives.
+It provides the basis for checking the conformance of the Platform implementation.</p>
+<div class="section" id="architecture-viewpoints">
+<h2>Architecture viewpoints<a class="headerlink" href="#architecture-viewpoints" title="Permalink to this headline">¶</a></h2>
+<p>Standards and services supporting the user requirements and the data access and sharing policies expressed in this RM-ODP Enterprise Model and in the RM-ODP Information Model are identified in the RM-ODP Computational Model.</p>
+<p>Software packaging and infrastructure deployment constraints are compiled in the RM-ODP Technology Viewpoint and the RM-ODP Engineering Viewpoint.</p>
+</div>
+<div class="section" id="modeling-concepts">
+<h2>Modeling concepts<a class="headerlink" href="#modeling-concepts" title="Permalink to this headline">¶</a></h2>
+<p>According to RM-ODP, the Geohazards TEP&#8217;s Enterprise Viewpoint specification is structured in terms of communities and community objects.
+The community is modeled with the following concepts and their relationships:</p>
+<p><strong>Objectives of the community</strong>
+An objective is specified in a community contract (e.g. a charter, a directive, ...) in terms of a foreseen community achievement that the Platform will support by enabling a collective behaviour.</p>
+<p><strong>Roles and Processes of the community behaviours</strong>
+The roles model the users, the owners and the providers of data or informations processed by the system.
+The processes model the sequence of actions carried out to fulfill an objective.</p>
+<p><strong>Policies</strong>
+The policies model a set of rules related to a particular purpose, that specify a behaviour, or constraints on behaviour, of the Platform.
+They implement a particular business or operational decision.
+A policy enveloppe concept encompasses the successive policy values applied during the lifecycle of the system.</p>
+</div>
 </div>
 
 

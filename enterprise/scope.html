@@ -89,14 +89,35 @@
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="purpose.html">Community concepts</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Targeted operational processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definitions.html">Definitions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="definitions.html#architecture-viewpoints">Architecture viewpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definitions.html#modeling-concepts">Modeling concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="purpose.html">Community concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="purpose.html#community-contract">Community contract</a></li>
+<li class="toctree-l3"><a class="reference internal" href="purpose.html#community-objectives">Community objectives</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Targeted operational processes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#system-capabilities">System Capabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-access">Data access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#processor-integration">Processor integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-processing-and-cloud-bursting">Data processing and Cloud bursting</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="policies.html">Policies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interactions.html">Design constraints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactions.html">Design constraints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="interactions.html#different-services">Different services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="interactions.html#constraints-on-data-providers-administrators-interactions">Constraints on Data providers | Administrators interactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="interactions.html#constraints-on-processor-integrators-end-users-interactions">Constraints on Processor integrators | end-users interactions</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-gsnl.html">Requirements - GEO Supersites and Natural Laboratories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="summary.html">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../information/index.html">Information Viewpoint</a><ul>
@@ -139,7 +160,13 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Enterprise Viewpoint - Scope of the system</a></li>
+<li><a class="reference internal" href="#">Enterprise Viewpoint - Scope of the system</a><ul>
+<li><a class="reference internal" href="#system-capabilities">System Capabilities</a></li>
+<li><a class="reference internal" href="#data-access">Data access</a></li>
+<li><a class="reference internal" href="#processor-integration">Processor integration</a></li>
+<li><a class="reference internal" href="#data-processing-and-cloud-bursting">Data processing and Cloud bursting</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -186,14 +213,22 @@
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="definitions.html">Definitions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="purpose.html">Community concepts</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Targeted operational processes</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Targeted operational processes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#system-capabilities">System Capabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-access">Data access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#processor-integration">Processor integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-processing-and-cloud-bursting">Data processing and Cloud bursting</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="policies.html">Policies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="interactions.html">Design constraints</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-gsnl.html">Requirements - GEO Supersites and Natural Laboratories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="summary.html">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../information/index.html">Information Viewpoint</a></li>
@@ -218,7 +253,130 @@
       
   <div class="section" id="enterprise-viewpoint-scope-of-the-system">
 <h1>Enterprise Viewpoint - Scope of the system<a class="headerlink" href="#enterprise-viewpoint-scope-of-the-system" title="Permalink to this headline">¶</a></h1>
-<p>This section is under development.</p>
+<p>With the scope of the system, we describe the Platform expected behaviour, i.e., the way it is supposed to work and interact with its environment in the TEP context.</p>
+<p>The targeted operational processes are:</p>
+<ul class="simple">
+<li>Data access</li>
+<li>Processor integration</li>
+<li>Data processing and Cloud bursting</li>
+<li>Visualization</li>
+<li>Reproducible Science</li>
+<li>Capacity Building through Data Sharing</li>
+</ul>
+<p>Within RM-ODP, the scope of the system is modelled as the set of roles it fulfils.</p>
+<div class="section" id="system-capabilities">
+<h2>System Capabilities<a class="headerlink" href="#system-capabilities" title="Permalink to this headline">¶</a></h2>
+<p>The platform is meant to allow users to easily exploit EO data resources by combining fast data access, processing facilities and flexibility for the user&#8217;s own data analysis.
+The platform provides Data Access, Data Processing Services and PaaS (Platform as a Service).
+Data Access includes the possibility to perform catalogue queries.
+Data Processing Services enable users to process data available in the repository using a number of well know tools and to exploit the results.
+The PaaS enables users to perform their data exploitation activities with large flexibility and autonomy by using one or several virtual hosts directly provided on the Cloud platform where the data sits.
+Users can, therefore, use their virtual hosts to efficiently access data and processing services and immediately elaborate results using analysis and visualization tools available from the PaaS or directly installed in virtual hosts by themselves.
+In addition users can also open their own accounts on a commercial Cloud Provider and directly provision their virtual hosts independently (through the Geohazards Platform Services).</p>
+<p><strong>Roles and Processes</strong></p>
+<ul class="simple">
+<li>EV_Role:</li>
+<li>EV_Behaviour:</li>
+<li>EV_Process:</li>
+</ul>
+<p>&lt;&lt; Enterprise_Spec &gt;&gt;
+Community Roles</p>
+<p>&lt;&lt; Enterprise_Spec &gt;&gt;
+Community Processes</p>
+</div>
+<div class="section" id="data-access">
+<h2>Data access<a class="headerlink" href="#data-access" title="Permalink to this headline">¶</a></h2>
+<p>TBD</p>
+</div>
+<div class="section" id="processor-integration">
+<h2>Processor integration<a class="headerlink" href="#processor-integration" title="Permalink to this headline">¶</a></h2>
+<p>TBD</p>
+</div>
+<div class="section" id="data-processing-and-cloud-bursting">
+<h2>Data processing and Cloud bursting<a class="headerlink" href="#data-processing-and-cloud-bursting" title="Permalink to this headline">¶</a></h2>
+<p>Users can instantiate (on-demand) a processing service appliance, provision the appliance on a pre-configured Cloud Provider and invoke the processing via the OGC Web Processing Service interface.
+Users define input data and select a results location (e.g. portal, cloud block storage, dropbox, google drive, ...)</p>
+<p class="plantuml">
+<object data="../_images/plantuml-2fb8df0da2ddeb02e35eaef4d27a86f46aad28ad.svg" type="image/svg+xml" style="width:922px;height:673px;">
+<img src="../_images/plantuml-2fb8df0da2ddeb02e35eaef4d27a86f46aad28ad.png" alt="title runJob - On-demand cloud appliance
+actor endUser
+' Boundary (view in MVC) Objects that interface with system actors
+boundary geoBrowser
+' Entity (model in MVC): Objects representing system data
+' model descriptions are delegated to the Information viewpoint
+' Control (controller in MVC): Objects that mediate between boundaries and entities
+control processingServices
+control eoDataContext
+control cloudControler
+
+endUser &lt;-&gt; geoBrowser: interact
+geoBrowser -&gt; processingServices: selectProcessor
+activate processingServices
+geoBrowser &lt;-- processingServices: selected
+deactivate processingServices
+
+geoBrowser -&gt; eoDataContext: selectDatasets
+activate eoDataContext
+geoBrowser &lt;-- eoDataContext: selected
+deactivate eoDataContext
+
+endUser -&gt; geoBrowser: Allocate selected input data
+endUser -&gt; geoBrowser: runJob
+
+geoBrowser -&gt; cloudControler: provision Cloud appliance with processor and input data
+activate cloudControler
+cloudControler-&gt;cloudControler: validate request against user quota
+ref over cloudControler: warning if quota exceeded
+cloudControler --&gt; userCloudStorage: Deliver results
+geoBrowser &lt;-- cloudControler: Reference to results
+deactivate cloudControler
+
+endUser -&gt; userCloudStorage: access generated EO-based products
+endUser -&gt; geoBrowser: share generated eO-based products" />
+
+</object></p>
+<p>Users can run existing processing services (e.g. G-POD services) and and invoke the processing via the OGC Web Processing Service interface.
+Users define input data and select a results location (e.g. portal, cloud block storage, dropbox, google drive, ...)</p>
+<p class="plantuml">
+<object data="../_images/plantuml-b4b5636b6768ec0bde460af6b33decefa0327ebe.svg" type="image/svg+xml" style="width:936px;height:673px;">
+<img src="../_images/plantuml-b4b5636b6768ec0bde460af6b33decefa0327ebe.png" alt="title runJob - On-demand computing element
+actor endUser
+' Boundary (view in MVC) Objects that interface with system actors
+boundary geoBrowser
+' Entity (model in MVC): Objects representing system data
+' model descriptions are delegated to the Information viewpoint
+' Control (controller in MVC): Objects that mediate between boundaries and entities
+control processingServices
+control eoDataContext
+control cloudControler
+
+endUser &lt;-&gt; geoBrowser: interact
+geoBrowser -&gt; processingServices: selectProcessor
+activate processingServices
+geoBrowser &lt;-- processingServices: selected
+deactivate processingServices
+
+geoBrowser -&gt; eoDataContext: selectDatasets
+activate eoDataContext
+geoBrowser &lt;-- eoDataContext: selected
+deactivate eoDataContext
+
+endUser -&gt; geoBrowser: Allocate selected input data
+endUser -&gt; geoBrowser: runJob
+
+geoBrowser -&gt; cloudControler: provision grid computing element with input data parameter
+activate cloudControler
+cloudControler-&gt;cloudControler: validate request against user quota
+ref over cloudControler: warning if quota exceeded
+cloudControler --&gt; userCloudStorage: Deliver results
+geoBrowser &lt;-- cloudControler: Reference to results
+deactivate cloudControler
+
+endUser -&gt; userCloudStorage: access generated EO-based products
+endUser -&gt; geoBrowser: share generated EO-based products" />
+
+</object></p>
+</div>
 </div>
 
 

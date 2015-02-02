@@ -31,7 +31,7 @@
     <link rel="top" title="Geohazards Thematic Exploitation Platform Architecture v1.0 documentation" href="../index.html" />
     <link rel="up" title="Enterprise Viewpoint" href="index.html" />
     <link rel="next" title="Enterprise Viewpoint - Scope of the system" href="scope.html" />
-    <link rel="prev" title="Enterprise Viewpoint" href="index.html" />
+    <link rel="prev" title="Enterprise Viewpoint - Definitions" href="definitions.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
   
@@ -89,14 +89,35 @@
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="">Community concepts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="scope.html">Targeted operational processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definitions.html">Definitions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="definitions.html#architecture-viewpoints">Architecture viewpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="definitions.html#modeling-concepts">Modeling concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Community concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#community-contract">Community contract</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#community-objectives">Community objectives</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="scope.html">Targeted operational processes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="scope.html#system-capabilities">System Capabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scope.html#data-access">Data access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scope.html#processor-integration">Processor integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scope.html#data-processing-and-cloud-bursting">Data processing and Cloud bursting</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="policies.html">Policies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interactions.html">Design constraints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interactions.html">Design constraints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="interactions.html#different-services">Different services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="interactions.html#constraints-on-data-providers-administrators-interactions">Constraints on Data providers | Administrators interactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="interactions.html#constraints-on-processor-integrators-end-users-interactions">Constraints on Processor integrators | end-users interactions</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-gsnl.html">Requirements - GEO Supersites and Natural Laboratories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="summary.html">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../information/index.html">Information Viewpoint</a><ul>
@@ -139,7 +160,11 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Enterprise Viewpoint - Purpose of the system</a></li>
+<li><a class="reference internal" href="#">Enterprise Viewpoint - Purpose of the system</a><ul>
+<li><a class="reference internal" href="#community-contract">Community contract</a></li>
+<li><a class="reference internal" href="#community-objectives">Community objectives</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -149,7 +174,7 @@
               
                 
   <li>
-    <a href="index.html" title="Previous Chapter: Enterprise Viewpoint"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Enterprise Viewp...</span>
+    <a href="definitions.html" title="Previous Chapter: Enterprise Viewpoint - Definitions"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Enterprise Viewp...</span>
     </a>
   </li>
   <li>
@@ -186,7 +211,12 @@
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Enterprise Viewpoint</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="">Community concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="definitions.html">Definitions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Community concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#community-contract">Community contract</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#community-objectives">Community objectives</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="scope.html">Targeted operational processes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="policies.html">Policies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="interactions.html">Design constraints</a></li>
@@ -194,6 +224,7 @@
 <li class="toctree-l2"><a class="reference internal" href="reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="reqs-gsnl.html">Requirements - GEO Supersites and Natural Laboratories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="summary.html">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../information/index.html">Information Viewpoint</a></li>
@@ -218,7 +249,120 @@
       
   <div class="section" id="enterprise-viewpoint-purpose-of-the-system">
 <h1>Enterprise Viewpoint - Purpose of the system<a class="headerlink" href="#enterprise-viewpoint-purpose-of-the-system" title="Permalink to this headline">¶</a></h1>
-<p>This section is under development.</p>
+<p>The Enterprise Viewpoint describes the Geohazards Exploitation Platform&#8217;s science and business requirements and how to meet them.</p>
+<div class="section" id="community-contract">
+<h2>Community contract<a class="headerlink" href="#community-contract" title="Permalink to this headline">¶</a></h2>
+<p>The main purpose of the system gathering together the GEP community is expressed in a contract that specifies how the community objective can be met. This contract:</p>
+<ul class="simple">
+<li>states the objective for which the community exists;</li>
+<li>governs the structure, the behaviour and the policies of the community;</li>
+<li>constrains the behaviour of the members of the community;</li>
+<li>states the rules for the assignment of enterprise objects to roles.</li>
+</ul>
+<p>The satellite EO and geohazards community is growing in size and importance, with the advent of large new initiatives and projects of global interest.
+The Committee on Earth Observation Satellites (CEOS) is coordinating globally this community, through its Disasters Working Group.
+The geohazards platform or GEP contributes to this expanding community a unique set of tools, allowing them to forge new applications in direct collaboration with large numbers of actors.</p>
+<p>In particular, the community will benefit from a cloud-based workspace, allowing advanced EO data exploitation activities and offering access to a broad range of shared processing tools.
+GEO is a community platform. Each partner brings tools and processing chains, but also has access in the same workspace to large data sets and shared processing tools.</p>
+<p>The vision for the Platform was inspired by the Scientific &amp; Technical Memorandum of the the International Forum on Satellite EO for Geohazards <a class="reference internal" href="references.html#r1">[R1]</a>.</p>
+<p>The platform is intended to support operational users with a mandate in seismic risk management,
+as well as a range of geoscience users in research institutes and universities.
+Operational users are focused on disaster prevention, preparedness, early warning, and response.
+Academic users are focused on the scientific use of data, with the main goal of understanding the physics of earthquakes, thereby improving our ability to characterize, understand, and model seismic risk.
+Overall, the Satellite EO for Geohazards community encompasses the following actors:</p>
+<ul class="simple">
+<li>Satellite data providers<ul>
+<li>National or international space agencies like ESA, which operate satellites (CEOS has 9 space agencies members).</li>
+<li>Commercial satellite operators or commercial suppliers of data.</li>
+</ul>
+</li>
+<li>Value-adder companies (or VACs)<ul>
+<li>Companies using satellite data to generate information products that can be used directly by end users to address a need.</li>
+<li>Companies active in a wide range of information sectors ranging from oil &amp; gas industries to environmental applications, disaster risk management and many others.</li>
+</ul>
+</li>
+<li>Research institutes and academia<ul>
+<li>Involved through government-sponsored grants for basic research</li>
+<li>Involved in support of applied research objectives</li>
+</ul>
+</li>
+<li>Industrial partners with an interest in geohazards research</li>
+<li>Operational geohazards actors<ul>
+<li>National and regional civil protection agencies</li>
+<li>Seismological centres</li>
+<li>National and local authorities in charge of seismic risk management</li>
+</ul>
+</li>
+<li>Other forms of association of researchers<ul>
+<li>the Geohazard Supersites and Natural Laboratories (GSNL)</li>
+<li>the European Plate Observing System (EPOS)</li>
+</ul>
+</li>
+</ul>
+<p>The CEOS Working Group on Disasters is committed to support and enhance the access to in-situ and satellite observations, at the global scale, for this geohazards community.
+This is defining the main purpose of the Geohazards Thematic Exploitation Platform, that we refine hereafter into a set of community objectives.
+The system is then designed in terms of processes that meet these objectives.
+Such processes (see the next section &#8220;Scope of the system) allow the system actors to interact and behave in order to fulfill the stated goal and objectives.
+According to the RM-ODP approach, the complete behaviour for a role in the community is modelled by the actions for that role in a number of processes.
+Processes (activity or sequence diagrams) and behaviors (state diagrams) are modelled in this Enterprise viewpoint of the RM-ODP architecture.</p>
+<p>As a summary, the community is modeled in the RM-ODP Enterprise Specification as a set of stakeholders and their identified roles, governed by a set of community rules.</p>
+<p>&lt;&lt; EV_Community &gt;&gt;</p>
+</div>
+<div class="section" id="community-objectives">
+<h2>Community objectives<a class="headerlink" href="#community-objectives" title="Permalink to this headline">¶</a></h2>
+<p>The community contract models the agreement amongst the members to work together to meet a shared goal, and more concretely a set of objectives.
+For the GEP community, the designed system has to implement technical processes that help achieve the following set of objectives.</p>
+<p><strong>Exploitation and collaboration</strong></p>
+<ul class="simple">
+<li>EV_Objective <strong>comm1</strong>: Evolve SSEP to promote a reference platform for different thematic domains, starting with geohazards</li>
+<li>EV_Objective <strong>comm2</strong>: Measure community validated usages of EO data</li>
+<li>EV_Objective <strong>comm3</strong>: Investigate means for accessing and exploiting commercial data assets</li>
+<li>EV_Objective <strong>comm4</strong>: Involve stakeholders for long term sustainable operations</li>
+</ul>
+<p><strong>Processor integration</strong></p>
+<ul class="simple">
+<li>EV_Objective <strong>integ1</strong>: Support processor integration for massive parallel processing</li>
+<li>EV_Objective <strong>integ2</strong>: Demonstrate a smooth transition from integration to operations</li>
+<li>EV_Objective <strong>integ3</strong>: Investigate means for accessing and exploiting commercial processor assets</li>
+</ul>
+<p><strong>Cloud bursting</strong></p>
+<ul class="simple">
+<li>EV_Objective <strong>burst1</strong>: Allow the selection from a range of Cloud Providers to run a processing task</li>
+<li>EV_Objective <strong>burst2</strong>: Support application deployments on a selected Cloud Provider</li>
+<li>EV_Objective <strong>burst3</strong>: Demonstrate an exploitation approach based on a pay-per-use model</li>
+</ul>
+<p><strong>Digital science</strong></p>
+<ul class="simple">
+<li>EV_Objective <strong>digit1</strong>: Allow the rapid creation and web-publication of added-value science products (e.g. co-seismic interferograms)</li>
+<li>EV_Objective <strong>digit2</strong>: Review, re-produce and qualify science products from 3rd parties</li>
+<li>EV_Objective <strong>digit3</strong>: Support increased access to EO derived information, through inter-disciplinary exchange and cooperation</li>
+</ul>
+<p><strong>CEOS Pilots synergy</strong></p>
+<ul class="simple">
+<li>EV_Objective <strong>ceos1</strong>: Foster EO resource &amp; knowledge sharing for capacity building at global scale</li>
+<li>EV_Objective <strong>ceos2</strong>: Provide EO data (InSAR, optical) and processing capacities to existing initiatives</li>
+<li>EV_Objective <strong>ceos3</strong>: Demonstrate advanced science products for rapid earthquake response &amp; and reduce impact and risk from volcanic eruptions</li>
+</ul>
+<p><strong>Geohazards Supersites and Natural Laboratories synergy</strong></p>
+<ul class="simple">
+<li>EV_Objective <strong>gsnl1</strong>: Map hazard prone land surfaces in geologically active regions</li>
+<li>EV_Objective <strong>gnsl2</strong>: Monitor terrain deformations in geologically active regions</li>
+<li>EV_Objective <strong>gnsl3</strong>: Ensure easy access to Earth Science data to promote their use and advance scientific research</li>
+<li>EV_Objective <strong>gnsl4</strong>: Manage Permanent Supersites, Candidate Supersites, Event Supersites, and Natural Laboratories</li>
+</ul>
+<p><strong>Seismic hazards knowledge</strong></p>
+<ul class="simple">
+<li>EV_Objective <strong>seismic1</strong>: Support production of new observations of the seismic belts (~15% of land surface)</li>
+<li>EV_Objective <strong>seismic2</strong>: Contribute to improved understanding of seismic events</li>
+<li>EV_Objective <strong>seismic3</strong>: Support Geoscience users to characterize, understand, and model seismic risk</li>
+</ul>
+<p><strong>Volcanic eruptions monitoring</strong></p>
+<ul class="simple">
+<li>EV_Objective <strong>volcano1</strong>: Support monitoring of all Holocene era volcanoes on a global basis (~1500 vocanoes)</li>
+<li>EV_Objective <strong>volcano2</strong>: Involve National and Regional Civil Protection authorities, Seismological centers, National &amp; Local authorities</li>
+</ul>
+<p>The next section identifies the GEP processes (EV_Process) to be modelled as activity diagrams.</p>
+</div>
 </div>
 
 
