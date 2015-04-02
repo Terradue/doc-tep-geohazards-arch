@@ -347,39 +347,23 @@ skinparam componentStyle uml2
 !include target/rst/in/group___service.iuml" />
 
 </object></p>
-<p>This component is a wrapper for all users’ application level functionalities. It implements an open framework to plug services that then creates <em class="xref std std-ref">Task</em><em class="xref std std-ref">Task</em> or <em class="xref std std-ref">Scheduler</em><em class="xref std std-ref">Scheduler</em>. This framework controls common service functionalities:</p>
+<p>This component is a wrapper for all users’ application level functionalities. It implements an open framework to plug services that then creates <em class="xref std std-ref">Task</em> or <em class="xref std std-ref">Scheduler</em>. This framework controls common service functionalities:</p>
 <ul class="simple">
-<li><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a> on the service</li>
+<li><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a> on the service</li>
 <li>Service definition parsing and template build</li>
-<li><em class="xref std std-ref">Task</em><em class="xref std std-ref">Task</em> creation Practically, every service implements IService that defines all the parameters the service must or may include in the task or scheduler and several functions that</li>
+<li><em class="xref std std-ref">Task</em> creation Practically, every service implements IService that defines all the parameters the service must or may include in the task or scheduler and several functions that</li>
 <li>prepares the data access request view template for the web client;</li>
 <li>reviews the parameters’ correctness;</li>
-<li>builds the task with parameterized jobs composition. Once the task created by the service, the assigned <em class="xref std std-ref">Computing Resource</em><em class="xref std std-ref">Computing Resource</em> handles it for submission.</li>
-<li><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a> on the service</li>
-<li>Service definition parsing and template build</li>
-<li><em class="xref std std-ref">Task</em><em class="xref std std-ref">Task</em> creation Practically, every service implements IService that defines all the parameters the service must or may include in the task or scheduler and several functions that</li>
-<li>prepares the data access request view template for the web client;</li>
-<li>reviews the parameters’ correctness;</li>
-<li>builds the task with parameterized jobs composition. Once the task created by the service, the assigned <em class="xref std std-ref">Computing Resource</em><em class="xref std std-ref">Computing Resource</em> handles it for submission.</li>
+<li>builds the task with parameterized jobs composition. Once the task created by the service, the assigned <em class="xref std std-ref">Computing Resource</em> handles it for submission.</li>
 </ul>
 <div class="section" id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a> stores the service reference in the database</li>
+<li><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a> stores the service reference in the database</li>
+<li><a class="reference internal" href="group___authorisation.html#group-authorisation"><em>Authorisation</em></a> controls access on the services</li>
+<li>creates new <em class="xref std std-ref">Task</em></li>
+<li>is available on <em class="xref std std-ref">Computing Resource</em></li>
 </ul>
-<p><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a> stores the service reference in the database</p>
-<ul class="simple">
-<li><a class="reference internal" href="group___authorisation.html#group-authorisation"><em>Authorisation</em></a><a class="reference internal" href="group___authorisation.html#group-authorisation"><em>Authorisation</em></a> controls access on the services</li>
-</ul>
-<p><a class="reference internal" href="group___authorisation.html#group-authorisation"><em>Authorisation</em></a><a class="reference internal" href="group___authorisation.html#group-authorisation"><em>Authorisation</em></a> controls access on the services</p>
-<ul class="simple">
-<li>creates new <em class="xref std std-ref">Task</em><em class="xref std std-ref">Task</em></li>
-</ul>
-<p>creates new <em class="xref std std-ref">Task</em><em class="xref std std-ref">Task</em></p>
-<ul class="simple">
-<li>is available on <em class="xref std std-ref">Computing Resource</em><em class="xref std std-ref">Computing Resource</em></li>
-</ul>
-<p>is available on <em class="xref std std-ref">Computing Resource</em><em class="xref std std-ref">Computing Resource</em></p>
 </div>
 </div>
 

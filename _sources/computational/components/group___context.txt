@@ -16,13 +16,10 @@ This component manages the general context for the entire system for a given ses
 
 Dependencies
 ------------
-- :ref:`Persistence of Data <group___persistence>`:ref:`Persistence of Data <group___persistence>` loads/stores data from/to the database
-:ref:`Persistence of Data <group___persistence>`:ref:`Persistence of Data <group___persistence>` loads/stores data from/to the database
+- :ref:`Persistence of Data <group___persistence>` loads/stores data from/to the database
 
-- :ref:`Authorisation <group___authorisation>`:ref:`Authorisation <group___authorisation>` controls access to objects
-:ref:`Authorisation <group___authorisation>`:ref:`Authorisation <group___authorisation>` controls access to objects
+- :ref:`Authorisation <group___authorisation>` controls access to objects
 
-- :ref:`Authentication <group___authentication>`:ref:`Authentication <group___authentication>` authenticates a user
-:ref:`Authentication <group___authentication>`:ref:`Authentication <group___authentication>` authenticates a user
+- :ref:`Authentication <group___authentication>` authenticates a user
 
 

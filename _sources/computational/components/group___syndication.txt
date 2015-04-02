@@ -12,5 +12,5 @@ Syndication Feed
   skinparam componentStyle uml2
   !include target/rst/in/group___syndication.iuml
 
-Syndication Feed is a conceptual model in which website material is made available through a list of entries. In this context, the syndication feed is mainly used to represent a set of results from a query in the :ref:`Atom Feed <group___atom>`:ref:`Atom Feed <group___atom>` Format.
+Syndication Feed is a conceptual model in which website material is made available through a list of entries. In this context, the syndication feed is mainly used to represent a set of results from a query in the :ref:`Atom Feed <group___atom>` Format.
 

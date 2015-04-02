@@ -16,13 +16,11 @@ This is the core of the OpenSearch mechanism
 
 Dependencies
 ------------
-- uses :ref:`Syndication Feed <group___syndication>`:ref:`Syndication Feed <group___syndication>` model to represent :ref:`OpenSearchable <group___open_searchable>`:ref:`OpenSearchable <group___open_searchable>` entities.
-uses :ref:`Syndication Feed <group___syndication>`:ref:`Syndication Feed <group___syndication>` model to represent :ref:`OpenSearchable <group___open_searchable>`:ref:`OpenSearchable <group___open_searchable>` entities.
+- uses :ref:`Syndication Feed <group___syndication>` model to represent :ref:`OpenSearchable <group___open_searchable>` entities.
 
 
 Interfaces
 ------------
-- process :ref:`OpenSearchable <group___open_searchable>`:ref:`OpenSearchable <group___open_searchable>` entities to expose them in OpenSearch interface.
-process :ref:`OpenSearchable <group___open_searchable>`:ref:`OpenSearchable <group___open_searchable>` entities to expose them in OpenSearch interface.
+- process :ref:`OpenSearchable <group___open_searchable>` entities to expose them in OpenSearch interface.
 
 

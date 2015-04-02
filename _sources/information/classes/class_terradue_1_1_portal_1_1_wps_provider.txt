@@ -3,7 +3,7 @@
 Terradue::Portal::WpsProvider
 #############################
 
-Represents a remote provider of a Web Processing :ref:`Service <class_terradue_1_1_portal_1_1_service>`:ref:`Service <class_terradue_1_1_portal_1_1_service>`.
+Represents a remote provider of a Web Processing :ref:`Service <class_terradue_1_1_portal_1_1_service>`.
 
 
 .. uml::

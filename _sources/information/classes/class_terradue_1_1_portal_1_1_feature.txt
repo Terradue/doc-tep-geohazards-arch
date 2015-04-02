@@ -3,7 +3,7 @@
 Terradue::Portal::Feature
 #########################
 
-:ref:`Feature <class_terradue_1_1_portal_1_1_feature>`:ref:`Feature <class_terradue_1_1_portal_1_1_feature>`. 
+:ref:`Feature <class_terradue_1_1_portal_1_1_feature>`. 
 
 
 .. uml::

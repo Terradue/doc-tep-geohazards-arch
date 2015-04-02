@@ -16,7 +16,6 @@ The component provides generic interaction with data that is persistently stored
 
 Interfaces
 ------------
-- connects to :ref:`SQL interface to RDBMS <group___s_q_l_connector>`:ref:`SQL interface to RDBMS <group___s_q_l_connector>`
-connects to :ref:`SQL interface to RDBMS <group___s_q_l_connector>`:ref:`SQL interface to RDBMS <group___s_q_l_connector>`
+- connects to :ref:`SQL interface to RDBMS <group___s_q_l_connector>`
 
 

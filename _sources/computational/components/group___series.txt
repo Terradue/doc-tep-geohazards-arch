@@ -17,15 +17,12 @@ This component represents a dataset series. Practically it is a non-final compon
 Dependencies
 ------------
 - core_DataModelAccess stores persistently the series information in the database
-core_DataModelAccess stores persistently the series information in the database
 
 - core_UserGroupACL controls the access on the series
-core_UserGroupACL controls the access on the series
 
 
 Interfaces
 ------------
 - proxy data series items via OpenSearch 
-proxy data series items via OpenSearch 
 
 

@@ -384,48 +384,11 @@ DIAG_NAME
 endfooter" />
 
 </object></p>
-<p class="plantuml">
-<object data="../../_images/plantuml-34a3a806e6e3c148a7fcdfb45fa6b26258d17f01.svg" type="image/svg+xml" style="width:839px;height:960px;">
-<img src="../../_images/plantuml-34a3a806e6e3c148a7fcdfb45fa6b26258d17f01.png" alt="!define DIAG_NAME Authentication mechanism Activity Diagram
-
-start
-:read session information;
-if (valid session) then (yes)
-    :Load user info from session;
-else (No)
-    while (user not authenticated &amp; next authentication method ?) is (yes)
-        if (Authentication successful) then (yes)
-            if (user exists) then (no)
-                if (authentication method allows user creation) then (yes)
-                    :create user account;
-                endif
-            endif
-         endif
-    endwhile (no)
-    if (user authenticated) then (yes)
-        if (user is enabled) then (no)
-            if ( configuration needs user activation ) then (yes)
-                :Throw User Activation Exception;
-                stop
-            endif
-        endif
-        :Load user info and create session;
-    endif
-endif
-stop
-
-footer
-DIAG_NAME
-(c) Terradue Srl
-endfooter" />
-
-</object></p>
 <div class="section" id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a> reads/writes the user information</li>
+<li><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a> reads/writes the user information</li>
 </ul>
-<p><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a> reads/writes the user information</p>
 </div>
 </div>
 

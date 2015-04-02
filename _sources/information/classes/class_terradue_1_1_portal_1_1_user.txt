@@ -3,7 +3,7 @@
 Terradue::Portal::User
 ######################
 
-:ref:`User <class_terradue_1_1_portal_1_1_user>`:ref:`User <class_terradue_1_1_portal_1_1_user>`. 
+:ref:`User <class_terradue_1_1_portal_1_1_user>`. 
 
 
 .. uml::

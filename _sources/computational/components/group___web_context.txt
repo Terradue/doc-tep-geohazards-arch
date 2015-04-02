@@ -12,11 +12,10 @@ WebContext
   skinparam componentStyle uml2
   !include target/rst/in/group___web_context.iuml
 
-This component extends the general context for the entire system in an HTTP context based on a web session. When the system is a web application, it provides an HTTP context (:ref:`Terradue.Portal.IfyWebContext <class_terradue_1_1_portal_1_1_ify_web_context>`:ref:`Terradue.Portal.IfyWebContext <class_terradue_1_1_portal_1_1_ify_web_context>` with session, request, content-type). For instance, it allows the general context to provide with the authentication of the user based on HTTP request information (e.g. SSO headers).
+This component extends the general context for the entire system in an HTTP context based on a web session. When the system is a web application, it provides an HTTP context (:ref:`Terradue.Portal.IfyWebContext <class_terradue_1_1_portal_1_1_ify_web_context>` with session, request, content-type). For instance, it allows the general context to provide with the authentication of the user based on HTTP request information (e.g. SSO headers).
 
 Dependencies
 ------------
-- :ref:`Context <group___context>`:ref:`Context <group___context>` is extended by WebContext for HTTP based system
-:ref:`Context <group___context>`:ref:`Context <group___context>` is extended by WebContext for HTTP based system
+- :ref:`Context <group___context>` is extended by WebContext for HTTP based system
 
 

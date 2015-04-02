@@ -349,10 +349,8 @@ skinparam componentStyle uml2
 !include target/rst/in/group___wps_provider.iuml" />
 
 </object></p>
-<p>This component is an extension of <em class="xref std std-ref">Computing Resource</em><em class="xref std std-ref">Computing Resource</em> for providing with WPS Server as a processing resource. It has two main functions:</p>
+<p>This component is an extension of <em class="xref std std-ref">Computing Resource</em> for providing with WPS Server as a processing resource. It has two main functions:</p>
 <ul class="simple">
-<li>analyses the GetCapabilities() function of the WPS server to retrieve all the process offered.</li>
-<li>submits, controls and montiors processing over a WPS Server</li>
 <li>analyses the GetCapabilities() function of the WPS server to retrieve all the process offered.</li>
 <li>submits, controls and montiors processing over a WPS ServerBelow, the sequence diagram describes the analaysis process to retrieve WPS services and parameters.</li>
 </ul>
@@ -482,153 +480,19 @@ DIAG_NAME
 endfooter" />
 
 </object></p>
-<p class="plantuml">
-<object data="../../_images/plantuml-9bc419e2bc1f4f68f8468dae5707003fa77028a7.svg" type="image/svg+xml" style="width:1151px;height:2515px;">
-<img src="../../_images/plantuml-9bc419e2bc1f4f68f8468dae5707003fa77028a7.png" alt="!define DIAG_NAME WPS Service Analysis Sequence Diagram
-
-participant &quot;WebClient&quot; as WC
-participant &quot;WebServer&quot; as WS
-participant &quot;Provider&quot; as P
-participant &quot;Cloud Provider&quot; as C
-participant &quot;DataBase&quot; as DB
-
-autonumber
-
-== Get Capabilities ==
-
-WC -&gt; WS: GetCapabilities request
-activate WS
-WS -&gt; DB: Load all Providers (Proxy=true)
-loop on each provider
-    WS -&gt; DB: load services
-    loop on each service
-        WS -&gt; WS: get service info (identifier, title, abstract)
-    end
-end
-WS -&gt; C: Load all Providers
-loop on each provider
-    WS -&gt; P: GetCapabilities
-    WS -&gt; WS: extract services from GetCapabilities using request identifier
-    loop on each service
-        WS -&gt; WS: get service info (identifier, title, abstract)
-    end
-end
-WS -&gt; WS: aggregate all services info into response offering
-WS -&gt; WC: return aggregated GetCapabilities
-deactivate WS
-
-== Describe Process ==
-
-WC -&gt; WS: DescribeProcess request
-activate WS
-alt case process from db
-    WS -&gt; DB: load service from request identifier
-    WS -&gt; DB: get provider url + service identifier on the provider
-else case process from cloud provider
-    WS -&gt; C: get service provider
-    WS -&gt; P: GetCapabilities
-    WS -&gt; WS: extract describeProcess url from GetCapabilities using request identifier
-end
-WS -&gt; WS: build &quot;real&quot; describeProcess request
-WS -&gt; P: DescribeProcess
-WS -&gt; WC: return result from describeProcess
-deactivate WS
-
-== Execute ==
-
-WC -&gt; WS: Execute request
-activate WS
-alt case process from db
-    WS -&gt; DB: load service from request identifier
-    WS -&gt; DB: get provider url + service identifier on the provider
-else case process 'from cloud provider'
-    WS -&gt; C: get service provider
-    WS -&gt; P: GetCapabilities
-    WS -&gt; WS: extract execute url from GetCapabilities using request identifier
-end
-WS -&gt; WS: build &quot;real&quot; execute request
-WS -&gt; P: Execute
-alt case error
-    WS -&gt; WC: return error
-else case success
-    WS -&gt; DB: store job
-    WS -&gt; WS: update job RetrieveResultServlet url
-    WS -&gt; WC: return created job
-end
-deactivate WS
-
-== Retrieve Result Servlet ==
-
-WC -&gt; WS: RetrieveResultServlet request
-activate WS
-WS -&gt; DB: load job info from request identifier
-WS -&gt; P: call &quot;real&quot; statusLocation url
-WS -&gt; WS: update href in response to put local server url instead of real provider
-WS -&gt; WC: return updated statusLocation response
-deactivate WS
-
-== Search WPS process ==
-
-WC -&gt; WS: WPS search request
-activate WS
-WS -&gt; DB: Load all Providers
-WS -&gt; C: Load all Providers
-loop on each provider
-    WS -&gt; P: GetCapabilities
-    WS -&gt; WS: get services info
-    loop on each service
-        alt provider is Proxied
-            WS -&gt; WS: create local identifier and save remote identifier
-            WS -&gt; WS: use local server url as baseurl
-        end
-        WS -&gt; WS: add service info to the response
-    end
-end
-deactivate WS
-
-== Integrate WPS provider ==
-
-WC -&gt; WS: POST provider
-activate WS
-WS -&gt; DB: store provider
-WS -&gt; P: GetCapabilities
-WS -&gt; WS: get services info
-loop on each service
-    alt provider is Proxied
-        WS -&gt; WS: create local identifier and save remote identifier
-        WS -&gt; WS: use local server url as baseurl
-    end
-    WS -&gt; DB: store service
-end
-
-
-footer
-DIAG_NAME
-(c) Terradue Srl
-endfooter" />
-
-</object></p>
 <div class="section" id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>extends <em class="xref std std-ref">Computing Resource</em><em class="xref std std-ref">Computing Resource</em> for WPS specific resource</li>
+<li>extends <em class="xref std std-ref">Computing Resource</em> for WPS specific resource</li>
+<li>exports WPS Server as a computing resource as a <a class="reference internal" href="group___o_w_s_context.html#group-o-w-s-context"><em>OWS Context</em></a> model.</li>
 </ul>
-<p>extends <em class="xref std std-ref">Computing Resource</em><em class="xref std std-ref">Computing Resource</em> for WPS specific resource</p>
-<ul class="simple">
-<li>exports WPS Server as a computing resource as a <a class="reference internal" href="group___o_w_s_context.html#group-o-w-s-context"><em>OWS Context</em></a><a class="reference internal" href="group___o_w_s_context.html#group-o-w-s-context"><em>OWS Context</em></a> model.</li>
-</ul>
-<p>exports WPS Server as a computing resource as a <a class="reference internal" href="group___o_w_s_context.html#group-o-w-s-context"><em>OWS Context</em></a><a class="reference internal" href="group___o_w_s_context.html#group-o-w-s-context"><em>OWS Context</em></a> model.</p>
 </div>
 <div class="section" id="interfaces">
 <h2>Interfaces<a class="headerlink" href="#interfaces" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>implements <a class="reference internal" href="group___open_searchable.html#group-open-searchable"><em>OpenSearchable</em></a><a class="reference internal" href="group___open_searchable.html#group-open-searchable"><em>OpenSearchable</em></a> interface to search WPS Server in OpenSearch.</li>
+<li>implements <a class="reference internal" href="group___open_searchable.html#group-open-searchable"><em>OpenSearchable</em></a> interface to search WPS Server in OpenSearch.</li>
+<li>implements <a class="reference internal" href="group___w_p_s.html#group-w-p-s"><em>Web Processing Services Interface</em></a> interface to retrieve process offerings from WPS Server and to submit, control and monitor prcoessing.</li>
 </ul>
-<p>implements <a class="reference internal" href="group___open_searchable.html#group-open-searchable"><em>OpenSearchable</em></a><a class="reference internal" href="group___open_searchable.html#group-open-searchable"><em>OpenSearchable</em></a> interface to search WPS Server in OpenSearch.</p>
-<ul class="simple">
-<li>implements <a class="reference internal" href="group___w_p_s.html#group-w-p-s"><em>Web Processing Services Interface</em></a><a class="reference internal" href="group___w_p_s.html#group-w-p-s"><em>Web Processing Services Interface</em></a> interface to retrieve process offerings from WPS Server and to submit, control and monitor prcoessing.</li>
-</ul>
-<p>implements <a class="reference internal" href="group___w_p_s.html#group-w-p-s"><em>Web Processing Services Interface</em></a><a class="reference internal" href="group___w_p_s.html#group-w-p-s"><em>Web Processing Services Interface</em></a> interface to retrieve process offerings from WPS Server and to submit, control and monitor prcoessing.</p>
 </div>
 </div>
 

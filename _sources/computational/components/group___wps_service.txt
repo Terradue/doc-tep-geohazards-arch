@@ -12,20 +12,17 @@ WPS Service
   skinparam componentStyle uml2
   !include target/rst/in/group___wps_service.iuml
 
-This component is an extension of :ref:`Service <group___service>`:ref:`Service <group___service>` for providing with WPS process as processing offerings. Practically, it get services offered in the :ref:`WPS Provider <group___wps_provider>`:ref:`WPS Provider <group___wps_provider>` associated and then for each process exposed, retrieve the DescribeProcess() from :ref:`WPS Provider <group___wps_provider>`:ref:`WPS Provider <group___wps_provider>` to describe the process with input and ouput parameters.
+This component is an extension of :ref:`Service <group___service>` for providing with WPS process as processing offerings. Practically, it get services offered in the :ref:`WPS Provider <group___wps_provider>` associated and then for each process exposed, retrieve the DescribeProcess() from :ref:`WPS Provider <group___wps_provider>` to describe the process with input and ouput parameters.
 
 Dependencies
 ------------
-- extends :ref:`Service <group___service>`:ref:`Service <group___service>` for WPS specific offerings
-extends :ref:`Service <group___service>`:ref:`Service <group___service>` for WPS specific offerings
+- extends :ref:`Service <group___service>` for WPS specific offerings
 
-- exports WPS Service as a service resource as a :ref:`OWS Context <group___o_w_s_context>`:ref:`OWS Context <group___o_w_s_context>` model.
-exports WPS Service as a service resource as a :ref:`OWS Context <group___o_w_s_context>`:ref:`OWS Context <group___o_w_s_context>` model.
+- exports WPS Service as a service resource as a :ref:`OWS Context <group___o_w_s_context>` model.
 
 
 Interfaces
 ------------
-- implements :ref:`OpenSearchable <group___open_searchable>`:ref:`OpenSearchable <group___open_searchable>` interface to search WPS Service in OpenSearch.
-implements :ref:`OpenSearchable <group___open_searchable>`:ref:`OpenSearchable <group___open_searchable>` interface to search WPS Service in OpenSearch.
+- implements :ref:`OpenSearchable <group___open_searchable>` interface to search WPS Service in OpenSearch.
 
 

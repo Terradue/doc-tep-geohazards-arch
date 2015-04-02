@@ -349,24 +349,19 @@ skinparam componentStyle uml2
 !include target/rst/in/group___wps_service.iuml" />
 
 </object></p>
-<p>This component is an extension of <a class="reference internal" href="group___service.html#group-service"><em>Service</em></a><a class="reference internal" href="group___service.html#group-service"><em>Service</em></a> for providing with WPS process as processing offerings. Practically, it get services offered in the <a class="reference internal" href="group___wps_provider.html#group-wps-provider"><em>WPS Provider</em></a><a class="reference internal" href="group___wps_provider.html#group-wps-provider"><em>WPS Provider</em></a> associated and then for each process exposed, retrieve the DescribeProcess() from <a class="reference internal" href="group___wps_provider.html#group-wps-provider"><em>WPS Provider</em></a><a class="reference internal" href="group___wps_provider.html#group-wps-provider"><em>WPS Provider</em></a> to describe the process with input and ouput parameters.</p>
+<p>This component is an extension of <a class="reference internal" href="group___service.html#group-service"><em>Service</em></a> for providing with WPS process as processing offerings. Practically, it get services offered in the <a class="reference internal" href="group___wps_provider.html#group-wps-provider"><em>WPS Provider</em></a> associated and then for each process exposed, retrieve the DescribeProcess() from <a class="reference internal" href="group___wps_provider.html#group-wps-provider"><em>WPS Provider</em></a> to describe the process with input and ouput parameters.</p>
 <div class="section" id="dependencies">
 <h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>extends <a class="reference internal" href="group___service.html#group-service"><em>Service</em></a><a class="reference internal" href="group___service.html#group-service"><em>Service</em></a> for WPS specific offerings</li>
+<li>extends <a class="reference internal" href="group___service.html#group-service"><em>Service</em></a> for WPS specific offerings</li>
+<li>exports WPS Service as a service resource as a <a class="reference internal" href="group___o_w_s_context.html#group-o-w-s-context"><em>OWS Context</em></a> model.</li>
 </ul>
-<p>extends <a class="reference internal" href="group___service.html#group-service"><em>Service</em></a><a class="reference internal" href="group___service.html#group-service"><em>Service</em></a> for WPS specific offerings</p>
-<ul class="simple">
-<li>exports WPS Service as a service resource as a <a class="reference internal" href="group___o_w_s_context.html#group-o-w-s-context"><em>OWS Context</em></a><a class="reference internal" href="group___o_w_s_context.html#group-o-w-s-context"><em>OWS Context</em></a> model.</li>
-</ul>
-<p>exports WPS Service as a service resource as a <a class="reference internal" href="group___o_w_s_context.html#group-o-w-s-context"><em>OWS Context</em></a><a class="reference internal" href="group___o_w_s_context.html#group-o-w-s-context"><em>OWS Context</em></a> model.</p>
 </div>
 <div class="section" id="interfaces">
 <h2>Interfaces<a class="headerlink" href="#interfaces" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>implements <a class="reference internal" href="group___open_searchable.html#group-open-searchable"><em>OpenSearchable</em></a><a class="reference internal" href="group___open_searchable.html#group-open-searchable"><em>OpenSearchable</em></a> interface to search WPS Service in OpenSearch.</li>
+<li>implements <a class="reference internal" href="group___open_searchable.html#group-open-searchable"><em>OpenSearchable</em></a> interface to search WPS Service in OpenSearch.</li>
 </ul>
-<p>implements <a class="reference internal" href="group___open_searchable.html#group-open-searchable"><em>OpenSearchable</em></a><a class="reference internal" href="group___open_searchable.html#group-open-searchable"><em>OpenSearchable</em></a> interface to search WPS Service in OpenSearch.</p>
 </div>
 </div>
 

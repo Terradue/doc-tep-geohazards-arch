@@ -12,5 +12,5 @@ OWS Context Document
   skinparam componentStyle uml2
   !include target/rst/in/group___o_w_s_context_atom_feed.iuml
 
-This components provides with the representation of entities in the system into :ref:`OWS Context <group___o_w_s_context>`:ref:`OWS Context <group___o_w_s_context>` compliant entry in a :ref:`Syndication Feed <group___syndication>`:ref:`Syndication Feed <group___syndication>` feed (typically :ref:`Atom Feed <group___atom>`:ref:`Atom Feed <group___atom>`)
+This components provides with the representation of entities in the system into :ref:`OWS Context <group___o_w_s_context>` compliant entry in a :ref:`Syndication Feed <group___syndication>` feed (typically :ref:`Atom Feed <group___atom>`)
 
