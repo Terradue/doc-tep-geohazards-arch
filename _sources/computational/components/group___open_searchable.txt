@@ -1,0 +1,16 @@
+.. _group___open_searchable:
+
+OpenSearchable
+##############
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___open_searchable.iuml
+
+This is the internal interface for any real world entity to be processed in OpenSearch Engine
+

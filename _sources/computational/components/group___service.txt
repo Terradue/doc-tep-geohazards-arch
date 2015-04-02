@@ -1,0 +1,45 @@
+.. _group___service:
+
+Service
+#######
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___service.iuml
+
+This component is a wrapper for all users’ application level functionalities. It implements an open framework to plug services that then creates :ref:`Task <group___task>`:ref:`Task <group___task>` or :ref:`Scheduler <group___scheduler>`:ref:`Scheduler <group___scheduler>`. This framework controls common service functionalities:
+
+- :ref:`Persistence of Data <group___persistence>`:ref:`Persistence of Data <group___persistence>` on the service
+- Service definition parsing and template build
+- :ref:`Task <group___task>`:ref:`Task <group___task>` creation Practically, every service implements IService that defines all the parameters the service must or may include in the task or scheduler and several functions that
+- prepares the data access request view template for the web client;
+- reviews the parameters’ correctness;
+- builds the task with parameterized jobs composition. Once the task created by the service, the assigned :ref:`Computing Resource <group___computing_resource>`:ref:`Computing Resource <group___computing_resource>` handles it for submission.
+
+- :ref:`Persistence of Data <group___persistence>`:ref:`Persistence of Data <group___persistence>` on the service
+- Service definition parsing and template build
+- :ref:`Task <group___task>`:ref:`Task <group___task>` creation Practically, every service implements IService that defines all the parameters the service must or may include in the task or scheduler and several functions that
+- prepares the data access request view template for the web client;
+- reviews the parameters’ correctness;
+- builds the task with parameterized jobs composition. Once the task created by the service, the assigned :ref:`Computing Resource <group___computing_resource>`:ref:`Computing Resource <group___computing_resource>` handles it for submission.
+
+Dependencies
+------------
+- :ref:`Persistence of Data <group___persistence>`:ref:`Persistence of Data <group___persistence>` stores the service reference in the database
+:ref:`Persistence of Data <group___persistence>`:ref:`Persistence of Data <group___persistence>` stores the service reference in the database
+
+- :ref:`Authorisation <group___authorisation>`:ref:`Authorisation <group___authorisation>` controls access on the services
+:ref:`Authorisation <group___authorisation>`:ref:`Authorisation <group___authorisation>` controls access on the services
+
+- creates new :ref:`Task <group___task>`:ref:`Task <group___task>`
+creates new :ref:`Task <group___task>`:ref:`Task <group___task>`
+
+- is available on :ref:`Computing Resource <group___computing_resource>`:ref:`Computing Resource <group___computing_resource>`
+is available on :ref:`Computing Resource <group___computing_resource>`:ref:`Computing Resource <group___computing_resource>`
+
+

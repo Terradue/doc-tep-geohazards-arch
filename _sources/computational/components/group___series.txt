@@ -1,0 +1,31 @@
+.. _group___series:
+
+Series
+######
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___series.iuml
+
+This component represents a dataset series. Practically it is a non-final component that can be extended to implement other collections.
+
+Dependencies
+------------
+- core_DataModelAccess stores persistently the series information in the database
+core_DataModelAccess stores persistently the series information in the database
+
+- core_UserGroupACL controls the access on the series
+core_UserGroupACL controls the access on the series
+
+
+Interfaces
+------------
+- proxy data series items via OpenSearch 
+proxy data series items via OpenSearch 
+
+

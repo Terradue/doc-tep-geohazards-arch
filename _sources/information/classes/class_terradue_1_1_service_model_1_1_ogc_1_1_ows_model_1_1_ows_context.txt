@@ -1,0 +1,34 @@
+.. _class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_ows_context:
+
+Terradue::ServiceModel::Ogc::OwsModel::OwsContext
+#################################################
+
+This class is the overall container class for the OWS context document. 
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_ows_context.iuml
+
+
+
+Properties
+----------
+=================================================================================================================================== =============== ======================================================================================================================================================================
+Type                                                                                                                                Name            Summary
+=================================================================================================================================== =============== ======================================================================================================================================================================
+List< string >                                                                                                                      Authors         Identifier for the author of the document 
+
+string                                                                                                                              Publisher       Identifier for the publisher of the document 
+
+:ref:`Terradue::ServiceModel::Ogc::OwsModel::OwcCreator <class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_creator>`   Creator         The tool/application used to create the context document and its properties 
+
+:ref:`Terradue::ServiceModel::Ogc::OwsModel::OwcResource <class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_resource>` Resources       The description of a resource and its access parameters and configuration 
+
+object                                                                                                                              ContextMetadata Additional metadata describing the context document itself. The format recommendation is ISO19115 complaint metadata. The metadata standard used should be specified 
+
+=================================================================================================================================== =============== ======================================================================================================================================================================
+

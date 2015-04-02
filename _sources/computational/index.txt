@@ -7,6 +7,7 @@ Contents:
    :maxdepth: 2
    
    Level of abstraction <cv-purpose>
-   Items configurations <cv-configurations>
+   Computational Components <cv-components>
    Interfaces <cv-interfaces>
+   Service Model <cv-servicemodel>
    Summary <cv-summary>

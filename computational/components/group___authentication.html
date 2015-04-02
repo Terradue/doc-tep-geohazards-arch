@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Authentication &mdash; Geohazards Thematic Exploitation Platform Architecture 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Geohazards Thematic Exploitation Platform Architecture 1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Computational Viewpoint - Items configurations" href="../cv-components.html" />
+    <link rel="next" title="Authorisation" href="group___authorisation.html" />
+    <link rel="prev" title="Computational Viewpoint - Items configurations" href="../cv-components.html" />
+    <link rel="stylesheet" href="../../_static/terradue.css" type="text/css" />
+    <script src="../../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body>
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../../_static/t2Logo.png"></a>
+        <!--<a class="navbar-brand" href="../../index.html"><img class="navbar-brand-logo" src="../../_static/logo-geohazard.png" alt="sandbox-logo"/></a>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../../_static/logo-geohazard.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>1.0</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../enterprise/index.html">Enterprise Viewpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/definitions.html">Definitions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/definitions.html#architecture-viewpoints">Architecture viewpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/definitions.html#modeling-concepts">Modeling concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/purpose.html">Community concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/purpose.html#community-contract">Community contract</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/purpose.html#community-objectives">Community objectives</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/scope.html">Targeted operational processes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#system-capabilities">System Capabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#data-access">Data access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#processor-integration">Processor integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#data-processing-and-cloud-bursting">Data processing and Cloud bursting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/policies.html">Policies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/interactions.html">Design constraints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/interactions.html#different-services">Different services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/interactions.html#constraints-on-data-providers-administrators-interactions">Constraints on Data providers | Administrators interactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/interactions.html#constraints-on-processor-integrators-end-users-interactions">Constraints on Processor integrators | end-users interactions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/reqs-gsnl.html">Requirements - GEO Supersites and Natural Laboratories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/summary.html">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/references.html">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../information/index.html">Information Viewpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../information/iv-information.html">Information objects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_entity.html">Terradue::Portal::Entity</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_entity.html#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_entity.html#methods">Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_feature.html">Terradue::Portal::Feature</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_feature.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_group.html">Terradue::Portal::Group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_group.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_series.html">Terradue::Portal::Series</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_series.html#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_series.html#methods">Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_user.html">Terradue::Portal::User</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_user.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_wps_process_offering.html">Terradue::Portal::WpsProcessOffering</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_wps_process_offering.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_wps_provider.html">Terradue::Portal::WpsProvider</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_wps_provider.html#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_wps_provider.html#methods">Methods</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../information/iv-association.html">Association</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../information/iv-contractpolicy.html">Contract &amp; Policy</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Computational Viewpoint</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../cv-purpose.html">Level of abstraction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../cv-components.html">Computational Components</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Authentication</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___authorisation.html">Authorisation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___authorisation.html#dependencies">Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___context.html">Context</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___context.html#dependencies">Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___persistence.html">Persistence</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___persistence.html#interfaces">Interfaces</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___series.html">Series</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___series.html#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="group___series.html#interfaces">Interfaces</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___service.html">Service</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___service.html#dependencies">Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___web_context.html">Web Context</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___web_context.html#dependencies">Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___wps_provider.html">WPS Provider</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___wps_provider.html#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="group___wps_provider.html#interfaces">Interfaces</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___wps_service.html">WPS Service</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___wps_service.html#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="group___wps_service.html#interfaces">Interfaces</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cv-interfaces.html">Interfaces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="group___s_q_l_connector.html">SQL Connector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group___w_p_s.html">Web Processing Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group___open_searchable.html">OpenSearchable</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cv-servicemodel.html">Service Model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="group___o_w_s_context.html">OWS Context</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group___syndication.html">Syndication Feed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cv-summary.html">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../engineering/index.html">Engineering Viewpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../engineering/nv-purpose.html">Infrastructure constraints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engineering/nv-nodes.html">Deployment nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engineering/nv-channels.html">Deployment channels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engineering/nv-summary.html">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../technology/index.html">Technology Viewpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../technology/tv-purpose.html">Technology selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technology/tv-packages.html">Software packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technology/tv-standards.html">Implementation standards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technology/tv-summary.html">Summary</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Authentication</a><ul>
+<li><a class="reference internal" href="#dependencies">Dependencies</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="../cv-components.html" title="Previous Chapter: Computational Viewpoint - Items configurations"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Computational Vi...</span>
+    </a>
+  </li>
+  <li>
+    <a href="group___authorisation.html" title="Next Chapter: Authorisation"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Authorisation &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/Terradue/doc-tep-geohazards-arch/blob/master/source/computational/components/group___authentication.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../enterprise/index.html">Enterprise Viewpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../information/index.html">Information Viewpoint</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Computational Viewpoint</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../cv-purpose.html">Level of abstraction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../cv-components.html">Computational Components</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Authentication</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___authorisation.html">Authorisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group___context.html">Context</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group___persistence.html">Persistence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group___series.html">Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group___service.html">Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group___web_context.html">Web Context</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group___wps_provider.html">WPS Provider</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group___wps_service.html">WPS Service</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cv-interfaces.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cv-servicemodel.html">Service Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cv-summary.html">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../engineering/index.html">Engineering Viewpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../technology/index.html">Technology Viewpoint</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/Terradue/doc-tep-geohazards-arch/blob/master/source/computational/components/group___authentication.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="authentication">
+<span id="group-authentication"></span><h1>Authentication<a class="headerlink" href="#authentication" title="Permalink to this headline">¶</a></h1>
+<p class="plantuml">
+<object data="../../_images/plantuml-8d49b527ae46c62668196369917c29dafa7a31d2.svg" type="image/svg+xml" style="width:169px;height:127px;">
+<img src="../../_images/plantuml-8d49b527ae46c62668196369917c29dafa7a31d2.png" alt="!include includes/skins.iuml
+skinparam backgroundColor #FFFFFF
+skinparam componentStyle uml2
+!include target/rst/in/group___authentication.iuml" />
+
+</object></p>
+<p>It provides with the functions to identify a user through a generic interface for implementing multiple authentication mechanism.</p>
+<p class="plantuml">
+<object data="../../_images/plantuml-34a3a806e6e3c148a7fcdfb45fa6b26258d17f01.svg" type="image/svg+xml" style="width:839px;height:960px;">
+<img src="../../_images/plantuml-34a3a806e6e3c148a7fcdfb45fa6b26258d17f01.png" alt="!define DIAG_NAME Authentication mechanism Activity Diagram
+
+start
+:read session information;
+if (valid session) then (yes)
+    :Load user info from session;
+else (No)
+    while (user not authenticated &amp; next authentication method ?) is (yes)
+        if (Authentication successful) then (yes)
+            if (user exists) then (no)
+                if (authentication method allows user creation) then (yes)
+                    :create user account;
+                endif
+            endif
+         endif
+    endwhile (no)
+    if (user authenticated) then (yes)
+        if (user is enabled) then (no)
+            if ( configuration needs user activation ) then (yes)
+                :Throw User Activation Exception;
+                stop
+            endif
+        endif
+        :Load user info and create session;
+    endif
+endif
+stop
+
+footer
+DIAG_NAME
+(c) Terradue Srl
+endfooter" />
+
+</object></p>
+<p class="plantuml">
+<object data="../../_images/plantuml-34a3a806e6e3c148a7fcdfb45fa6b26258d17f01.svg" type="image/svg+xml" style="width:839px;height:960px;">
+<img src="../../_images/plantuml-34a3a806e6e3c148a7fcdfb45fa6b26258d17f01.png" alt="!define DIAG_NAME Authentication mechanism Activity Diagram
+
+start
+:read session information;
+if (valid session) then (yes)
+    :Load user info from session;
+else (No)
+    while (user not authenticated &amp; next authentication method ?) is (yes)
+        if (Authentication successful) then (yes)
+            if (user exists) then (no)
+                if (authentication method allows user creation) then (yes)
+                    :create user account;
+                endif
+            endif
+         endif
+    endwhile (no)
+    if (user authenticated) then (yes)
+        if (user is enabled) then (no)
+            if ( configuration needs user activation ) then (yes)
+                :Throw User Activation Exception;
+                stop
+            endif
+        endif
+        :Load user info and create session;
+    endif
+endif
+stop
+
+footer
+DIAG_NAME
+(c) Terradue Srl
+endfooter" />
+
+</object></p>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a> reads/writes the user information</li>
+</ul>
+<p><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a><a class="reference internal" href="group___persistence.html#group-persistence"><em>Persistence of Data</em></a> reads/writes the user information</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

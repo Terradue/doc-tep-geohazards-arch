@@ -1,0 +1,16 @@
+.. _group___atom:
+
+Atom Feed
+#########
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___atom.iuml
+
+This is the representation in Atom of OpenSearch query results
+

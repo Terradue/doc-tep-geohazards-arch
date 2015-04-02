@@ -1,7 +1,10 @@
-Terradue::Portal::WpsProcessOffering
-====================================
+.. _class_terradue_1_1_portal_1_1_wps_process_offering:
 
-Represents a WPS process offering on a remote WPS server. 
+Terradue::Portal::WpsProcessOffering
+####################################
+
+Represents a WPS process offering on a remote WPS server.
+
 
 .. uml::
 
@@ -14,10 +17,10 @@ Represents a WPS process offering on a remote WPS server.
 
 Properties
 ----------
-============================================================================================= ====================== ==================================================================================
-Type                                                                                          Name                   Summary
-============================================================================================= ====================== ==================================================================================
-`:doc:Terradue::Portal::WpsProvider <class_terradue_1_1_portal_1_1_wps_provider>`             Provider               Gets or sets the WPS provider to which the WPS process offering belongs.
-`:doc:Terradue::Portal::ComputingResource <class_terradue_1_1_portal_1_1_computing_resource>` FixedComputingResource Gets or sets the computing resource that must be used by the WPS process offering.
-============================================================================================= ====================== ==================================================================================
+================================================================================= ======== =========================================================================
+Type                                                                              Name     Summary
+================================================================================= ======== =========================================================================
+:ref:`Terradue::Portal::WpsProvider <class_terradue_1_1_portal_1_1_wps_provider>` Provider Gets or sets the WPS provider to which the WPS process offering belongs.
+
+================================================================================= ======== =========================================================================
 

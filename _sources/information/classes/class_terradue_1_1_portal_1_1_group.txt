@@ -1,7 +1,10 @@
-Terradue::Portal::Group
-=======================
+.. _class_terradue_1_1_portal_1_1_group:
 
-Represents a user group. 
+Terradue::Portal::Group
+#######################
+
+Represents a user group
+
 
 .. uml::
 
@@ -14,11 +17,14 @@ Represents a user group.
 
 Properties
 ----------
-=============== =========== ============================================================
+=============== =========== =============================================================
 Type            Name        Summary
-=============== =========== ============================================================
+=============== =========== =============================================================
 override string Name        Gets or sets the name, the unique identifier, of this group.
+
 string          Description Gets or sets the long description of this group.
+
 int             Priority    Gets or sets the optional privilege level of this group.
-=============== =========== ============================================================
+
+=============== =========== =============================================================
 

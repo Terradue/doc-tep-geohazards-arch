@@ -1,7 +1,10 @@
-Terradue::Portal::WpsProvider
-=============================
+.. _class_terradue_1_1_portal_1_1_wps_provider:
 
-Represents a remote provider of a Web Processing  . 
+Terradue::Portal::WpsProvider
+#############################
+
+Represents a remote provider of a Web Processing :ref:`Service <class_terradue_1_1_portal_1_1_service>`:ref:`Service <class_terradue_1_1_portal_1_1_service>`.
+
 
 .. uml::
 
@@ -10,21 +13,23 @@ Represents a remote provider of a Web Processing  .
   skinparam componentStyle uml2
   !include target/rst/in/class_terradue_1_1_portal_1_1_wps_provider.iuml
 
-This class is used as the computing resource on which WPS processes, which are equivalent to tasks, run. 
+This class is used as the computing resource on which WPS processes, which are equivalent to tasks, run.
 
 Properties
 ----------
-==== ===== ===============================================
+==== ===== ================================================
 Type Name  Summary
-==== ===== ===============================================
-bool Proxy Define if the provider is to be proxied or not.
-==== ===== ===============================================
+==== ===== ================================================
+bool Proxy Define if the provider is to be proxied or not 
+
+==== ===== ================================================
 
 Methods
 -------
-==== ======================= ==============================================================
+==== ======================= ===============================================================
 Type Name                    Summary
-==== ======================= ==============================================================
-void StoreProcessOfferings() Get and stores the process offerings from GetCapabilities url.
-==== ======================= ==============================================================
+==== ======================= ===============================================================
+void StoreProcessOfferings() Get and stores the process offerings from GetCapabilities url 
+
+==== ======================= ===============================================================
 
