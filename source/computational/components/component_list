@@ -1,0 +1,22 @@
+Computational Viewpoint - Component list
+########################################
+
+Components
+----------
+
+- :doc:`Authentication <group___authentication>`
+- :doc:`Authorisation <group___authorisation>`
+- :doc:`Computing Resource <group___computing_resource>`
+- :doc:`Context <group___context>`
+- :doc:`Persistence <group___persistence>`
+- :doc:`Series <group___series>`
+- :doc:`Service <group___service>`
+- :doc:`Web Context <group___web_context>`
+- :doc:`WPS Provider <group___wps_provider>`
+- :doc:`WPS Service <group___wps_service>`
+
+Interfaces
+----------
+
+- :doc:`SQL Connector <group___s_q_l_connector>`
+
