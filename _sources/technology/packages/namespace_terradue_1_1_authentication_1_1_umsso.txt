@@ -16,8 +16,13 @@ Terradue::Authentication::Umsso
 
 Software Page : `Terradue.Authentication.Umsso <https://git.terradue.com/sugar/terradue-authentication-umsso>`_
 
-Version : 1.9.11
+Version : 1.2.3
 
 
 License : `incubating <https://git.terradue.com/sugar/terradue-authentication-umsso/master/LICENSE.txt>`_
+
+
+
+Requires :
+- :ref:`namespace_terradue_1_1_portal`
 

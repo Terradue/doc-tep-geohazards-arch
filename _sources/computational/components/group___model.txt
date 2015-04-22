@@ -26,4 +26,5 @@ Software Packages
 -----------------
 - :ref:`namespace_terradue_1_1_service_model_1_1_ogc_1_1_ows_context`
 - :ref:`namespace_terradue_1_1_service_model_1_1_syndication`
+- :ref:`namespace_terradue_1_1_web_service_1_1_model`
 

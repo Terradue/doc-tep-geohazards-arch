@@ -1,0 +1,29 @@
+.. _namespace_terradue_1_1_open_search_1_1_data_analyzer:
+
+Terradue::OpenSearch::DataAnalyzer
+##################################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/namespace_terradue_1_1_open_search_1_1_data_analyzer.iuml
+
+:ref:`Terradue.Cloud <namespace_terradue_1_1_cloud>` Software Package
+
+Software Page : `DotNetOpenSearchDataAnalyzer <https://github.com/Terradue/DotNetOpenSearchDataAnalyzer>`_
+
+Version : 1.0.13
+
+
+License : `GPLv3 <https://github.com/DotNetOpenSearch/Terradue.OpenSearch/blob/master/LICENSE.txt>`_
+
+
+
+Requires :
+- :ref:`namespace_terradue_1_1_open_search`
+- :ref:`namespace_terradue_1_1_g_d_a_l_1_1_native`
+

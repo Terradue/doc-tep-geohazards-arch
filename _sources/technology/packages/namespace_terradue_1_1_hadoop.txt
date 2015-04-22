@@ -1,0 +1,23 @@
+.. _namespace_terradue_1_1_hadoop:
+
+Terradue::Hadoop
+################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/namespace_terradue_1_1_hadoop.iuml
+
+:ref:`Terradue.Hadoop <namespace_terradue_1_1_hadoop>` Software Package
+
+Software Page : `Terradue.Cloud <https://git.terradue.com/sugar/terradue-hadoop>`_
+
+Version : 1.3.2
+
+
+License : `incubating <https://git.terradue.com/sugar/terradue-hadoop>`_
+

@@ -25,5 +25,6 @@ Sub-Components
 Software Packages
 -----------------
 - :ref:`namespace_terradue_1_1_cloud`
+- :ref:`namespace_terradue_1_1_hadoop`
 - :ref:`namespace_terradue_1_1_open_nebula`
 

@@ -12,11 +12,12 @@ Terradue::Metadata::EarthObservation
   skinparam componentStyle uml2
   !include target/rst/in/namespace_terradue_1_1_metadata_1_1_earth_observation.iuml
 
+DotNetEarthObservation Software Package
+
+Software Page : `DotNetEarthObservation <https://github.com/Terradue/DotNetEarthObservation>`_
+
+Version : 1.2.2
 
 
-Software Page : ` <>`_
-
-Version : 
-
-License : ` <>`_
+License : `GPLv3 <https://github.com/Terradue/Terradue.Metadata.EarthObservation/blob/master/LICENSE.txt>`_
 

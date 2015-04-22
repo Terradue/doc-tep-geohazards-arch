@@ -1,0 +1,28 @@
+.. _namespace_terradue_1_1_web_service_1_1_model:
+
+Terradue::WebService::Model
+###########################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/namespace_terradue_1_1_web_service_1_1_model.iuml
+
+:ref:`Terradue.WebService.Model <namespace_terradue_1_1_web_service_1_1_model>` Software Package
+
+Software Page : `Terradue.WebService.Model <https://git.terradue.com/sugar/terradue-webservice-model>`_
+
+Version : 1.1.3
+
+
+License : `incubating <https://git.terradue.com/sugar/terradue-webservice-model>`_
+
+
+
+Requires :
+- :ref:`namespace_terradue_1_1_portal`
+

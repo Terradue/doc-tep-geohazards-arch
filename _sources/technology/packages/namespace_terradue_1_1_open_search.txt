@@ -19,5 +19,5 @@ Software Page : `DotNetOpenSearch <https://github.com/Terradue/DotNetOpenSearch>
 Version : 1.9.11
 
 
-License : `GPLv3 <https://github.com/Terradue.GeoJson/Terradue.OpenSearch/blob/master/LICENSE.txt>`_
+License : `GPLv3 <https://github.com/DotNetOpenSearch/Terradue.OpenSearch/blob/master/LICENSE.txt>`_
 
