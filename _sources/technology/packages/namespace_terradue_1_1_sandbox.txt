@@ -1,0 +1,30 @@
+.. _namespace_terradue_1_1_sandbox:
+
+Terradue::Sandbox
+#################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/namespace_terradue_1_1_sandbox.iuml
+
+:ref:`Terradue.Sandbox <namespace_terradue_1_1_sandbox>` Software Package
+
+Software Page : `Terradue.Cloud <https://git.terradue.com/sugar/terradue-sandbox>`_
+
+Version : 1.3.6
+
+
+License : `incubating <https://git.terradue.com/sugar/terradue-sandbox>`_
+
+
+
+Requires :
+- :ref:`namespace_terradue_1_1_portal`
+- :ref:`namespace_terradue_1_1_cloud`
+- :ref:`namespace_terradue_1_1_hadoop`
+
