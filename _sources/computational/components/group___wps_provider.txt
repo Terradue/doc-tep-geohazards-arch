@@ -15,7 +15,11 @@ WPS Provider
 This component is an extension of :ref:`Computing Resource <group___computing_resource>` for providing with WPS Server as a processing resource. It has two main functions:
 
 - analyses the GetCapabilities() function of the WPS server to retrieve all the process offered.
-- submits, controls and montiors processing over a WPS ServerBelow, the sequence diagram describes the analaysis process to retrieve WPS services and parameters.
+- submits, controls and montiors processing over a WPS Server
+
+Below, the sequence diagram describes the analaysis process to retrieve WPS services and parameters.
+
+
 
 .. uml::
 
@@ -143,6 +147,8 @@ This component is an extension of :ref:`Computing Resource <group___computing_re
 	(c) Terradue Srl
 	endfooter
 	
+
+""
 
 Dependencies
 ------------

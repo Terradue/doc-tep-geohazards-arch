@@ -1,0 +1,22 @@
+.. _namespace_terradue_1_1_github:
+
+Terradue::Github
+################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/namespace_terradue_1_1_github.iuml
+
+
+
+Software Page : ` <>`_
+
+Version : 
+
+License : ` <>`_
+

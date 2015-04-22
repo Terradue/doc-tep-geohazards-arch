@@ -1,0 +1,22 @@
+.. _namespace_terradue_1_1_open_search_1_1_geo_json:
+
+Terradue::OpenSearch::GeoJson
+#############################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/namespace_terradue_1_1_open_search_1_1_geo_json.iuml
+
+
+
+Software Page : ` <>`_
+
+Version : 
+
+License : ` <>`_
+

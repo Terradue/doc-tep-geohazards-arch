@@ -1,0 +1,27 @@
+.. _group___security:
+
+Security
+########
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___security.iuml
+
+
+
+
+Sub-Components
+--------------
+- :ref:`group___auth___umsso`
+- :ref:`group___authentication`
+
+
+Software Packages
+-----------------
+- :ref:`namespace_terradue_1_1_authentication_1_1_umsso`
+

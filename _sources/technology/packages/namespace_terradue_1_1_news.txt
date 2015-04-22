@@ -1,0 +1,22 @@
+.. _namespace_terradue_1_1_news:
+
+Terradue::News
+##############
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/namespace_terradue_1_1_news.iuml
+
+
+
+Software Page : ` <>`_
+
+Version : 
+
+License : ` <>`_
+

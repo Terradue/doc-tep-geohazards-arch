@@ -12,10 +12,18 @@ Authorisation
   skinparam componentStyle uml2
   !include target/rst/in/group___authorisation.iuml
 
-It provides with the functions to define privileges for users or groups on entities for which restrictions are useful, such as entities that represent resources (computing resources or processing services etc.).The authorisation consists of two phases:
+It provides with the functions to define privileges for users or groups on entities for which restrictions are useful, such as entities that represent resources (computing resources or processing services etc.).
+
+""
+
+The authorisation consists of two phases:
 
 - a generic phase where the current user's access privileges are compared to the necessary privileges for the accessed resource
-- an optional specific phase where the same check is performed for the requested operation. This phase is specific to the entity subclass in question as the possible operations are entity-specific.If IfyContext.RestrictedMode is <<unknown>> (the default value) and the user has insufficient privileges to access an item, the item is not loaded and an exception is thrown immediately. Otherwise, if IfyContext.RestrictedMode is <<unknown>>, the authorisation check needs to be done by the code that loaded the entity item. This code should check the CanView property of the loaded item and if its value is <<unknown>>, it may either continue or throw another, more appropriate, exception. The latter procedure is also followed for the second phase that checks operation authorisations. The authorisation for a specific operation must be ensured by the code of the entity subclass. The central authorisation model supports this task by initialising the properties corresponding to the operation privilege that are applicable to the entity subclass.
+- an optional specific phase where the same check is performed for the requested operation. This phase is specific to the entity subclass in question as the possible operations are entity-specific.
+
+If IfyContext.RestrictedMode is <<unknown>> (the default value) and the user has insufficient privileges to access an item, the item is not loaded and an exception is thrown immediately. Otherwise, if IfyContext.RestrictedMode is <<unknown>>, the authorisation check needs to be done by the code that loaded the entity item. This code should check the CanView property of the loaded item and if its value is <<unknown>>, it may either continue or throw another, more appropriate, exception. The latter procedure is also followed for the second phase that checks operation authorisations. The authorisation for a specific operation must be ensured by the code of the entity subclass. The central authorisation model supports this task by initialising the properties corresponding to the operation privilege that are applicable to the entity subclass.
+
+
 
 .. uml::
 
@@ -58,4 +66,10 @@ Dependencies
 ------------
 - :ref:`Persistence of Data <group___persistence>` reads/writes the privileges persistently
 
+
+
+Classes
+-------
+- :ref:`class_terradue_1_1_portal_1_1_group`
+- :ref:`class_terradue_1_1_portal_1_1_user`
 

@@ -1,0 +1,29 @@
+.. _group___model:
+
+Model
+#####
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___model.iuml
+
+
+
+
+Sub-Components
+--------------
+- :ref:`group___atom`
+- :ref:`group___o_w_s_context`
+- :ref:`group___syndication`
+
+
+Software Packages
+-----------------
+- :ref:`namespace_terradue_1_1_service_model_1_1_ogc_1_1_ows_context`
+- :ref:`namespace_terradue_1_1_service_model_1_1_syndication`
+

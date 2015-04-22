@@ -1,0 +1,27 @@
+.. _group___open_search:
+
+OpenSearch
+##########
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___open_search.iuml
+
+
+
+
+Sub-Components
+--------------
+- :ref:`group___open_search_engine`
+- :ref:`group___open_searchable`
+
+
+Software Packages
+-----------------
+- :ref:`namespace_terradue_1_1_open_search`
+

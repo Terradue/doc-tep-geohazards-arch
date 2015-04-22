@@ -14,15 +14,22 @@ Series
 
 This component represents a dataset series. Practically it is a non-final component that can be extended to implement other collections.
 
+""
+
 Dependencies
 ------------
-- core_DataModelAccess stores persistently the series information in the database
+- :ref:`Persistence of Data <group___persistence>` stores persistently the series information in the database
 
-- core_UserGroupACL controls the access on the series
+- :ref:`Authorisation <group___authorisation>` controls the access on the series
 
 
 Interfaces
 ------------
-- proxy data series items via OpenSearch 
+- proxy data series items via IOpenSearchable
 
+
+
+Classes
+-------
+- :ref:`class_terradue_1_1_portal_1_1_series`
 

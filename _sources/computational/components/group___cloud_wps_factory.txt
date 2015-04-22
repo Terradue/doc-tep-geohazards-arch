@@ -1,0 +1,42 @@
+.. _group___cloud_wps_factory:
+
+CloudWpsFactory
+###############
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___cloud_wps_factory.iuml
+
+This component enables Cloud Appliance that exposes a WPS service to be exposed as a processing service automatically.
+
+
+
+.. uml::
+
+
+	
+	TODO: sequence diagram
+	
+	
+
+Dependencies
+------------
+- calls :ref:`Cloud Provider <group___cloud_provider>` to retrieve the computing appliances
+
+- calls :ref:`OneClient <group___one_client>` to contact OpenNebula interface
+
+- creates :ref:`WPS Provider <group___wps_provider>` for each computing appliance that expose WPS 
+
+- creates :ref:`WPS Service <group___wps_service>` for each process found in GetCapabilities of the WPS Service
+
+
+
+Classes
+-------
+- :ref:`class_terradue_1_1_tep_q_w_1_1_controller_1_1_cloud_wps_factory`
+

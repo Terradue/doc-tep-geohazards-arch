@@ -1,0 +1,41 @@
+.. _namespace_terradue_1_1_portal:
+
+Terradue::Portal
+################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/namespace_terradue_1_1_portal.iuml
+
+:ref:`Terradue.Portal <namespace_terradue_1_1_portal>` Software Package
+
+Software Page : `Terradue.Portal <https://git.terradue.com/sugar/terradue-portal>`_
+
+Version : 2.6.26
+
+
+License : `incubating <https://git.terradue.com/sugar/terradue-portal>`_
+
+
+
+Requires :
+- :ref:`namespace_terradue_1_1_open_search`
+
+
+
+Classes
+-------
+- :ref:`class_terradue_1_1_portal_1_1_entity`
+- :ref:`class_terradue_1_1_portal_1_1_feature`
+- :ref:`class_terradue_1_1_portal_1_1_group`
+- :ref:`class_terradue_1_1_portal_1_1_series`
+- :ref:`class_terradue_1_1_portal_1_1_service`
+- :ref:`class_terradue_1_1_portal_1_1_user`
+- :ref:`class_terradue_1_1_portal_1_1_wps_process_offering`
+- :ref:`class_terradue_1_1_portal_1_1_wps_provider`
+

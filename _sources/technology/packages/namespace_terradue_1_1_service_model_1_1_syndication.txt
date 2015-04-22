@@ -1,0 +1,23 @@
+.. _namespace_terradue_1_1_service_model_1_1_syndication:
+
+Terradue::ServiceModel::Syndication
+###################################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/namespace_terradue_1_1_service_model_1_1_syndication.iuml
+
+DotNetSyndication Software Package
+
+Software Page : `DotNetSyndication <https://github.com/Terradue/DotNetSyndication>`_
+
+Version : 1.0.0
+
+
+License : `GPLv3 <https://github.com/Terradue/DotNetSyndication/blob/master/LICENSE>`_
+

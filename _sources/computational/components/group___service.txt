@@ -21,6 +21,8 @@ This component is a wrapper for all users’ application level functionalities. 
 - reviews the parameters’ correctness;
 - builds the task with parameterized jobs composition. Once the task created by the service, the assigned :ref:`Computing Resource <group___computing_resource>` handles it for submission.
 
+""
+
 Dependencies
 ------------
 - :ref:`Persistence of Data <group___persistence>` stores the service reference in the database
@@ -31,4 +33,11 @@ Dependencies
 
 - is available on :ref:`Computing Resource <group___computing_resource>`
 
+
+
+Classes
+-------
+- :ref:`class_terradue_1_1_portal_1_1_script_based_service`
+- :ref:`struct_terradue_1_1_portal_1_1_service_1_1_category`
+- :ref:`class_terradue_1_1_portal_1_1_service`
 

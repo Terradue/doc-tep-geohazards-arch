@@ -1,0 +1,25 @@
+.. _group___cloud_appliance:
+
+Cloud Applicance
+################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___cloud_appliance.iuml
+
+The component represents an abstract Cloud Appliance available as a computing resources. Practically, a class that implements :ref:`Terradue.Cloud.CloudAppliance <class_terradue_1_1_cloud_1_1_cloud_appliance>` represents a virtual machine running on a :ref:`Terradue.Cloud.CloudProvider <class_terradue_1_1_cloud_1_1_cloud_provider>`
+
+Dependencies
+------------
+- :ref:`Persistence of Data <group___persistence>` stores/loads persistently the appliance in the database
+
+- :ref:`Cloud Provider <group___cloud_provider>` controls the appliance
+
+- :ref:`Authorisation <group___authorisation>` controls the access on the appliance
+
+

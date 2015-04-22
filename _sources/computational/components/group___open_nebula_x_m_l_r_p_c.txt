@@ -1,0 +1,16 @@
+.. _group___open_nebula_x_m_l_r_p_c:
+
+OpenNebula XML-RPC Interface
+############################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___open_nebula_x_m_l_r_p_c.iuml
+
+The XML-RPC interface is the primary interface for OpenNebula, and it exposes all the functionality to interface the OpenNebula daemon. Through the XML-RPC interface, it is possible to control and manage any OpenNebula resource, including virtual machines, networks, images, users, hosts and clusters.
+

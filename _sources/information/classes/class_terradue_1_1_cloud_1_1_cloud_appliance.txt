@@ -1,0 +1,45 @@
+.. _class_terradue_1_1_cloud_1_1_cloud_appliance:
+
+Terradue::Cloud::CloudAppliance
+###############################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_cloud_1_1_cloud_appliance.iuml
+
+
+
+Properties
+----------
+=================================================================================== ======== =============================================================
+Type                                                                                Name     Summary
+=================================================================================== ======== =============================================================
+:ref:`Terradue::Cloud::CloudProvider <class_terradue_1_1_cloud_1_1_cloud_provider>` Provider Gets (or sets) the provider to which the appliance belongs.
+
+string                                                                              RemoteId 
+string                                                                              Hostname 
+string                                                                              Owner    
+int                                                                                 Cores    Gets the number of CPU cores assigned to the instance.
+
+float                                                                               Memory   Gets the maximum RAM allocated to the instance in gigabytes.
+
+MachineState                                                                        State    
+=================================================================================== ======== =============================================================
+
+Methods
+-------
+============= ========== =======
+Type          Name       Summary
+============= ========== =======
+abstract bool Start()    
+abstract bool Stop()     
+abstract bool Suspend()  
+abstract bool Resume()   
+abstract bool Shutdown() 
+============= ========== =======
+

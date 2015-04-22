@@ -1,0 +1,21 @@
+.. _group___one_client:
+
+OneClient
+#########
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___one_client.iuml
+
+DotNet4One Client makes XML-RPC requests to the interface exposed by an OpenNebula server.
+
+Interfaces
+------------
+- calls :ref:`OpenNebula XML-RPC Interface <group___open_nebula_x_m_l_r_p_c>` interface to perform action on Cloud Controller
+
+
