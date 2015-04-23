@@ -33,7 +33,7 @@
     <link rel="top" title="Geohazards Thematic Exploitation Platform Architecture 1.0 documentation" href="../index.html" />
     <link rel="up" title="Engineering Viewpoint" href="index.html" />
     <link rel="next" title="Engineering Viewpoint - Deployment channels" href="nv-channels.html" />
-    <link rel="prev" title="Engineering Viewpoint - Infrastructure Constraints" href="nv-infra-constraint.html" />
+    <link rel="prev" title="Engineering Viewpoint - Interaction Constraints" href="nv-inter-constraint.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
   
@@ -257,10 +257,13 @@
 <li class="toctree-l4"><a class="reference internal" href="nv-infra-constraint.html#web-portal-security-constraints">Web Portal Security Constraints</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="nv-infra-constraint.html">Interaction Constraints</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="nv-infra-constraint.html#general-operating-system-constraints">General Operating System Constraints</a></li>
-<li class="toctree-l4"><a class="reference internal" href="nv-infra-constraint.html#web-portal-computing-constraints">Web Portal Computing Constraints</a></li>
-<li class="toctree-l4"><a class="reference internal" href="nv-infra-constraint.html#web-portal-security-constraints">Web Portal Security Constraints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nv-inter-constraint.html">Interaction Constraints</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="nv-inter-constraint.html#peripheral-constraints">Peripheral Constraints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nv-inter-constraint.html#network-support-constraints">Network Support Constraints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nv-inter-constraint.html#database-constraints">Database Constraints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nv-inter-constraint.html#middleware-contraints">Middleware Contraints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nv-inter-constraint.html#cots-package-constraints">COTS Package Constraints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nv-inter-constraint.html#data-transport-constraints">Data Transport Constraints</a></li>
 </ul>
 </li>
 </ul>
@@ -325,7 +328,7 @@
               
                 
   <li>
-    <a href="nv-infra-constraint.html" title="Previous Chapter: Engineering Viewpoint - Infrastructure Constraints"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Engineering View...</span>
+    <a href="nv-inter-constraint.html" title="Previous Chapter: Engineering Viewpoint - Interaction Constraints"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Engineering View...</span>
     </a>
   </li>
   <li>
@@ -390,7 +393,87 @@
       
   <div class="section" id="engineering-viewpoint-deployment-nodes">
 <h1>Engineering Viewpoint - Deployment nodes<a class="headerlink" href="#engineering-viewpoint-deployment-nodes" title="Permalink to this headline">¶</a></h1>
-<p>This section is under development.</p>
+<p class="plantuml">
+<object data="../_images/plantuml-9a5806a0a4c43e4f893da69ed0db4182f8810048.svg" type="image/svg+xml" style="width:2460px;height:1075px;">
+<img src="../_images/plantuml-9a5806a0a4c43e4f893da69ed0db4182f8810048.png" alt="skinparam component {
+    BackgroundColor&lt;&lt;tep&gt;&gt; RosyBrown
+    BorderColor&lt;&lt;tep&gt;&gt; black
+}
+
+cloud &quot;Terradue Private Cloud&quot; {
+
+        node &quot;Proxy&quot; {
+                [HTTP Proxy Server] -- [Web Service Firewall]
+        }
+
+        node &quot;VPN Gateway&quot; {
+                [OpenVPN Server] .. [Cloud Firewall] : dynamic rules
+                [OpenVPN Server] -- [Cloud Firewall]
+        }
+
+        node &quot;Cloud Controller&quot; {
+          [HTTP Sunstone Dashboard] -- [OpenNebula] : XML-RPC
+        }
+
+
+
+        frame &quot;Virtual Hosts&quot; {
+
+                package &quot;Terradue Service&quot; {
+
+                        node &quot;Web Portal&quot; &lt;&lt; VM &gt;&gt; {
+                          [HTTP Web Portal Server] &lt;&lt; tep &gt;&gt;
+                          database &quot;MySql&quot; {
+                                [DB Tep]
+                          }
+                          [HTTP Web Portal Server] -- [DB Tep]
+                        }
+
+                        node &quot;Catalogue&quot; &lt;&lt; VM &gt;&gt; {
+                          [HTTP OpenSearch Catalogue] &lt;&lt; tep &gt;&gt;
+                          database &quot;ElasticSearch&quot; {
+                                [Index EO]
+                          }
+                          [HTTP OpenSearch Catalogue] -- [Index EO]
+                        }
+
+                }
+
+                package &quot;Users&quot; {
+                        node &quot;Developer Cloud Sandbox&quot; &lt;&lt; VM &gt;&gt; {
+                                [HTTP Sandbox Dashboard] -- [User App]
+                                [Sandbox WPS Server] -- [User App]
+                                [SSH Server] -- [User App]
+                        }
+
+                        node &quot;ESA CloudToolbox&quot; &lt;&lt; VM &gt;&gt; {
+                                [VNC Server] -- [Sentinel-1 toolbox]
+                                [VNC Server] -- [NEST]
+                                [VNC Server] -- [GAMMA]
+                                [VNC Server] -- [Matlab]
+
+                        }
+                }
+
+        }
+
+        [HTTP Web Portal Server] -- [Sandbox WPS Server] : HTTP
+        [HTTP Web Portal Server] -- [OpenNebula] : XML-RPC
+
+        [Web Service Firewall] -- [HTTP Web Portal Server] : HTTP
+        [Web Service Firewall] -- [HTTP OpenSearch Catalogue] : HTTP
+        [Web Service Firewall] -- [HTTP Sunstone Dashboard] : HTTP
+
+        [Cloud Firewall] -- [VNC Server]
+        [Cloud Firewall] -- [SSH Server] : SSH
+        [Cloud Firewall] -- [HTTP Sandbox Dashboard] : HTTP
+}
+
+() &quot;https://geohazards-tep.eo.esa.int/&quot; -- [HTTP Proxy Server] : HTTPS
+() &quot;https://access.terradue.com/&quot; -- [OpenVPN Server] : HTTPS
+() &quot;https://cloud.terradue.com/&quot; -- [HTTP Proxy Server] : HTTPS" />
+
+</object></p>
 </div>
 
 

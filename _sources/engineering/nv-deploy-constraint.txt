@@ -11,5 +11,5 @@ Interaction Constraints.
    :maxdepth: 1
 
    Infrastructure Constraints <nv-infra-constraint>
-   Interaction Constraints <nv-infra-constraint>
+   Interaction Constraints <nv-inter-constraint>
    
