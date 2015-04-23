@@ -81,18 +81,30 @@
 								<resource>
 									<directory>/Users/emathot/Workspace/Terradue/system/TepQW/build/xml/</directory>
 									<include>group___atom.xml</include>
+									<include>group___auth___umsso.xml</include>
 									<include>group___authentication.xml</include>
 									<include>group___authorisation.xml</include>
 									<include>group___context.xml</include>
+									<include>group___cloud.xml</include>
+									<include>group___cloud_appliance.xml</include>
+									<include>group___cloud_provider.xml</include>
+									<include>group___cloud_wps_factory.xml</include>
+									<include>group___core.xml</include>
+									<include>group___model.xml</include>
 									<include>group___o_w_s_context.xml</include>
 									<include>group___o_w_s_context_atom_feed.xml</include>
+									<include>group___one_client.xml</include>
+									<include>group___open_nebula_x_m_l_r_p_c.xml</include>
+									<include>group___open_search.xml</include>
 									<include>group___open_search_engine.xml</include>
 									<include>group___open_searchable.xml</include>
 									<include>group___persistence.xml</include>
 									<include>group___s_q_l_connector.xml</include>
+									<include>group___security.xml</include>
 									<include>group___series.xml</include>
 									<include>group___service.xml</include>
 									<include>group___syndication.xml</include>
+									<include>group___tep.xml</include>
 									<include>group___w_p_s.xml</include>
 									<include>group___web_context.xml</include>
 									<include>group___wps_provider.xml</include>
@@ -106,6 +118,29 @@
 							        <include>class_terradue_1_1_portal_1_1_group.xml</include>
 							        <include>class_terradue_1_1_portal_1_1_feature.xml</include>
 							        <include>class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model*</include>
+							        <include>class_terradue_1_1_cloud_1_1_cloud_appliance.xml</include>
+							        <include>class_terradue_1_1_cloud_1_1_cloud_provider.xml</include>
+							        <include>class_terradue_1_1_tep_q_w_1_1_controller_1_1_cloud_wps_factory.xml</include>
+							        <include>namespace_terradue_1_1_open_search.xml</include>
+							        <include>namespace_terradue_1_1_portal.xml</include>
+							        <include>namespace_terradue_1_1_authentication_1_1_umsso.xml</include>
+							        <include>namespace_terradue_1_1_cloud.xml</include>
+							        <include>namespace_terradue_1_1_g_d_a_l_1_1_native.xml</include>
+							        <include>namespace_terradue_1_1_geo_json.xml</include>
+							        <include>namespace_terradue_1_1_github.xml</include>
+							        <include>namespace_terradue_1_1_hadoop.xml</include>
+							        <include>namespace_terradue_1_1_metadata_1_1_earth_observation.xml</include>
+							        <include>namespace_terradue_1_1_service_model_1_1_ogc_1_1_ows_context.xml</include>
+							        <include>namespace_terradue_1_1_service_model_1_1_syndication.xml</include>
+							        <include>namespace_terradue_1_1_news.xml</include>
+							        <include>namespace_terradue_1_1_open_nebula.xml</include>
+							        <include>namespace_terradue_1_1_open_search_1_1_data_analyzer.xml</include>
+							        <include>namespace_terradue_1_1_open_search_1_1_geo_json.xml</include>
+							        <include>namespace_terradue_1_1_open_search_1_1_tumblr.xml</include>
+							        <include>namespace_terradue_1_1_open_search_1_1_twitter.xml</include>
+							        <include>namespace_terradue_1_1_sandbox.xml</include>
+							        <include>namespace_terradue_1_1_tep_q_w.xml</include>
+							        <include>namespace_terradue_1_1_web_service_1_1_model.xml</include>
 								</resource>
 							</resources>
 							<outputDirectory>${project.build.directory}/xml</outputDirectory>
@@ -162,6 +197,25 @@
 								</resource>
 							</resources>
 							<outputDirectory>${project.build.directory}/source/computational/components</outputDirectory>
+						</configuration>
+					</execution>
+					<execution>
+						<id>copy-packages-sources</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<resources>
+								<resource>
+									<directory>${project.build.directory}/rst/in</directory>
+									<includes>
+							          <include>namespace*.rst</include>
+							          <include>namespace*.iuml</include>
+							        </includes>
+								</resource>
+							</resources>
+							<outputDirectory>${project.build.directory}/source/technology/packages</outputDirectory>
 						</configuration>
 					</execution>
 				</executions>

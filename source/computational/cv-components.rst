@@ -1,5 +1,5 @@
-Computational Viewpoint - Items configurations
-##############################################
+Computational Viewpoint - Components
+####################################
 
 The set of computational objects were carried from those defined in enterprise and information viewpoints.
 
@@ -9,17 +9,14 @@ If you are using your web browser to read this document, you can click individua
 
 .. include:: component_diagram.rst
 
-The complete list of components:
+The components group list:
 
 .. toctree::
    :maxdepth: 1
    
-   Authentication <components/group___authentication>
-   Authorisation <components/group___authorisation>
-   Context <components/group___context>
-   Persistence <components/group___persistence>
-   Series <components/group___series>
-   Service <components/group___service>
-   Web Context <components/group___web_context>
-   WPS Provider <components/group___wps_provider>
-   WPS Service <components/group___wps_service>
+   Cloud <components/group___cloud>
+   Core <components/group___core>
+   Model <components/group___model>
+   OpenSearch <components/group___open_search>
+   Security <components/group___security>
+   Tep <components/group___tep>

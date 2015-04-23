@@ -25,6 +25,11 @@
    !include target/rst/in/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_resource.iuml
    !include target/rst/in/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_ows_context.iuml
 
+   !include target/rst/in/class_terradue_1_1_cloud_1_1_cloud_appliance.iuml
+   !include target/rst/in/class_terradue_1_1_cloud_1_1_cloud_provider.iuml
+
+   !include target/rst/in/class_terradue_1_1_tep_q_w_1_1_controller_1_1_cloud_wps_factory.iuml
+
    !include target/rst/in/class_relations.iuml
 
   footer
