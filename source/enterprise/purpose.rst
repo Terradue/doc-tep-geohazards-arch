@@ -105,7 +105,7 @@ For the GEP community, the designed system has to implement technical processes 
 
 * EV_Objective **ceos1**: Foster EO resource & knowledge sharing for capacity building at global scale
 * EV_Objective **ceos2**: Provide EO data (InSAR, optical) and processing capacities to existing initiatives
-* EV_Objective **ceos3**: Demonstrate advanced science products for rapid earthquake response & and reduce impact and risk from volcanic eruptions
+* EV_Objective **ceos3**: Demonstrate advanced science products for rapid earthquake response and to reduce impact & risk from volcanic eruptions
 
 **Geohazards Supersites and Natural Laboratories synergy**
 

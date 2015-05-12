@@ -1,6 +1,11 @@
 Geohazards Thematic Exploitation Platform Architecture
 ======================================================
 
+This architecture document follows the RM-ODP framework (ISO/IEC 10746 | ITU-T Recommendations X.900), 
+a Reference Model of Open Distributed Processing.
+
+The GEP architecture contributes to evolve the ESA SSEP architecture, and also aims at providing recommendations for the future Thematic Exploitation Platform architectures.
+
 Contents:
 
 .. toctree::
