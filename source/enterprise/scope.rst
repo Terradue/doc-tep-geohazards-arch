@@ -155,16 +155,27 @@ Capacity Building through Data Sharing
 
 The Geohazards Web Portal is investigating on different work areas (or 'contexts'):
 
-* "EO Data": 
-** dedicated to EO data collections available as input data for processing tasks
-** provides Portal links to automate the discovery allowing users to easily feed processing tasks
-* "EO-based products":
-** dedicated to GEP processors results (final and intermediate processing outputs) 
-** provides Portal links to processing jobs runs, to allow users understand a processor, and its possible improvements 
-* "Publications":
-** related to the scientific community curated results (scientific papers)
-** provides Portal links to collateral resources (like in GEP, data and processors) that allow researchers to understand and reproduce an experiment or a production
-* "Community":
-** dedicated to geotag and reference web accessible content that labs, institutes, agencies, ... are openly sharing on the web (articles and blog posts, products images delivered in web-browser compatible formats, ...)
-** provides a Portal integration mechanism based on the OGC standard "OWS Context" (http://www.opengeospatial.org/standards/owc)
+EO Data
++++++++
+
+* dedicated to EO data collections available as input data for processing tasks
+* provides Portal links to automate the discovery allowing users to easily feed processing tasks
+
+EO-based products
++++++++++++++++++
+
+* dedicated to GEP processors results (final and intermediate processing outputs) 
+* provides Portal links to processing jobs runs, to allow users understand a processor, and its possible improvements 
+
+Publications
+++++++++++++
+
+* related to the scientific community curated results (scientific papers)
+* provides Portal links to collateral resources (like in GEP, data and processors) that allow researchers to understand and reproduce an experiment or a production
+
+Community
++++++++++
+
+* dedicated to geotag and reference web accessible content that labs, institutes, agencies, ... are openly sharing on the web (articles and blog posts, products images delivered in web-browser compatible formats, ...)
+* provides a Portal integration mechanism based on the OGC standard "OWS Context" (http://www.opengeospatial.org/standards/owc)
 
