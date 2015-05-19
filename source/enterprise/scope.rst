@@ -144,7 +144,7 @@ The platform is meant to allow users to perform data visualisation tasks:
 Reproducible Science
 --------------------
 
-The Geohazards Platform is investigating on different collaborative eScience scenarios:
+The Geohazards Platform is investigating on different collaborative eScience scenarios made available to users:
 
 * Job run sharing, allowing users to see a job processing parameters and results, and reuse a job definition as a baseline for further runs. 
 * Collaborative work on algorithm integration, Virtual Machines accessing Git repositories, like offered by social coding platforms such as GitHub).
@@ -153,7 +153,7 @@ The Geohazards Platform is investigating on different collaborative eScience sce
 Capacity Building through Data Sharing
 --------------------------------------
 
-The Geohazards Web Portal is investigating on different work areas (or 'contexts'):
+The Geohazards Web Portal is investigating on different work areas (or 'contexts') made available to users:
 
 EO Data
 +++++++
