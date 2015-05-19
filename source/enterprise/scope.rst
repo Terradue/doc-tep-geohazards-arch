@@ -131,3 +131,40 @@ Users define input data and select a results location (e.g. portal, cloud block 
 
        endUser -> userCloudStorage: access generated EO-based products
        endUser -> geoBrowser: share generated EO-based products
+
+Visualization
+-------------
+
+The platform is meant to allow users to perform data visualisation tasks:
+
+* from processing software toolboxes hosted on their dedicated virtual machine: visualize and analyse EO-based products, e.g. to further apply data manipulation tools to them.
+* from Web Portal Geobrowser: overlay EO data collections density maps, geohazards events layers (e.g. Disasters Charter activations)
+* still from the Web Portal Geobrowser: combine EO data footprints and EO-based products to support data processing decision making (selection of processing input data, discovery and analysis of data processing results)
+
+Reproducible Science
+--------------------
+
+The Geohazards Platform is investigating on different collaborative eScience scenarios:
+
+* Job run sharing, allowing users to see a job processing parameters and results, and reuse a job definition as a baseline for further runs. 
+* Collaborative work on algorithm integration, Virtual Machines accessing Git repositories, like offered by social coding platforms such as GitHub).
+* Cloud bursting of Processing services to Commercial Clouds, in order to enable low-cost, massive data processing campaigns.
+
+Capacity Building through Data Sharing
+--------------------------------------
+
+The Geohazards Web Portal is investigating on different work areas (or 'contexts'):
+
+* "EO Data": 
+** dedicated to EO data collections available as input data for processing tasks
+** provides Portal links to automate the discovery allowing users to easily feed processing tasks
+* "EO-based products":
+** dedicated to GEP processors results (final and intermediate processing outputs) 
+** provides Portal links to processing jobs runs, to allow users understand a processor, and its possible improvements 
+* "Publications":
+** related to the scientific community curated results (scientific papers)
+** provides Portal links to collateral resources (like in GEP, data and processors) that allow researchers to understand and reproduce an experiment or a production
+* "Community":
+** dedicated to geotag and reference web accessible content that labs, institutes, agencies, ... are openly sharing on the web (articles and blog posts, products images delivered in web-browser compatible formats, ...)
+** provides a Portal integration mechanism based on the OGC standard "OWS Context" (http://www.opengeospatial.org/standards/owc)
+
