@@ -1,9 +1,6 @@
 Enterprise Viewpoint - Requirements - CEOS Pilot on Seismic Hazards
 ####################################################################
 
-Enterprise Viewpoint - Requirements - CEOS Pilot on Seismic Hazards
-####################################################################
-
 The CEOS Pilot on Seismic Hazards is driven by the CEOS Disaster Risk Management (DRM) Observation Strategy, 
 and is delivered by CEOS as a response to a collection of observation requirements from the user community, 
 to be implemented in 2014-2016.
