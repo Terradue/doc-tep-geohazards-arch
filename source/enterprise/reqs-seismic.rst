@@ -7,9 +7,9 @@ to be implemented in 2014-2016.
 
 The CEOS Pilot on Seismic Hazards aims at demonstrating: 
 
-| a) added-value and uniqueness of increased CEOS coordination in this area; 
-| b) benefits of closer ties to users and ease of access to data; 
-| c) potential for increased roles of space agencies in Disasters Risk Management, for the 10-year period starting in 2015.
+"a)" added-value and uniqueness of increased CEOS coordination in this area; 
+"b)" benefits of closer ties to users and ease of access to data; 
+"c)" potential for increased roles of space agencies in Disasters Risk Management, for the 10-year period starting in 2015.
 
 In support of this vision, the ESA Geohazards Exploitatin Platform, 
 as a Cloud Platform contributing to community building in this Pilot area,
