@@ -19,17 +19,15 @@ System Capabilities
 
 The platform is meant to allow users to easily exploit EO data resources by combining fast data access, processing facilities and flexibility for the user's own data analysis. 
 The platform provides Data Access, Data Processing Services and PaaS (Platform as a Service). 
-Data Access includes the possibility to perform catalogue queries. 
-Data Processing Services enable users to process data available in the repository using a number of well know tools and to exploit the results. 
-The PaaS enables users to perform their data exploitation activities with large flexibility and autonomy by using one or several virtual hosts directly provided on the Cloud platform where the data sits. 
-Users can, therefore, use their virtual hosts to efficiently access data and processing services and immediately elaborate results using analysis and visualization tools available from the PaaS or directly installed in virtual hosts by themselves. 
-In addition users can also open their own accounts on a commercial Cloud Provider and directly provision their virtual hosts independently (through the Geohazards Platform Services).
+
+* Data Access includes the possibility to perform catalogue queries. 
+* Data Processing Services enable users to process data available in the repository using a number of well know tools and to exploit the results. 
+* The PaaS enables users to perform their data exploitation activities with large flexibility and autonomy by using one or several virtual hosts directly provided on the Cloud platform where the data resides. 
+
+Users can therefore use their virtual hosts to efficiently access data and processing services, and immediately elaborate results by exploiting the analysis and visualization tools made available from the PaaS, or that they can directly install themselves in their virtual host. 
+In addition, users can also open their own accounts on a commercial Cloud Provider, and directly provision their virtual hosts independently (through the Geohazards Platform Services).
 
 **Roles and Processes**
-
-* EV_Role:
-* EV_Behaviour:
-* EV_Process:
 
 << Enterprise_Spec >>
 Community Roles
@@ -37,18 +35,25 @@ Community Roles
 << Enterprise_Spec >>
 Community Processes
 
-Data access
------------
+<< Enterprise_Spec >>
+Community Policy
 
+<EV_Process> Data access
+------------------------
+
+* EV_Role:
+* EV_Policy:
 TBD
 
-Processor integration
----------------------
-
-TBD
-
-Data processing and Cloud bursting
+<EV_Process> Processor integration
 ----------------------------------
+
+* EV_Role:
+* EV_Policy:
+TBD
+
+<EV_Process> Data processing and Cloud bursting
+-----------------------------------------------
 
 Users can instantiate (on-demand) a processing service appliance, provision the appliance on a pre-configured Cloud Provider and invoke the processing via the OGC Web Processing Service interface.
 Users define input data and select a results location (e.g. portal, cloud block storage, dropbox, google drive, ...)
@@ -132,8 +137,12 @@ Users define input data and select a results location (e.g. portal, cloud block 
        endUser -> userCloudStorage: access generated EO-based products
        endUser -> geoBrowser: share generated EO-based products
 
-Visualization
--------------
+<EV_Process> Visualization
+--------------------------
+
+* EV_Role:
+* EV_Process:
+* EV_Policy:
 
 The platform is meant to allow users to perform data visualisation tasks:
 
@@ -141,8 +150,12 @@ The platform is meant to allow users to perform data visualisation tasks:
 * from Web Portal Geobrowser: overlay EO data collections density maps, geohazards events layers (e.g. Disasters Charter activations)
 * still from the Web Portal Geobrowser: combine EO data footprints and EO-based products to support data processing decision making (selection of processing input data, discovery and analysis of data processing results)
 
-Reproducible Science
---------------------
+<EV_Process> Reproducible Science
+---------------------------------
+
+* EV_Role:
+* EV_Process:
+* EV_Policy:
 
 The Geohazards Platform is investigating on different collaborative eScience scenarios made available to users:
 
@@ -150,31 +163,43 @@ The Geohazards Platform is investigating on different collaborative eScience sce
 * Collaborative work on algorithm integration, Virtual Machines accessing Git repositories, like offered by social coding platforms such as GitHub).
 * Cloud bursting of Processing services to Commercial Clouds, in order to enable low-cost, massive data processing campaigns.
 
-Capacity Building through Data Sharing
---------------------------------------
+<EV_Process> Capacity Building through Data Sharing
+---------------------------------------------------
 
 The Geohazards Web Portal is investigating on different work areas (or 'contexts') made available to users:
 
-EO Data
-+++++++
+<EV_Step> EO Data exploitation
+++++++++++++++++++++++++++++++
+
+* EV_Role:
+* EV_Policy:
 
 * dedicated to EO data collections available as input data for processing tasks
 * provides Portal links to automate the discovery allowing users to easily feed processing tasks
 
-EO-based products
-+++++++++++++++++
+<EV_Step> EO-based products exploitation
+++++++++++++++++++++++++++++++++++++++++
+
+* EV_Role:
+* EV_Policy:
 
 * dedicated to GEP processors results (final and intermediate processing outputs) 
 * provides Portal links to processing jobs runs, to allow users understand a processor, and its possible improvements 
 
-Publications
-++++++++++++
+<EV_Step> Publication referencing
++++++++++++++++++++++++++++++++++
+
+* EV_Role:
+* EV_Policy:
 
 * related to the scientific community curated results (scientific papers)
 * provides Portal links to collateral resources (like in GEP, data and processors) that allow researchers to understand and reproduce an experiment or a production
 
-Community
-+++++++++
+<EV_Step> Community sharing
++++++++++++++++++++++++++++
+
+* EV_Role: 
+* EV_Policy:
 
 * dedicated to geotag and reference web accessible content that labs, institutes, agencies, ... are openly sharing on the web (articles and blog posts, products images delivered in web-browser compatible formats, ...)
 * provides a Portal integration mechanism based on the OGC standard "OWS Context" (http://www.opengeospatial.org/standards/owc)
