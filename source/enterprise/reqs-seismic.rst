@@ -14,9 +14,9 @@ In support of this vision, the ESA Geohazards Exploitatin Platform,
 as a Cloud Platform contributing to community building in this Pilot area,
 is aiming at supporting the Seismic Hazards community with the realization of three pragmatic objectives:
 
-EV_Obj seismic1: Support production of new observations of the seismic belts (around 15% of the land surface)
-EV_Obj seismic2: Contribute to improved understanding of seismic events
-EV_Obj volcano3: Support Geoscience users to characterize, understand, and model seismic risk
+* EV_Obj seismic1: Support production of new observations of the seismic belts (around 15% of the land surface)
+* EV_Obj seismic2: Contribute to improved understanding of seismic events
+* EV_Obj volcano3: Support Geoscience users to characterize, understand, and model seismic risk
 
 These objectives are contributing the present architecture Enterprise Viewpoint, 
 and they are specified as part of the community contract aimed at supporting the CEOS PIlot.
