@@ -17,10 +17,26 @@ This class describes the resource elements which supply the information layers u
 
 Properties
 ----------
-=================================================================================================================================== ========= =======================================================================================
-Type                                                                                                                                Name      Summary
-=================================================================================================================================== ========= =======================================================================================
-:ref:`Terradue::ServiceModel::Ogc::OwsModel::OwcOffering <class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_offering>` Offerings Service or inline content offering for the resource targeted at OGC compliant clients 
+=================================================================================================================================== ================ =========================================================================================================================================================================================================
+Type                                                                                                                                Name             Summary
+=================================================================================================================================== ================ =========================================================================================================================================================================================================
+string                                                                                                                              Title            A Human Readable Title for the OWC Resource 
 
-=================================================================================================================================== ========= =======================================================================================
+string                                                                                                                              Abstract         Description of the Context Document Purpose/Content 
+
+DateTimeOffset                                                                                                                      UpdateDate       Date when the resource definition was updated 
+
+List< string >                                                                                                                      Authors          Identifier for the author of the resource definition 
+
+string                                                                                                                              Publisher        Identifier for the publisher of the resource definition 
+
+object                                                                                                                              GeospatialExtent The geographic extent of the resource 
+
+List< Uri >                                                                                                                         Preview          A URI identifying a preview of the resource 
+
+List< Uri >                                                                                                                         ContentByRef     A URI identifying a service which will return an immediately exploitable result by simply requesting based on the URI. The expectation is that the return type of this call will be a well-known format 
+
+:ref:`Terradue::ServiceModel::Ogc::OwsModel::OwcOffering <class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_offering>` Offerings        Service or inline content offering for the resource targeted at OGC compliant clients 
+
+=================================================================================================================================== ================ =========================================================================================================================================================================================================
 

@@ -39,6 +39,10 @@ void Load()                              Reads the information of an item using 
 
 void Store()                             Writes the item to the database.
 
+void StorePrivilegesForUsers()           Sets the privileges on the resource represented by the instance for the specified users according to the privilege properties.
+
+void StorePrivilegesForGroups()          Sets the privileges on the resource represented by the instance for the specified user groups according to the privilege properties.
+
 void StoreGlobalPrivileges()             Sets global privileges on the resource represented by the instance that will apply to all users according to the privilege properties.
 
 void RemoveGlobalPrivileges()            Sets global privileges on the resource represented by the instance that will apply to all users according to the privilege properties.

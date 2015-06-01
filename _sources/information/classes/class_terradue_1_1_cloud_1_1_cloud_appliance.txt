@@ -16,20 +16,23 @@ Terradue::Cloud::CloudAppliance
 
 Properties
 ----------
-=================================================================================== ======== =============================================================
-Type                                                                                Name     Summary
-=================================================================================== ======== =============================================================
-:ref:`Terradue::Cloud::CloudProvider <class_terradue_1_1_cloud_1_1_cloud_provider>` Provider Gets (or sets) the provider to which the appliance belongs.
+====================================================================================================== ====================== ========================================================================================================================
+Type                                                                                                   Name                   Summary
+====================================================================================================== ====================== ========================================================================================================================
+:ref:`Terradue::Cloud::CloudProvider <class_terradue_1_1_cloud_1_1_cloud_provider>`                    Provider               Get (or set) the provider to which the appliance belongs.
 
-string                                                                              RemoteId 
-string                                                                              Hostname 
-string                                                                              Owner    
-int                                                                                 Cores    Gets the number of CPU cores assigned to the instance.
+string                                                                                                 RemoteId               Get (or set) the remote identifier that identifies the applicance on the :ref:`Cloud Provider <group___cloud_provider>`
 
-float                                                                               Memory   Gets the maximum RAM allocated to the instance in gigabytes.
+string                                                                                                 Hostname               
+string                                                                                                 Owner                  
+:ref:`Terradue::Cloud::VirtualMachineTemplate <class_terradue_1_1_cloud_1_1_virtual_machine_template>` VirtualMachineTemplate The template the appliance has been instantiated from.
 
-MachineState                                                                        State    
-=================================================================================== ======== =============================================================
+int                                                                                                    Cores                  Gets the number of CPU cores assigned to the instance.
+
+float                                                                                                  Memory                 Gets the maximum RAM allocated to the instance in gigabytes.
+
+MachineState                                                                                           State                  
+====================================================================================================== ====================== ========================================================================================================================
 
 Methods
 -------

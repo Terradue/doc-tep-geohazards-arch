@@ -1,0 +1,16 @@
+.. _class_terradue_1_1_cloud_1_1_virtual_machine_template:
+
+Terradue::Cloud::VirtualMachineTemplate
+#######################################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/class_terradue_1_1_cloud_1_1_virtual_machine_template.iuml
+
+
+

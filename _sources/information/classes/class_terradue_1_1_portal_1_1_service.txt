@@ -36,3 +36,16 @@ BuildTaskCallbackType OnBuildTask Gets or sets the callback method that is calle
 
 ===================== =========== ==========================================================================================================================================================================================
 
+Methods
+-------
+=================== ================= ========================
+Type                Name              Summary
+=================== ================= ========================
+ServiceParameterSet GetParameters()   Gets the parameters. 
+
+void                CheckParameters() Checks the parameters. 
+
+abstract void       BuildTask()       Builds the task. 
+
+=================== ================= ========================
+

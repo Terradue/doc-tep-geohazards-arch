@@ -26,10 +26,20 @@ bool Proxy Define if the provider is to be proxied or not
 
 Methods
 -------
-==== ======================= ===============================================================
-Type Name                    Summary
-==== ======================= ===============================================================
-void StoreProcessOfferings() Get and stores the process offerings from GetCapabilities url 
+====================== ============================== ===============================================================
+Type                   Name                           Summary
+====================== ============================== ===============================================================
+void                   StoreProcessOfferings()        Get and stores the process offerings from GetCapabilities url 
 
-==== ======================= ===============================================================
+bool                   ExecuteTask()                  Executes the task. 
+
+WPSCapabilitiesType    GetWPSCapabilitiesFromUrl()    Return a GetCapabilities object from GetCapabilities url 
+
+ProcessDescriptionType GetWPSDescribeProcessFromUrl() Gets the WPS describe process from URL. 
+
+bool                   GetTaskResult()                Gets the task result. 
+
+WpsProcessOffering     GetProcessOffering()           Gets the process offering. 
+
+====================== ============================== ===============================================================
 

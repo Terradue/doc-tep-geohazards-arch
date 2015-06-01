@@ -19,6 +19,7 @@ Sub-Components
 --------------
 - :ref:`group___cloud_appliance`
 - :ref:`group___cloud_provider`
+- :ref:`group___virtual_machine_template`
 - :ref:`group___one_client`
 
 

@@ -1,0 +1,26 @@
+.. _group___virtual_machine_template:
+
+Virtual Machine Template
+########################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___virtual_machine_template.iuml
+
+The component represents an abstract Virtual Machine Template to instantiate a CloudApppliance. Practically, a class that implements :ref:`Terradue.Cloud.VirtualMachineTemplate <class_terradue_1_1_cloud_1_1_virtual_machine_template>` represents a specification of the virtual machine to instantiate on a :ref:`Terradue.Cloud.CloudProvider <class_terradue_1_1_cloud_1_1_cloud_provider>`
+
+Dependencies
+------------
+- :ref:`Cloud Provider <group___cloud_provider>` provides with the virtual machines templates
+
+
+
+Classes
+-------
+- :ref:`class_terradue_1_1_cloud_1_1_virtual_machine_template`
+

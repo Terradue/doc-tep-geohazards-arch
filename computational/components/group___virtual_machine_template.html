@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Virtual Machine Template &mdash; Geohazards Thematic Exploitation Platform Architecture 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Geohazards Thematic Exploitation Platform Architecture 1.0 documentation" href="../../index.html" />
+    <link rel="stylesheet" href="../../_static/terradue.css" type="text/css" />
+    <script src="../../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body>
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../../_static/t2Logo.png"></a>
+        <!--<a class="navbar-brand" href="../../index.html"><img class="navbar-brand-logo" src="../../_static/logo-geohazard.png" alt="sandbox-logo"/></a>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../../_static/logo-geohazard.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>1.0</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../enterprise/index.html">Enterprise Viewpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/definitions.html">Definitions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/definitions.html#architecture-viewpoints">Architecture viewpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/definitions.html#modeling-concepts">Modeling concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/purpose.html">Community concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/purpose.html#community-contract">Community contract</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/purpose.html#community-objectives">Community objectives</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/scope.html">Targeted operational processes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#system-capabilities">System Capabilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#ev-process-data-access">&lt;EV_Process&gt; Data access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#ev-process-processor-integration">&lt;EV_Process&gt; Processor integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#ev-process-data-processing-and-cloud-bursting">&lt;EV_Process&gt; Data processing and Cloud bursting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#ev-process-visualization">&lt;EV_Process&gt; Visualization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#ev-process-reproducible-science">&lt;EV_Process&gt; Reproducible Science</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#ev-process-capacity-building-through-data-sharing">&lt;EV_Process&gt; Capacity Building through Data Sharing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../enterprise/scope.html#ev-step-eo-data-exploitation">&lt;EV_Step&gt; EO Data exploitation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../enterprise/scope.html#ev-step-eo-based-products-exploitation">&lt;EV_Step&gt; EO-based products exploitation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../enterprise/scope.html#ev-step-publication-referencing">&lt;EV_Step&gt; Publication referencing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../enterprise/scope.html#ev-step-community-sharing">&lt;EV_Step&gt; Community sharing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/policies.html">Policies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/interactions.html">Design constraints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/interactions.html#different-services">Different services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/interactions.html#constraints-on-data-providers-administrators-interactions">Constraints on Data providers | Administrators interactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/interactions.html#constraints-on-processor-integrators-end-users-interactions">Constraints on Processor integrators | end-users interactions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/reqs-gsnl.html">Requirements - GEO Supersites and Natural Laboratories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/summary.html">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../enterprise/references.html">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../information/index.html">Information Viewpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../information/iv-information.html">Information objects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_entity.html">Terradue::Portal::Entity</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_entity.html#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_entity.html#methods">Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_feature.html">Terradue::Portal::Feature</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_feature.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_group.html">Terradue::Portal::Group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_group.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_series.html">Terradue::Portal::Series</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_series.html#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_series.html#methods">Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_user.html">Terradue::Portal::User</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_user.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_wps_process_offering.html">Terradue::Portal::WpsProcessOffering</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_wps_process_offering.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_wps_provider.html">Terradue::Portal::WpsProvider</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_wps_provider.html#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_portal_1_1_wps_provider.html#methods">Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_application.html">Terradue::ServiceModel::Ogc::OwsModel::OwcApplication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_content.html">Terradue::ServiceModel::Ogc::OwsModel::OwcContent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_creator.html">Terradue::ServiceModel::Ogc::OwsModel::OwcCreator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_creator.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_display.html">Terradue::ServiceModel::Ogc::OwsModel::OwcDisplay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_offering.html">Terradue::ServiceModel::Ogc::OwsModel::OwcOffering</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_offering.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_operation.html">Terradue::ServiceModel::Ogc::OwsModel::OwcOperation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_operation.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_resource.html">Terradue::ServiceModel::Ogc::OwsModel::OwcResource</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_resource.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_ows_context.html">Terradue::ServiceModel::Ogc::OwsModel::OwcContext</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_ows_context.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_cloud_1_1_cloud_appliance.html">Terradue::Cloud::CloudAppliance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_cloud_1_1_cloud_appliance.html#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_cloud_1_1_cloud_appliance.html#methods">Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_cloud_1_1_cloud_provider.html">Terradue::Cloud::CloudProvider</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_cloud_1_1_cloud_provider.html#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_cloud_1_1_cloud_provider.html#methods">Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../information/classes/class_terradue_1_1_tep_q_w_1_1_controller_1_1_cloud_wps_factory.html">Terradue::TepQW::Controller::CloudWpsFactory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../information/classes/class_terradue_1_1_tep_q_w_1_1_controller_1_1_cloud_wps_factory.html#methods">Methods</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../information/iv-association.html">Information Viewpoint - Association</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../information/iv-association.html#class-relationships">Class Relationships</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../information/iv-contractpolicy.html">Contract &amp; Policy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computational Viewpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cv-purpose.html">Level of abstraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cv-components.html">Computational Components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="group___cloud.html">Cloud</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___cloud.html#sub-components">Sub-Components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="group___cloud.html#software-packages">Software Packages</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___core.html">Core</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___core.html#sub-components">Sub-Components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="group___core.html#software-packages">Software Packages</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___model.html">Model</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___model.html#sub-components">Sub-Components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="group___model.html#software-packages">Software Packages</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___open_search.html">OpenSearch</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___open_search.html#sub-components">Sub-Components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="group___open_search.html#software-packages">Software Packages</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___security.html">Security</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___security.html#sub-components">Sub-Components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="group___security.html#software-packages">Software Packages</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___tep.html">Tep</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___tep.html#sub-components">Sub-Components</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cv-interfaces.html">Interfaces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="group___s_q_l_connector.html">SQL Connector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group___w_p_s.html">Web Processing Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group___open_searchable.html">OpenSearchable</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cv-servicemodel.html">Service Model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="group___o_w_s_context.html">OWS Context</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="group___o_w_s_context.html#classes">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="group___syndication.html">Syndication Feed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cv-summary.html">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../engineering/index.html">Engineering Viewpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../engineering/nv-deploy-constraint.html">Deployment Constraints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../engineering/nv-infra-constraint.html">Infrastructure Constraints</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../engineering/nv-infra-constraint.html#general-operating-system-constraints">General Operating System Constraints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../engineering/nv-infra-constraint.html#web-portal-computing-constraints">Web Portal Computing Constraints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../engineering/nv-infra-constraint.html#web-portal-security-constraints">Web Portal Security Constraints</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../engineering/nv-inter-constraint.html">Interaction Constraints</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../engineering/nv-inter-constraint.html#peripheral-constraints">Peripheral Constraints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../engineering/nv-inter-constraint.html#network-support-constraints">Network Support Constraints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../engineering/nv-inter-constraint.html#database-constraints">Database Constraints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../engineering/nv-inter-constraint.html#middleware-contraints">Middleware Contraints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../engineering/nv-inter-constraint.html#cots-package-constraints">COTS Package Constraints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../engineering/nv-inter-constraint.html#data-transport-constraints">Data Transport Constraints</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../engineering/nv-nodes.html">Deployment nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engineering/nv-channels.html">Deployment channels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engineering/nv-summary.html">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../technology/index.html">Technology Viewpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../technology/tv-purpose.html">Technology selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technology/tv-packages.html">Software packages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_authentication_1_1_umsso.html">Terradue::Authentication::Umsso</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_cloud.html">Terradue::Cloud</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_cloud.html#classes">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_geo_json.html">Terradue::GeoJson</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_g_d_a_l_1_1_native.html">Terradue::GDAL::Native</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_github.html">Terradue::Github</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_metadata_1_1_earth_observation.html">Terradue::Metadata::EarthObservation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_service_model_1_1_ogc_1_1_ows_context.html">Terradue::ServiceModel::Ogc::OwsContext</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_service_model_1_1_syndication.html">Terradue::ServiceModel::Syndication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_news.html">Terradue::News</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_open_nebula.html">Terradue::OpenNebula</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_open_search.html">Terradue::OpenSearch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_open_search_1_1_data_analyzer.html">Terradue::OpenSearch::DataAnalyzer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_open_search_1_1_geo_json.html">Terradue::OpenSearch::GeoJson</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_open_search_1_1_tumblr.html">Terradue::OpenSearch::Tumblr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_open_search_1_1_tumblr.html">Terradue::OpenSearch::Twitter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_portal.html">Terradue::Portal</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_portal.html#classes">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_web_service_1_1_model.html">Terradue::WebService::Model</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../technology/tv-standards.html">Technlogy Viewpoint - Implementation standards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technology/tv-standards.html#normative-references">Normative References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technology/tv-summary.html">Summary</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Virtual Machine Template</a><ul>
+<li><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li><a class="reference internal" href="#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/Terradue/doc-tep-geohazards-arch/blob/master/source/computational/components/group___virtual_machine_template.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../enterprise/index.html">Enterprise Viewpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../information/index.html">Information Viewpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Computational Viewpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engineering/index.html">Engineering Viewpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../technology/index.html">Technology Viewpoint</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/Terradue/doc-tep-geohazards-arch/blob/master/source/computational/components/group___virtual_machine_template.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="virtual-machine-template">
+<span id="group-virtual-machine-template"></span><h1>Virtual Machine Template<a class="headerlink" href="#virtual-machine-template" title="Permalink to this headline">¶</a></h1>
+<p class="plantuml">
+<object data="../../_images/plantuml-3bbc986d916f275a2d82fadf622cd30139cce8ed.svg" type="image/svg+xml" style="width:177px;height:60px;">
+<img src="../../_images/plantuml-3bbc986d916f275a2d82fadf622cd30139cce8ed.png" alt="!include includes/skins.iuml
+skinparam backgroundColor #FFFFFF
+skinparam componentStyle uml2
+!include target/rst/in/group___virtual_machine_template.iuml" />
+
+</object></p>
+<p>The component represents an abstract Virtual Machine Template to instantiate a CloudApppliance. Practically, a class that implements <a class="reference internal" href="../../information/classes/class_terradue_1_1_cloud_1_1_virtual_machine_template.html#class-terradue-1-1-cloud-1-1-virtual-machine-template"><em>Terradue.Cloud.VirtualMachineTemplate</em></a> represents a specification of the virtual machine to instantiate on a <a class="reference internal" href="../../information/classes/class_terradue_1_1_cloud_1_1_cloud_provider.html#class-terradue-1-1-cloud-1-1-cloud-provider"><em>Terradue.Cloud.CloudProvider</em></a></p>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="group___cloud_provider.html#group-cloud-provider"><em>Cloud Provider</em></a> provides with the virtual machines templates</li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="../../information/classes/class_terradue_1_1_cloud_1_1_virtual_machine_template.html#class-terradue-1-1-cloud-1-1-virtual-machine-template"><em>Terradue::Cloud::VirtualMachineTemplate</em></a></li>
+</ul>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

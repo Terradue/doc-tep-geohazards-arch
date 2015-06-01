@@ -33,5 +33,7 @@ Type                  Name                            Summary
 ===================== =============================== ================================================================================================
 OpenSearchDescription GetLocalOpenSearchDescription() Generates the corresponding :ref:`OpenSearch <namespace_terradue_1_1_open_search>` description.
 
+Series                FromOpenSearchUrl()             From the open search URL. 
+
 ===================== =============================== ================================================================================================
 

@@ -20,6 +20,12 @@ Properties
 =================================================================================================================================== =============== ======================================================================================================================================================================
 Type                                                                                                                                Name            Summary
 =================================================================================================================================== =============== ======================================================================================================================================================================
+string                                                                                                                              Title           A Human Readable Title for the OWS Context Document 
+
+string                                                                                                                              Abstract        Description of the Context Document Purpose/Content 
+
+DateTimeOffset                                                                                                                      UpdateDate      Date when the Context Document was updated 
+
 List< string >                                                                                                                      Authors         Identifier for the author of the document 
 
 string                                                                                                                              Publisher       Identifier for the publisher of the document 

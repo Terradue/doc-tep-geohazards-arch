@@ -1,4 +1,4 @@
 Technlogy Viewpoint - Implementation standards
 ##############################################
 
-This section is under development.
+.. include:: ../pages/page_norm.rst

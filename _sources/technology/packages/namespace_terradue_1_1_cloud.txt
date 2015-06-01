@@ -34,4 +34,5 @@ Classes
 -------
 - :ref:`class_terradue_1_1_cloud_1_1_cloud_appliance`
 - :ref:`class_terradue_1_1_cloud_1_1_cloud_provider`
+- :ref:`class_terradue_1_1_cloud_1_1_virtual_machine_template`
 

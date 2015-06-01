@@ -103,9 +103,18 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../enterprise/scope.html">Targeted operational processes</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#system-capabilities">System Capabilities</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#data-access">Data access</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#processor-integration">Processor integration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#data-processing-and-cloud-bursting">Data processing and Cloud bursting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#ev-process-data-access">&lt;EV_Process&gt; Data access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#ev-process-processor-integration">&lt;EV_Process&gt; Processor integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#ev-process-data-processing-and-cloud-bursting">&lt;EV_Process&gt; Data processing and Cloud bursting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#ev-process-visualization">&lt;EV_Process&gt; Visualization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#ev-process-reproducible-science">&lt;EV_Process&gt; Reproducible Science</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../enterprise/scope.html#ev-process-capacity-building-through-data-sharing">&lt;EV_Process&gt; Capacity Building through Data Sharing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../enterprise/scope.html#ev-step-eo-data-exploitation">&lt;EV_Step&gt; EO Data exploitation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../enterprise/scope.html#ev-step-eo-based-products-exploitation">&lt;EV_Step&gt; EO-based products exploitation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../enterprise/scope.html#ev-step-publication-referencing">&lt;EV_Step&gt; Publication referencing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../enterprise/scope.html#ev-step-community-sharing">&lt;EV_Step&gt; Community sharing</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../enterprise/policies.html">Policies</a></li>
@@ -194,7 +203,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../iv-association.html">Association</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../iv-association.html">Information Viewpoint - Association</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../iv-association.html#class-relationships">Class Relationships</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../iv-contractpolicy.html">Contract &amp; Policy</a></li>
 </ul>
 </li>
@@ -301,7 +311,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../../technology/packages/namespace_terradue_1_1_web_service_1_1_model.html">Terradue::WebService::Model</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../technology/tv-standards.html">Implementation standards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technology/tv-standards.html">Technlogy Viewpoint - Implementation standards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technology/tv-standards.html#normative-references">Normative References</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../technology/tv-summary.html">Summary</a></li>
 </ul>
 </li>
@@ -393,7 +404,8 @@
 <li class="toctree-l3"><a class="reference internal" href="class_terradue_1_1_tep_q_w_1_1_controller_1_1_cloud_wps_factory.html">Terradue::TepQW::Controller::CloudWpsFactory</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../iv-association.html">Association</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../iv-association.html">Information Viewpoint - Association</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../iv-association.html#class-relationships">Class Relationships</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../iv-contractpolicy.html">Contract &amp; Policy</a></li>
 </ul>
 </li>
@@ -420,7 +432,7 @@
 <span id="class-terradue-1-1-service-model-1-1-ogc-1-1-ows-model-1-1-owc-resource"></span><h1>Terradue::ServiceModel::Ogc::OwsModel::OwcResource<a class="headerlink" href="#terradue-servicemodel-ogc-owsmodel-owcresource" title="Permalink to this headline">¶</a></h1>
 <p>This class describes the resource elements which supply the information layers used in the Context Document. Resource, while it can be used bare, is typically classified by owc:MediaCode indicating the type of information encoded in the resource. The resource offers multiple ways to pass a configured resource, in-line content, by absolute URI and by service Content which needs to be interpreted by an intelligent client. While there may be limitations in the individual encoding, each of these types shall be semantically equivalent, i.e. alternative representations of the same information (they can for example have different resolutions but should not show fundamentally different information).</p>
 <p class="plantuml">
-<object data="../../_images/plantuml-d86f3d565eb533d26b97e4b12e7c727750831e1d.svg" type="image/svg+xml" style="width:248px;height:127px;">
+<object data="../../_images/plantuml-d86f3d565eb533d26b97e4b12e7c727750831e1d.svg" type="image/svg+xml" style="width:248px;height:219px;">
 <img src="../../_images/plantuml-d86f3d565eb533d26b97e4b12e7c727750831e1d.png" alt="!include includes/skins.iuml
 skinparam backgroundColor #FFFFFF
 skinparam componentStyle uml2
@@ -431,9 +443,9 @@ skinparam componentStyle uml2
 <h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <colgroup>
-<col width="58%" />
-<col width="4%" />
 <col width="38%" />
+<col width="5%" />
+<col width="58%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Type</th>
@@ -442,6 +454,38 @@ skinparam componentStyle uml2
 </tr>
 </thead>
 <tbody valign="top">
+<tr class="row-even"><td>string</td>
+<td>Title</td>
+<td>A Human Readable Title for the OWC Resource</td>
+</tr>
+<tr class="row-odd"><td>string</td>
+<td>Abstract</td>
+<td>Description of the Context Document Purpose/Content</td>
+</tr>
+<tr class="row-even"><td>DateTimeOffset</td>
+<td>UpdateDate</td>
+<td>Date when the resource definition was updated</td>
+</tr>
+<tr class="row-odd"><td>List&lt; string &gt;</td>
+<td>Authors</td>
+<td>Identifier for the author of the resource definition</td>
+</tr>
+<tr class="row-even"><td>string</td>
+<td>Publisher</td>
+<td>Identifier for the publisher of the resource definition</td>
+</tr>
+<tr class="row-odd"><td>object</td>
+<td>GeospatialExtent</td>
+<td>The geographic extent of the resource</td>
+</tr>
+<tr class="row-even"><td>List&lt; Uri &gt;</td>
+<td>Preview</td>
+<td>A URI identifying a preview of the resource</td>
+</tr>
+<tr class="row-odd"><td>List&lt; Uri &gt;</td>
+<td>ContentByRef</td>
+<td>A URI identifying a service which will return an immediately exploitable result by simply requesting based on the URI. The expectation is that the return type of this call will be a well-known format</td>
+</tr>
 <tr class="row-even"><td><a class="reference internal" href="class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model_1_1_owc_offering.html#class-terradue-1-1-service-model-1-1-ogc-1-1-ows-model-1-1-owc-offering"><em>Terradue::ServiceModel::Ogc::OwsModel::OwcOffering</em></a></td>
 <td>Offerings</td>
 <td>Service or inline content offering for the resource targeted at OGC compliant clients</td>
