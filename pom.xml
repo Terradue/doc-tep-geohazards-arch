@@ -23,13 +23,6 @@
 			<classifier>plantuml</classifier>
 			<version>1.1-SNAPSHOT</version>
 		</dependency>
-		<dependency>
-			<groupId>com.terradue.sugar</groupId>
-			<artifactId>Terradue.Portal</artifactId>
-			<type>tgz</type>
-			<classifier>doc</classifier>
-			<version>2.6.8</version>
-		</dependency>
 	</dependencies>
 
 	<properties>
@@ -47,24 +40,6 @@
 
 	<build>
 		<plugins>
-			<!--<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<version>2.6</version>
-				<executions>
-					<execution>
-						<id>include-plantuml</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>unpack-dependencies</goal>
-						</goals>
-						<configuration>
-							<failOnMissingClassifierArtifact>false</failOnMissingClassifierArtifact>
-							<outputDirectory>includes</outputDirectory>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -105,6 +80,7 @@
 									<include>group___service.xml</include>
 									<include>group___syndication.xml</include>
 									<include>group___tep.xml</include>
+									<include>group___virtual_machine_template.xml</include>
 									<include>group___w_p_s.xml</include>
 									<include>group___web_context.xml</include>
 									<include>group___wps_provider.xml</include>
@@ -118,6 +94,7 @@
 							        <include>class_terradue_1_1_portal_1_1_group.xml</include>
 							        <include>class_terradue_1_1_portal_1_1_feature.xml</include>
 							        <include>class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model*</include>
+							        <include>class_terradue_1_1_cloud_1_1_virtual_machine_template.xml</include>
 							        <include>class_terradue_1_1_cloud_1_1_cloud_appliance.xml</include>
 							        <include>class_terradue_1_1_cloud_1_1_cloud_provider.xml</include>
 							        <include>class_terradue_1_1_tep_q_w_1_1_controller_1_1_cloud_wps_factory.xml</include>
@@ -141,6 +118,7 @@
 							        <include>namespace_terradue_1_1_sandbox.xml</include>
 							        <include>namespace_terradue_1_1_tep_q_w.xml</include>
 							        <include>namespace_terradue_1_1_web_service_1_1_model.xml</include>
+							        <include>norm.xml</include>
 								</resource>
 							</resources>
 							<outputDirectory>${project.build.directory}/xml</outputDirectory>
@@ -197,6 +175,24 @@
 								</resource>
 							</resources>
 							<outputDirectory>${project.build.directory}/source/computational/components</outputDirectory>
+						</configuration>
+					</execution>
+					<execution>
+						<id>copy-pages-sources</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<resources>
+								<resource>
+									<directory>${project.build.directory}/rst/in</directory>
+									<includes>
+							          <include>page*.rst</include>
+							        </includes>
+								</resource>
+							</resources>
+							<outputDirectory>${project.build.directory}/source/pages</outputDirectory>
 						</configuration>
 					</execution>
 					<execution>
@@ -322,6 +318,10 @@
 			                   <replacement>
 			                       <token><![CDATA[<plantuml]]></token>
 			                       <value><![CDATA[[]<plantuml]]></value>
+			                   </replacement>    
+			                   <replacement>
+			                       <token><![CDATA[<ulink]]></token>
+			                       <value><![CDATA[[]<ulink]]></value>
 			                   </replacement>    
 			               </replacements>
 			           </configuration>               
