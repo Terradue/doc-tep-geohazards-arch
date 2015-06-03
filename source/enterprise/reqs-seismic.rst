@@ -34,12 +34,12 @@ The corresponding system requirements for the implementation of the 3 identified
 The Enterprise Objects supporting the Platform implementation are identified in the Architecture diagrams as follows:
 
 * **Portal**: the Platform's web presence entry point.
-* *geoBrowser*: the Portal service for user interation with the Platform resources, including advanced search capabilities on the Platform's resources via e.g. "geospatial", "time", "data collections" and "EO-based productions" search facets.
-* *processingServices*: the platform's resources dedicated to a "microservices" approach (in the current state, through Virtual Machines resources) for handling the inclusion on the platform of individual data processing units, per processor type (NEST, GAMMA, GMTSAR, ROI_PAC, ... including the proxying of existing G-POD services).
-* *cloudControler*: the platform's engine for Cloud resources management. 
-* *eoDataContext*: the geoBrowser's service for management of EO data sources, referenced from EO data providers catalogues, and including data access up to distributed EO data repositories (VA-4, ...).
-* *eoProductsContext*: the geoBrowser's service for referencing processing jobs runs and results (final and intermediate), to allow users understand a processor, and its possible improvements
-* *eoPublicationsContext*: the geoBrowser's service for referencing scientific community curated results (scientific papers), and make them available for community building and to support users goals with EO data exploitation on the Platform.
-* *eoCommunityContext*: the geoBrowser's service for referencing  web accessible content that labs, institutes or agencies are openly sharing on the web, and make them available for community building and to support users goals with EO data exploitation on the Platform.
+* **geoBrowser**: the Portal service for user interation with the Platform resources, including advanced search capabilities on the Platform's resources via e.g. "geospatial", "time", "data collections" and "EO-based productions" search facets.
+* **processingServices**: the platform's resources dedicated to a "microservices" approach (in the current state, through Virtual Machines resources) for handling the inclusion on the platform of individual data processing units, per processor type (NEST, GAMMA, GMTSAR, ROI_PAC, ... including the proxying of existing G-POD services).
+* **cloudControler**: the platform's engine for Cloud resources management. 
+* **eoDataContext**: the geoBrowser's service for management of EO data sources, referenced from EO data providers catalogues, and including data access up to distributed EO data repositories (VA-4, ...).
+* **eoProductsContext**: the geoBrowser's service for referencing processing jobs runs and results (final and intermediate), to allow users understand a processor, and its possible improvements
+* **eoPublicationsContext**: the geoBrowser's service for referencing scientific community curated results (scientific papers), and make them available for community building and to support users goals with EO data exploitation on the Platform.
+* **eoCommunityContext**: the geoBrowser's service for referencing  web accessible content that labs, institutes or agencies are openly sharing on the web, and make them available for community building and to support users goals with EO data exploitation on the Platform.
 
 These Enterprise Objects are designed and implemented on the Platform to answer the identified CEOS Seismic Pilot objectives, in terms of scientific analysis, production and results sharing tasks.
