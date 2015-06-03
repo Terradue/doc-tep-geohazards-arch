@@ -35,6 +35,7 @@ The Enterprise Objects supporting the Platform implementation are identified in 
 
 * **Portal**: the Platform's web presence entry point.
 * **geoBrowser**: the Portal service for user interation with the Platform resources, including advanced search capabilities on the Platform's resources via e.g. "geospatial", "time", "data collections" and "EO-based productions" search facets.
+* **oseCatalogue**: the EO data search hub for all the distributed EO data catalogues and partners resources registered on the Platform.
 * **processingServices**: the platform's resources dedicated to a "microservices" approach (in the current state, through Virtual Machines resources) for handling the inclusion on the platform of individual data processing units, per processor type (NEST, GAMMA, GMTSAR, ROI_PAC, ... including the proxying of existing G-POD services).
 * **cloudControler**: the platform's engine for Cloud resources management. 
 * **eoDataContext**: the geoBrowser's service for management of EO data sources, referenced from EO data providers catalogues, and including data access up to distributed EO data repositories (VA-4, ...).
