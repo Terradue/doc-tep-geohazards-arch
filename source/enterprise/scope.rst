@@ -65,6 +65,9 @@ TBD
 Users can instantiate (on-demand) a processing service appliance, provision the appliance on a pre-configured Cloud Provider and invoke the processing via the OGC Web Processing Service interface.
 Users define input data and select a results location (e.g. portal, cloud block storage, dropbox, google drive, ...)
 
+* EV_Policy:
+* EV_Process: runJob - On-demand cloud appliance
+
 .. uml::
 
        title runJob - On-demand cloud appliance
@@ -105,6 +108,9 @@ Users define input data and select a results location (e.g. portal, cloud block 
       
 Users can run existing processing services (e.g. G-POD services) and and invoke the processing via the OGC Web Processing Service interface.
 Users define input data and select a results location (e.g. portal, cloud block storage, dropbox, google drive, ...)
+
+* EV_Policy:
+* EV_Process: runJob - On-demand computing element
 
 .. uml::
 
