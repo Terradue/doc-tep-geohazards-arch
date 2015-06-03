@@ -17,7 +17,7 @@ The list of Permanent Supersites as of June 2015 is as follows:
 
 In support of this effort, the ESA Geohazards Exploitatin Platform provides a Cloud Platform connected to EO data catalogues and is aiming at facilitating data staging and data processing for users accessing these data sources from the Platform. 
 
-The interoperability of the Platform with EO data catalogues and repositories is aiming at reducing data gaps in a number of key domain objectives. The GSNL domain is one of them, and is supported by the Platform in the realization of four pragmatic objectives:
+The interoperability of the Platform with EO data catalogues and repositories is coordinated in order to reduce the data gaps in a number of key domain objectives. The GSNL domain is one of them, and is supported by the Platform data access and processing capabilities in the realization of four pragmatic objectives:
 
 * **EV_Objective gsnl1**: Map hazard prone land surfaces in geologically active regions;
 * **EV_Objective gnsl2**: Monitor terrain deformations in geologically active regions;
@@ -35,7 +35,7 @@ The corresponding system requirements for the implementation of the 4 identified
 * Data Access includes the possibility to perform catalogue queries.
 * Data Processing Services enable users to process data available in the repository using a number of well know tools and to exploit the results.
 
-The Enterprise Objects supporting the Platform implementation are identified in the Architecture diagrams as follows:
+The Enterprise Objects supporting the Platform implementation to support the GNSL EV_Objectives are identified in the Architecture diagrams as follows:
 
 * **Portal**: the Platform's web presence entry point.
 * **geoBrowser**: the Portal service for user interation with the Platform resources, including advanced search capabilities on the Platform's resources via e.g. "geospatial", "time", "data collections" and "EO-based productions" search facets.
