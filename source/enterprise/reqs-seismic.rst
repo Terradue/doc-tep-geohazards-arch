@@ -33,7 +33,7 @@ The corresponding system requirements for the implementation of the 3 identified
 
 The Enterprise Objects supporting the Platform implementation are identified in the Architecture diagrams as follows:
 
-* *Portal*: the Platform's web presence entry point.
+* **Portal**: the Platform's web presence entry point.
 * *geoBrowser*: the Portal service for user interation with the Platform resources, including advanced search capabilities on the Platform's resources via e.g. "geospatial", "time", "data collections" and "EO-based productions" search facets.
 * *processingServices*: the platform's resources dedicated to a "microservices" approach (in the current state, through Virtual Machines resources) for handling the inclusion on the platform of individual data processing units, per processor type (NEST, GAMMA, GMTSAR, ROI_PAC, ... including the proxying of existing G-POD services).
 * *cloudControler*: the platform's engine for Cloud resources management. 
