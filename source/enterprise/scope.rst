@@ -3,7 +3,7 @@ Enterprise Viewpoint - Scope of the system
 
 With the scope of the system, we describe the Platform expected behaviour, i.e., the way it is supposed to work and interact with its environment in the TEP context.
 
-The targeted operational processes are:
+The targeted operational roles are:
 
 * Data access
 * Processor integration
@@ -12,7 +12,7 @@ The targeted operational processes are:
 * Reproducible Science
 * Capacity Building through Data Sharing 
 
-Within RM-ODP, the scope of the system is modelled as the set of roles it fulfils.
+Within RM-ODP, the scope of the system is modelled as the set of community objectives that are fulfilled by the provided roles and behaviours.
 
 System Capabilities
 ===================
@@ -33,10 +33,10 @@ Roles actions and interactions
 Roles on the Platform are complying to a community policy, and are defined as a set of actions and interactions (EV_Behaviours), observable in the system through process steps involving three types of Enterprise Objects: Actors (e.g. a user), Resources (e.g. a data processor) and Artefacts (e.g. data processing results).
 
 << Enterprise_Spec >>
-Community Policy
+Community Roles
 
 << Enterprise_Spec >>
-Community Roles
+Community Policy
 
 << Enterprise_Spec >>
 Community Processes
@@ -44,22 +44,24 @@ Community Processes
 << Enterprise_Spec >>
 Enterprise Objects
 
-<EV_Process> Data access
-------------------------
+<EV_Role> Data access
+---------------------
 
-* EV_Role:
 * EV_Policy:
+* EV_Process:
 TBD
 
-<EV_Process> Processor integration
-----------------------------------
+<EV_Role> Processor integration
+-------------------------------
 
-* EV_Role:
 * EV_Policy:
+* EV_Process:
+* EV_Resource: vmDeveloperCloudSandbox
+* EV_Resource: vmCloudToolbox
 TBD
 
-<EV_Process> Data processing and Cloud bursting
------------------------------------------------
+<EV_Role> Data processing and Cloud bursting
+--------------------------------------------
 
 Users can instantiate (on-demand) a processing service appliance, provision the appliance on a pre-configured Cloud Provider and invoke the processing via the OGC Web Processing Service interface.
 Users define input data and select a results location (e.g. portal, cloud block storage, dropbox, google drive, ...)
@@ -143,12 +145,11 @@ Users define input data and select a results location (e.g. portal, cloud block 
        endUser -> userCloudStorage: access generated EO-based products
        endUser -> geoBrowser: share generated EO-based products
 
-<EV_Process> Visualization
---------------------------
+<EV_Role> Visualization
+-----------------------
 
-* EV_Role:
-* EV_Process:
 * EV_Policy:
+* EV_Process:
 
 The platform is meant to allow users to perform data visualisation tasks:
 
@@ -156,12 +157,11 @@ The platform is meant to allow users to perform data visualisation tasks:
 * from Web Portal Geobrowser: overlay EO data collections density maps, geohazards events layers (e.g. Disasters Charter activations)
 * still from the Web Portal Geobrowser: combine EO data footprints and EO-based products to support data processing decision making (selection of processing input data, discovery and analysis of data processing results)
 
-<EV_Process> Reproducible Science
----------------------------------
+<EV_Role> Reproducible Science
+------------------------------
 
-* EV_Role:
-* EV_Process:
 * EV_Policy:
+* EV_Process:
 
 The Geohazards Platform is investigating on different collaborative eScience scenarios made available to users:
 
@@ -169,43 +169,43 @@ The Geohazards Platform is investigating on different collaborative eScience sce
 * Collaborative work on algorithm integration, Virtual Machines accessing Git repositories, like offered by social coding platforms such as GitHub).
 * Cloud bursting of Processing services to Commercial Clouds, in order to enable low-cost, massive data processing campaigns.
 
-<EV_Process> Capacity Building through Data Sharing
----------------------------------------------------
+<EV_Role> Capacity Building through Data Sharing
+------------------------------------------------
 
 The Geohazards Web Portal is investigating on different work areas (or 'contexts') made available to users:
 
-<EV_Step> EO Data exploitation
-++++++++++++++++++++++++++++++
+<EV_Behaviour> EO Data exploitation
++++++++++++++++++++++++++++++++++++
 
-* EV_Role:
 * EV_Policy:
+* EV_Process:
 
 * dedicated to EO data collections available as input data for processing tasks
 * provides Portal links to automate the discovery allowing users to easily feed processing tasks
 
-<EV_Step> EO-based products exploitation
-++++++++++++++++++++++++++++++++++++++++
+<EV_Behaviour> EO-based products exploitation
++++++++++++++++++++++++++++++++++++++++++++++
 
-* EV_Role:
 * EV_Policy:
+* EV_Process:
 
 * dedicated to GEP processors results (final and intermediate processing outputs) 
 * provides Portal links to processing jobs runs, to allow users understand a processor, and its possible improvements 
 
-<EV_Step> Publication referencing
-+++++++++++++++++++++++++++++++++
+<EV_Behaviour> Publication referencing
+++++++++++++++++++++++++++++++++++++++
 
-* EV_Role:
 * EV_Policy:
+* EV_Process:
 
 * related to the scientific community curated results (scientific papers)
 * provides Portal links to collateral resources (like in GEP, data and processors) that allow researchers to understand and reproduce an experiment or a production
 
-<EV_Step> Community sharing
-+++++++++++++++++++++++++++
+<EV_Behaviour> Community sharing
+++++++++++++++++++++++++++++++++
 
-* EV_Role: 
 * EV_Policy:
+* EV_Process:
 
 * dedicated to geotag and reference web accessible content that labs, institutes, agencies, ... are openly sharing on the web (articles and blog posts, products images delivered in web-browser compatible formats, ...)
 * provides a Portal integration mechanism based on the OGC standard "OWS Context" (http://www.opengeospatial.org/standards/owc)
