@@ -19,11 +19,15 @@ is aiming at supporting the Seismic Hazards community with the realization of th
 * EV_Obj seismic2: Contribute to improved understanding of seismic events
 * EV_Obj volcano3: Support Geoscience users to characterize, understand, and model seismic risk
 
-These objectives are contributing the present architecture Enterprise Viewpoint, 
-and they are specified as part of the community contract aimed at supporting the CEOS PIlot.
-They relate to several Processes of the ESA Geohazards Exploitatin Platform, modeled in this architecture document (EV_Process),
-and enabled as interactions on the Platform in which Enterprise objects participate (Cloud resources, Processing services, Web Portal, ...).
+These objectives are contributing the present Geohazards Exploitation Platform architecture as part of the EV_Community_Contract aimed at supporting the CEOS Pilot.
+
+They relate to several EV_Processes of the ESA Geohazards Exploitatin Platform, and enabled for users as EV_Interactions on the Platform in which Enterprise Objects participate (Cloud resources, Processing services, Web Portal, ...).
 
 The corresponding system requirements for the implementation of the 3 identified objectives are as follows:
 
-* tbc
+* The GEP is meant to allow users to easily exploit EO data resources by combining fast data access, processing facilities and flexibility for the user’s own data analysis.
+* The platform provides Data Access, Data Processing Services and PaaS (Platform as a Service).
+* Data Access includes the possibility to perform catalogue queries.
+* Data Processing Services enable users to process data available in the repository using a number of well know tools and to exploit the results.
+* The PaaS enables users to perform their data exploitation activities with large flexibility and autonomy by using one or several virtual hosts directly provided on the Cloud platform where the data resides.
+
