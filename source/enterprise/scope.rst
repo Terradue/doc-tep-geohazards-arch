@@ -8,8 +8,8 @@ The targeted operational roles are:
 * Data access
 * Processor integration
 * Data processing and Cloud bursting
-* Visualization
-* Reproducible Science
+* Data visualization and analysis
+* Reproducible Science collaborations
 * Capacity Building through Data Sharing 
 
 Within RM-ODP, the scope of the system is modelled as the set of community objectives that are fulfilled by the provided roles and behaviours.
@@ -57,7 +57,6 @@ TBD
 * EV_Policy:
 * EV_Process:
 * EV_Resource: vmDeveloperCloudSandbox
-* EV_Resource: vmCloudToolbox
 TBD
 
 <EV_Role> Data processing and Cloud bursting
@@ -145,11 +144,12 @@ Users define input data and select a results location (e.g. portal, cloud block 
        endUser -> userCloudStorage: access generated EO-based products
        endUser -> geoBrowser: share generated EO-based products
 
-<EV_Role> Visualization
------------------------
+<EV_Role> Data visualization and analysis
+-----------------------------------------
 
 * EV_Policy:
 * EV_Process:
+* EV_Resource: vmCloudToolbox
 
 The platform is meant to allow users to perform data visualisation tasks:
 
@@ -157,8 +157,8 @@ The platform is meant to allow users to perform data visualisation tasks:
 * from Web Portal Geobrowser: overlay EO data collections density maps, geohazards events layers (e.g. Disasters Charter activations)
 * still from the Web Portal Geobrowser: combine EO data footprints and EO-based products to support data processing decision making (selection of processing input data, discovery and analysis of data processing results)
 
-<EV_Role> Reproducible Science
-------------------------------
+<EV_Role> Reproducible Science collaboration
+--------------------------------------------
 
 * EV_Policy:
 * EV_Process:
