@@ -1,0 +1,13 @@
+Information Viewpoint - Information objects list
+################################################
+
+
+
+- :doc:`Terradue::Portal::Feature <class_terradue_1_1_portal_1_1_feature>`
+- :doc:`Terradue::Portal::Group <class_terradue_1_1_portal_1_1_group>`
+- :doc:`Terradue::Portal::Scheduler <class_terradue_1_1_portal_1_1_scheduler>`
+- :doc:`Terradue::Portal::Series <class_terradue_1_1_portal_1_1_series>`
+- :doc:`Terradue::Portal::User <class_terradue_1_1_portal_1_1_user>`
+- :doc:`Terradue::Portal::WpsProcessOffering <class_terradue_1_1_portal_1_1_wps_process_offering>`
+- :doc:`Terradue::Portal::WpsProvider <class_terradue_1_1_portal_1_1_wps_provider>`
+
