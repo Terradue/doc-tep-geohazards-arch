@@ -15,7 +15,7 @@ The targeted operational processes are:
 Within RM-ODP, the scope of the system is modelled as the set of roles it fulfils.
 
 System Capabilities
--------------------
+===================
 
 The platform is meant to allow users to easily exploit EO data resources by combining fast data access, processing facilities and flexibility for the user's own data analysis. 
 The platform provides Data Access, Data Processing Services and PaaS (Platform as a Service). 
@@ -27,7 +27,13 @@ The platform provides Data Access, Data Processing Services and PaaS (Platform a
 Users can therefore use their virtual hosts to efficiently access data and processing services, and immediately elaborate results by exploiting the analysis and visualization tools made available from the PaaS, or that they can directly install themselves in their virtual host. 
 In addition, users can also open their own accounts on a commercial Cloud Provider, and directly provision their virtual hosts independently (through the Geohazards Platform Services).
 
-**Roles and Processes**
+Roles actions and interactions
+==============================
+
+Roles on the Platform are complying to a community policy, and are defined as a set of actions and interactions (EV_Behaviours), observable in the system through process steps involving three types of Enterprise Objects: Actors (e.g. a user), Resources (e.g. a data processor) and Artefacts (e.g. data processing results).
+
+<< Enterprise_Spec >>
+Community Policy
 
 << Enterprise_Spec >>
 Community Roles
@@ -36,7 +42,7 @@ Community Roles
 Community Processes
 
 << Enterprise_Spec >>
-Community Policy
+Enterprise Objects
 
 <EV_Process> Data access
 ------------------------
