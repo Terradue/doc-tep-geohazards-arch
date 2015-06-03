@@ -51,7 +51,7 @@ EOF
 $ chmod +x /usr/bin/plantuml
 
 # Clone the git repository
-$ git clone git@github.com:Terradue/doc-developer-sandbox.git
+$ git clone git@github.com:Terradue/doc-tep-geohazards-arch.git
 ```
 
 If needed, set your github information:
@@ -68,7 +68,7 @@ Build the documentation by running ``make html``.
 
 ### Publish the documentation
 
-``make html`` creates a ``build`` folder in the doc-developer-sandbox local repository.
+``make html`` creates a ``build`` folder in the doc-tep-geohazards-arch local repository.
 
 As root, do:
 

@@ -12,7 +12,7 @@
 	<artifactId>doc-tep-geohazards-arch</artifactId>
 	<packaging>rpm</packaging>
 	<description>Geohazards thematic exploitation platform architecture</description>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.3.4</version>
 
 
 	<dependencies>
