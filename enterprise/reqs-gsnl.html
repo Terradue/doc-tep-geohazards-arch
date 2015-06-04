@@ -103,16 +103,19 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="scope.html">Targeted operational processes</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="scope.html#system-capabilities">System Capabilities</a></li>
-<li class="toctree-l3"><a class="reference internal" href="scope.html#ev-process-data-access">&lt;EV_Process&gt; Data access</a></li>
-<li class="toctree-l3"><a class="reference internal" href="scope.html#ev-process-processor-integration">&lt;EV_Process&gt; Processor integration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="scope.html#ev-process-data-processing-and-cloud-bursting">&lt;EV_Process&gt; Data processing and Cloud bursting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="scope.html#ev-process-visualization">&lt;EV_Process&gt; Visualization</a></li>
-<li class="toctree-l3"><a class="reference internal" href="scope.html#ev-process-reproducible-science">&lt;EV_Process&gt; Reproducible Science</a></li>
-<li class="toctree-l3"><a class="reference internal" href="scope.html#ev-process-capacity-building-through-data-sharing">&lt;EV_Process&gt; Capacity Building through Data Sharing</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="scope.html#ev-step-eo-data-exploitation">&lt;EV_Step&gt; EO Data exploitation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="scope.html#ev-step-eo-based-products-exploitation">&lt;EV_Step&gt; EO-based products exploitation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="scope.html#ev-step-publication-referencing">&lt;EV_Step&gt; Publication referencing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="scope.html#ev-step-community-sharing">&lt;EV_Step&gt; Community sharing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scope.html#roles-actions-and-interactions">Roles actions and interactions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="scope.html#ev-role-data-access">&lt;EV_Role&gt; Data access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scope.html#ev-role-processor-integration">&lt;EV_Role&gt; Processor integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scope.html#ev-role-data-processing-and-cloud-bursting">&lt;EV_Role&gt; Data processing and Cloud bursting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scope.html#ev-role-data-visualization-and-analysis">&lt;EV_Role&gt; Data visualization and analysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scope.html#ev-role-reproducible-science-collaboration">&lt;EV_Role&gt; Reproducible Science collaboration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="scope.html#ev-role-capacity-building-through-data-sharing">&lt;EV_Role&gt; Capacity Building through Data Sharing</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="scope.html#ev-behaviour-eo-data-exploitation">&lt;EV_Behaviour&gt; EO Data exploitation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scope.html#ev-behaviour-eo-based-products-exploitation">&lt;EV_Behaviour&gt; EO-based products exploitation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scope.html#ev-behaviour-publication-referencing">&lt;EV_Behaviour&gt; Publication referencing</a></li>
+<li class="toctree-l5"><a class="reference internal" href="scope.html#ev-behaviour-community-sharing">&lt;EV_Behaviour&gt; Community sharing</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -410,7 +413,45 @@
       
   <div class="section" id="enterprise-viewpoint-requirements-geo-supersites-and-natural-laboratories">
 <h1>Enterprise Viewpoint - Requirements - GEO Supersites and Natural Laboratories<a class="headerlink" href="#enterprise-viewpoint-requirements-geo-supersites-and-natural-laboratories" title="Permalink to this headline">¶</a></h1>
-<p>This section is under development.</p>
+<p>The ESA Geohazards Exploitation Platform is pursuing and developing a synergy with the GEO/GEOSS Geohazards Supersites and Natural Laboratories (GSNL) effort (<a class="reference external" href="http://supersites.earthobservations.org/">http://supersites.earthobservations.org/</a>).</p>
+<p>&#8220;Supersites is an initiative of the geohazard scientific community. The Supersites provide access to spaceborne and in-situ geophysical data of selected sites prone to earthquake, volcano or other hazards&#8221;. A list of Permanent Geohazard Supersites is selected for scientific reasons as well as for community building opportunities.</p>
+<p>The list of Permanent Supersites as of June 2015 is as follows:
+* Marmara Region
+* San Andreas Fault, USA
+* Campi Flegreii and Vesuvius, Italy
+* Mt Etna, Italy
+* Hawaiian volcanoes, USA
+* Iceland volcanoes, Iceland
+* New Zealand volcanoes, New Zealand
+* Ecuadorian volcanoes, Ecuador</p>
+<p>In support of this effort, the ESA Geohazards Exploitatin Platform provides a Cloud Platform connected to EO data catalogues and is aiming at facilitating data staging and data processing for users accessing these data sources from the Platform.</p>
+<p>The interoperability of the Platform with EO data catalogues and repositories is coordinated in order to reduce the data gaps in a number of key domain objectives. The GSNL domain is one of them, and is supported by the Platform data access and processing capabilities in the realization of four pragmatic objectives:</p>
+<ul class="simple">
+<li><strong>EV_Objective gsnl1</strong>: Map hazard prone land surfaces in geologically active regions;</li>
+<li><strong>EV_Objective gnsl2</strong>: Monitor terrain deformations in geologically active regions;</li>
+<li><strong>EV_Objective gnsl3</strong>: Ensure easy access to Earth Science data to promote their use and advance scientific research;</li>
+<li><strong>EV_Objective gnsl4</strong>: Manage Permanent Supersites, Candidate Supersites, Event Supersites, and Natural Laboratories.</li>
+</ul>
+<p>These objectives are contributing the present Geohazards Exploitation Platform architecture as part of the EV_Community_Contract aimed at supporting the GSNL initiative.</p>
+<p>They relate to several EV_Processes of the ESA Geohazards Exploitatin Platform, and enabled for users as EV_Interactions on the Platform in which Enterprise Objects participate (Cloud resources, Processing services, Web Portal, ...).</p>
+<p>The corresponding system requirements for the implementation of the 4 identified objectives are as follows:</p>
+<ul class="simple">
+<li>The GEP is meant to allow users to easily exploit EO data resources by combining fast data access, processing facilities and flexibility for the user’s own data analysis.</li>
+<li>The platform provides Data Access, Data Processing Services and PaaS (Platform as a Service).</li>
+<li>Data Access includes the possibility to perform catalogue queries.</li>
+<li>Data Processing Services enable users to process data available in the repository using a number of well know tools and to exploit the results.</li>
+</ul>
+<p>The Enterprise Objects supporting the Platform implementation to support the GNSL EV_Objectives are identified in the Architecture diagrams as follows:</p>
+<ul class="simple">
+<li><strong>Portal</strong>: the Platform&#8217;s web presence entry point.</li>
+<li><strong>geoBrowser</strong>: the Portal service for user interation with the Platform resources, including advanced search capabilities on the Platform&#8217;s resources via e.g. &#8220;geospatial&#8221;, &#8220;time&#8221;, &#8220;data collections&#8221; and &#8220;EO-based productions&#8221; search facets.</li>
+<li><strong>oseCatalogue</strong>: the EO data search hub for all the distributed EO data catalogues and partners resources registered on the Platform, leveraging the OGC OpenSearch extensions standard and ElasticSearch technology.</li>
+<li><strong>processingServices</strong>: the platform&#8217;s resources dedicated to a &#8220;microservices&#8221; approach (in the current state, through Virtual Machines resources) for handling the inclusion on the platform of individual data processing units, per processor type (NEST, GAMMA, GMTSAR, ROI_PAC, ... including the proxying of existing G-POD services).</li>
+<li><strong>cloudControler</strong>: the platform&#8217;s engine for Cloud resources management.</li>
+<li><strong>eoDataContext</strong>: the geoBrowser&#8217;s service for management of EO data sources, referenced from EO data providers catalogues, and including data access up to distributed EO data repositories (VA-4, ...).</li>
+<li><strong>eoProductsContext</strong>: the geoBrowser&#8217;s service for referencing processing jobs runs and results (final and intermediate), to allow users understand a processor, and its possible improvements</li>
+</ul>
+<p>These Enterprise Objects are designed and implemented on the Platform to answer the identified GSNL objectives, in terms of scientific analysis, production and results sharing tasks.</p>
 </div>
 
 
