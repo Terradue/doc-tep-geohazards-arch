@@ -1,0 +1,16 @@
+.. _group___github_client:
+
+GithubClient
+############
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___github_client.iuml
+
+"" 
+

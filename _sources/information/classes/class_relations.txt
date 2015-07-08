@@ -9,7 +9,7 @@ Class Relationships
 
 
 
-- :ref:`class_terradue_1_1_cloud_1_1_cloud_appliance` is specified by :ref:`Virtual Machine Template <group___virtual_machine_template>` that describe the appliance specifications (CPU, memory, network...) 
+- :ref:`class_terradue_1_1_cloud_1_1_cloud_appliance` is specified by :ref:`Terradue.Cloud.VirtualMachineTemplate <class_terradue_1_1_cloud_1_1_virtual_machine_template>` that describe the appliance specifications (CPU, memory, network...) 
 
 - :ref:`class_terradue_1_1_portal_1_1_wps_process_offering` 
 

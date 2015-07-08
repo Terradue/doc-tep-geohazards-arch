@@ -32,5 +32,7 @@ string ButtonText  Gets or sets the button text.
 
 string ButtonLink  Gets or sets the button link. 
 
+int    Position    Gets or sets the position. 
+
 ====== =========== ======================================================================
 

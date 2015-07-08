@@ -32,7 +32,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Geohazards Thematic Exploitation Platform Architecture 1.0 documentation" href="../index.html" />
     <link rel="up" title="Engineering Viewpoint" href="index.html" />
-    <link rel="next" title="Engineering Viewpoint - Purpose of the system" href="nv-summary.html" />
+    <link rel="next" title="Technology Viewpoint" href="../technology/index.html" />
     <link rel="prev" title="Engineering Viewpoint - Deployment nodes" href="nv-nodes.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
@@ -130,7 +130,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../enterprise/reqs-seismic.html">Requirements - CEOS Pilot on Seismic Hazards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../enterprise/reqs-volcanoes.html">Requirements - CEOS Pilot on Volcanoes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../enterprise/reqs-gsnl.html">Requirements - GEO Supersites and Natural Laboratories</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../enterprise/summary.html">Summary</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../enterprise/references.html">References</a></li>
 </ul>
 </li>
@@ -219,7 +218,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../computational/components/group___cloud.html#software-packages">Software Packages</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../computational/components/group___community.html">Community</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../computational/components/group___community.html#sub-components">Sub-Components</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../computational/components/group___core.html">Core</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../computational/components/group___core.html#classes">Classes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../computational/components/group___core.html#sub-components">Sub-Components</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../computational/components/group___core.html#software-packages">Software Packages</a></li>
 </ul>
@@ -259,7 +263,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../computational/components/group___syndication.html">Syndication Feed</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../computational/cv-summary.html">Summary</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Engineering Viewpoint</a><ul class="current">
@@ -282,12 +285,20 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="nv-nodes.html">Deployment nodes</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Deployment channels</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nv-summary.html">Summary</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Deployment channels</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#continuous-integration">Continuous integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#packaging">Packaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deployment">Deployment</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../technology/index.html">Technology Viewpoint</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../technology/tv-purpose.html">Technology selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../technology/tv-purpose.html">Technology selection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../technology/tv-purpose.html#modular-software">Modular Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../technology/tv-purpose.html#long-lifetime-software">Long Lifetime Software</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../technology/tv-packages.html">Software packages</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../technology/packages/namespace_terradue_1_1_authentication_1_1_umsso.html">Terradue::Authentication::Umsso</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../technology/packages/namespace_terradue_1_1_cloud.html">Terradue::Cloud</a><ul>
@@ -316,7 +327,6 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../technology/tv-standards.html">Technlogy Viewpoint - Implementation standards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../technology/tv-standards.html#normative-references">Normative References</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../technology/tv-summary.html">Summary</a></li>
 </ul>
 </li>
 </ul>
@@ -332,7 +342,12 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Engineering Viewpoint - Deployment channels</a></li>
+<li><a class="reference internal" href="#">Engineering Viewpoint - Deployment channels</a><ul>
+<li><a class="reference internal" href="#continuous-integration">Continuous integration</a></li>
+<li><a class="reference internal" href="#packaging">Packaging</a></li>
+<li><a class="reference internal" href="#deployment">Deployment</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -346,7 +361,7 @@
     </a>
   </li>
   <li>
-    <a href="nv-summary.html" title="Next Chapter: Engineering Viewpoint - Purpose of the system"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Engineering View... &raquo;</span>
+    <a href="../technology/index.html" title="Next Chapter: Technology Viewpoint"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Technology Viewp... &raquo;</span>
     </a>
   </li>
               
@@ -384,8 +399,12 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Engineering Viewpoint</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="nv-deploy-constraint.html">Deployment Constraints</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nv-nodes.html">Deployment nodes</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Deployment channels</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nv-summary.html">Summary</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Deployment channels</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#continuous-integration">Continuous integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#packaging">Packaging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deployment">Deployment</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../technology/index.html">Technology Viewpoint</a></li>
@@ -407,7 +426,19 @@
       
   <div class="section" id="engineering-viewpoint-deployment-channels">
 <h1>Engineering Viewpoint - Deployment channels<a class="headerlink" href="#engineering-viewpoint-deployment-channels" title="Permalink to this headline">¶</a></h1>
-<p>This section is under development.</p>
+<div class="section" id="continuous-integration">
+<h2>Continuous integration<a class="headerlink" href="#continuous-integration" title="Permalink to this headline">¶</a></h2>
+<p>The deployment is the last step of a robust continuous integration cycle that starts with the implementation of features from development branches or resolution of bugs. Once commited, those development changes are integrated to the development branch. This branch is watched by the continuous system and build at every change. Developers are notified about the sucess or the failure of the build and must resolve broken builds accordingly. When a stable build is ready on development branch (tested on development environement), the release time can start where the development branch is merged to the master branch and a release build is performed from that latter.</p>
+<img src="../_images/gitflow.svg" /></div>
+<div class="section" id="packaging">
+<h2>Packaging<a class="headerlink" href="#packaging" title="Permalink to this headline">¶</a></h2>
+<p>All builds ouputs an <em>RPM</em> file that is a self contained package with all the software files referencing also the external depndency to be installed for the software to work correctly at runtime (e.g. see <em class="xref std std-ref">_cots</em>).
+According to the branch of build (developement or master), the RPM is placed in respective SNAPSHOT or RELEASE YUM repository. The developement platform is linked to the SNAPSHOT repository and the operational platform to the RELEASE repository.</p>
+</div>
+<div class="section" id="deployment">
+<h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h2>
+<p>The deployment consists in a simple &#8220;yum install&#8221; or &#8220;yum update&#8221; command. Duting deployment, operational platform is put offline and a maintenance notice is generated to inform the users about the downtime and the rationale of this update (bug fixes and new features list)</p>
+</div>
 </div>
 
 

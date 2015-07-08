@@ -16,7 +16,7 @@ DotNetOpenSearch Software Package
 
 Software Page : `DotNetOpenSearch <https://github.com/Terradue/DotNetOpenSearch>`_
 
-Version : 1.9.11
+Version : 1.10.4
 
 
 License : `GPLv3 <https://github.com/DotNetOpenSearch/Terradue.OpenSearch/blob/master/LICENSE.txt>`_

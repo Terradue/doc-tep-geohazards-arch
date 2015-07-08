@@ -31,6 +31,8 @@ Middleware Contraints
 
 - Cloud Controller powered by OpenNebula
 
+.. _cots:
+
 COTS Package Constraints
 ------------------------
 

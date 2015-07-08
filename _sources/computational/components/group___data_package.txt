@@ -1,0 +1,91 @@
+.. _group___data_package:
+
+Data Package
+############
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___data_package.iuml
+
+This component defines a container for datasets, defined by a user. This container manages remote resources in static (predefined datasets) or dynamic (search url). A Data Package is OpenSearchable" and can be queried via an opensearch interface.
+
+
+
+.. uml::
+
+
+	
+	User -> WebPortal: Select data
+	WebPortal -> WebServer: Stores in a temporary data package
+	WebServer -> Database: Save a temporary data package
+	User -> WebPortal: Save the data package \nwith name/identifier
+	WebPortal -> WebServer: Request the storage \nof the current temporary data package \nwith given name/identifier
+	WebServer -> Database: Save the data package \nwith associated opensearch urls
+	WebServer -> WebPortal: Return new data package
+	WebPortal -> User: Data package successfully created
+	
+	footer
+	GeoHazards TEP Data Package creation state diagram
+	(c) Terradue Srl
+	endfooter
+	
+	
+
+
+
+.. uml::
+
+
+	
+	User -> WebPortal: Load existing data package
+	WebPortal -> WebServer: Stores the data package in the temporary data package
+	WebPortal -> User: Displays the items from the data package
+	User -> WebPortal: Remove items or add new ones in the temporary data package
+	
+	alt user is owner of the data package
+	User -> WebPortal: Request the storage of the current temporary data package \nwith given name (update existing one)
+	WebServer -> Database: Save the data package \nwith associated opensearch urls
+	WebServer -> WebPortal: Return new data package
+	WebPortal -> User: Data package successfully updated
+	else user is not the owner of the data package
+	WebPortal -> User: Displays an error message to the user
+	end
+	
+	footer
+	GeoHazards TEP Data Package update state diagram
+	(c) Terradue Srl
+	endfooter
+	
+	
+
+
+
+.. uml::
+
+
+	
+	User -> WebPortal: Delete a data package
+	WebPortal -> WebServer: Request the suppression of the data package
+	WebServer -> Database: Deletes the data package
+	WebServer -> WebPortal: Confirm
+	WebPortal -> User: Data package successfully deleted
+	
+	footer
+	GeoHazards TEP Data Package suppression state diagram
+	(c) Terradue Srl
+	endfooter
+	
+	
+
+Dependencies
+------------
+- uses :ref:`Series <group___series>` to define the datasets resources
+
+- implements :ref:`OpenSearch <group___open_search>` to be queryable and act as a subset catalogue
+
+

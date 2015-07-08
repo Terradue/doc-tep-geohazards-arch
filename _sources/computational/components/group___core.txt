@@ -15,6 +15,11 @@ Core
 
 
 
+Classes
+-------
+- :ref:`class_terradue_1_1_portal_1_1_user`
+
+
 Sub-Components
 --------------
 - :ref:`group___computing_resource`

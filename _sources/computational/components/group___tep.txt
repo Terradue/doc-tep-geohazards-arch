@@ -17,5 +17,7 @@ Tep
 
 Sub-Components
 --------------
+- :ref:`group___data_package`
 - :ref:`group___cloud_wps_factory`
+- :ref:`group___tep_user`
 

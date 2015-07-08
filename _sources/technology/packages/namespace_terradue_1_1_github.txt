@@ -12,11 +12,17 @@ Terradue::Github
   skinparam componentStyle uml2
   !include target/rst/in/namespace_terradue_1_1_github.iuml
 
+:ref:`Terradue.Github <namespace_terradue_1_1_github>` Software Package
+
+Software Page : `Terradue.Github <https://git.terradue.com/sugar/terradue-github>`_
+
+Version : 1.0.4
 
 
-Software Page : ` <>`_
+License : `incubating <https://git.terradue.com/sugar/terradue-github>`_
 
-Version : 
 
-License : ` <>`_
+
+Requires :
+- :ref:`namespace_terradue_1_1_portal`
 

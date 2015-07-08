@@ -14,7 +14,7 @@ UM-SSO plugin
 
 This module enables external authentication using UM-SSO mechanism. In the core, the :ref:`Context <group___context>` component provides with an interface that allows using HTTP headers present in the HHTP context to authenticate the user. Associated with a set of rules, the :ref:`Authentication <group___authentication>` is able to establish a protocol to authenticate user.
 
-Next "Code ruleset" is the excerpt of the ruleset configured in ngEO to enable UM-SSO authentication. The externalAuthentication is declared with the method UM-SSO. accountType maps the rule to an account. The rule is applied only if the condition that specified that the header  is present and not empty. Then the value present in  is used as login username and user is registered automatically if not yet present in the database with register="true" and the user receives a account creation mail with the mail information found in header Umsso-Person-Email.
+Next "Code ruleset" is the excerpt of the ruleset configured to enable UM-SSO authentication. The externalAuthentication is declared with the method UM-SSO. accountType maps the rule to an account. The rule is applied only if the condition that specified that the header  is present and not empty. Then the value present in  is used as login username and user is registered automatically if not yet present in the database with register="true" and the user receives a account creation mail with the mail information found in header Umsso-Person-Email.
 
 .. code-block::
 
@@ -42,26 +42,26 @@ Following diagram depicts the User status when logging with UM-SSO.
 
 	
 	start
-	if (secured service?) then (yes)
-	  if (UM-SSO logged?) then (yes)
-	    if (user in DB?) then (yes)
-	      if (user pending activation?) then (yes)
-	        :reinvite user to confirm email
+	    if (secured service?) then (yes)
+	      if (UM-SSO logged?) then (yes)
+	        if (user in DB?) then (yes)
+	          if (user pending activation?) then (yes)
+	            :reinvite user to confirm email
+	            stop
+	          endif
+	        else (no)
+	          :create user account in db
+	          :set account status to **Pending Activation**
+	          :send confirmation email to user
+	          :invite user to confirm email
+	          stop
+	        endif
+	      else (no)
+	        :redirect user to UM-SSO IDP
 	        stop
 	      endif
-	    else (no)
-	      :create user account in db
-	      :set account status to **Pending Activation**
-	      :send confirmation email to user
-	      :invite user to confirm email
-	      stop
 	    endif
-	  else (no)
-	    :redirect user to UM-SSO IDP
-	    stop
-	  endif
-	endif
-	:process service
+	    :process service
 	stop
 	
 	footer
