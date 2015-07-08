@@ -8,6 +8,7 @@
    skinparam componentStyle uml2
 
    !include target/rst/in/group___core.iuml
+   !include target/rst/in/group___community.iuml
    !include target/rst/in/group___cloud.iuml
    !include target/rst/in/group___security.iuml
    !include target/rst/in/group___open_search.iuml
@@ -22,9 +23,11 @@
    !include target/rst/in/group___cloud_appliance.iuml
    !include target/rst/in/group___cloud_provider.iuml
    !include target/rst/in/group___cloud_wps_factory.iuml
+   !include target/rst/in/group___data_package.iuml
    !include target/rst/in/group___one_client.iuml
    !include target/rst/in/group___open_nebula_x_m_l_r_p_c.iuml
    !include target/rst/in/group___persistence.iuml
+   !include target/rst/in/group___tep_user.iuml
    
    !include target/rst/in/group___series.iuml
    !include target/rst/in/group___service.iuml

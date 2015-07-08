@@ -12,7 +12,7 @@
 	<artifactId>doc-tep-geohazards-arch</artifactId>
 	<packaging>rpm</packaging>
 	<description>Geohazards thematic exploitation platform architecture</description>
-	<version>1.3.5-SNAPSHOT</version>
+	<version>1.4-SNAPSHOT</version>
 
 
 	<dependencies>
@@ -64,7 +64,11 @@
 									<include>group___cloud_appliance.xml</include>
 									<include>group___cloud_provider.xml</include>
 									<include>group___cloud_wps_factory.xml</include>
+									<include>group___community.xml</include>
 									<include>group___core.xml</include>
+									<include>group___data_package.xml</include>
+									<include>group___github_client.xml</include>
+									<include>group___github_profile.xml</include>
 									<include>group___model.xml</include>
 									<include>group___o_w_s_context.xml</include>
 									<include>group___o_w_s_context_atom_feed.xml</include>
@@ -80,6 +84,7 @@
 									<include>group___service.xml</include>
 									<include>group___syndication.xml</include>
 									<include>group___tep.xml</include>
+									<include>group___tep_user.xml</include>
 									<include>group___virtual_machine_template.xml</include>
 									<include>group___w_p_s.xml</include>
 									<include>group___web_context.xml</include>

@@ -15,6 +15,7 @@ The components group list:
    :maxdepth: 1
    
    Cloud <components/group___cloud>
+   Community <components/group___community>
    Core <components/group___core>
    Model <components/group___model>
    OpenSearch <components/group___open_search>

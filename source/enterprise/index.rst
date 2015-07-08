@@ -14,5 +14,4 @@ Contents:
    Requirements - CEOS Pilot on Seismic Hazards <reqs-seismic>
    Requirements - CEOS Pilot on Volcanoes <reqs-volcanoes>
    Requirements - GEO Supersites and Natural Laboratories <reqs-gsnl>
-   Summary <summary>
    References <references>
