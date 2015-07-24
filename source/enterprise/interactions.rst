@@ -39,9 +39,9 @@ User profiles are defined to specialize the interactions between roles, in order
 Constraints on Data providers | Administrators interactions
 ------------------------------------------------------------
 
-Existing catalogues of EO Data Collections can be registered through a Catalogue Description Url, compliant with the OGC standard "OpenSearch Geo & Time extension". Collections are registered along with an identifier, a name and a description.
+- Existing catalogues of EO Data Collections can be registered through a Catalogue Description Url, compliant with the OGC standard "OpenSearch Geo & Time extension". Collections are registered along with an identifier, a name and a description.
 
-Partner Data Admins are also provided with an organisational interface (handled through ESA RSS) which can setup a dedicated FTP resource (or access a provided one) and will migrate the uploaded data collections onto the Platforms storage, create the catalogue references, and make it registered on the Platform.
+- Partner Data Admins are also provided with an organisational interface (handled through ESA RSS) which can setup a dedicated FTP resource (or access a provided one) and will migrate the uploaded data collections onto the Platforms storage, create the catalogue references, and make it registered on the Platform.
 
 Constraints on Processor integrators | end-users interactions
 --------------------------------------------------------------
