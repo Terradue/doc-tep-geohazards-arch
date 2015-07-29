@@ -30,34 +30,45 @@ In addition, users can also open their own accounts on a commercial Cloud Provid
 Roles actions and interactions
 ==============================
 
-Roles on the Platform are complying to a community policy, and are defined as a set of actions and interactions (EV_Behaviours), observable in the system through process steps involving three types of Enterprise Objects: Actors (e.g. a user), Resources (e.g. a data processor) and Artefacts (e.g. data processing results).
+Roles on the Platform are complying to a community policy (e.g. the data access quota allocated to a Principal Investigator on-boarded on the Platform), and are defined as a set of actions and interactions (EV_Behaviours), observable in the system through process steps involving three types of Enterprise Objects: Actors (e.g. a user), Resources (e.g. datasets, data processors) and Artefacts (e.g. data processing results).
 
 << Enterprise_Spec >>
-Community Roles
+Community Roles: 
+
+* Data access
+* Processor integration
+* Data processing and Cloud bursting
+* Data visualization and analysis
+* Reproducible Science collaborations
+* Capacity Building through Data Sharing
 
 << Enterprise_Spec >>
-Community Policy
+Community Policy: 
+
+* ESA EO data access and sharing policy
+* Third-Party EO data provider data access and sharing policy
+* Processor terms of use
+* Public Cloud Provider terms of use
 
 << Enterprise_Spec >>
-Community Processes
+Community Processes:
 
-<< Enterprise_Spec >>
-Enterprise Objects
+* On-demand provisioning of EO processor integration resource
+* On-demand provisioning of compute cluster
 
 <EV_Role> Data access
 ---------------------
 
-* EV_Policy:
-* EV_Process:
-TBD
+* EV_Policy: applicable EO data access and sharing policies
+* EV_Process: catalogue query, data package creation, EO product download
+* EV_Resource: eoDataCatalogue
 
 <EV_Role> Processor integration
 -------------------------------
 
-* EV_Policy:
-* EV_Process:
+* EV_Policy: Processor terms of use, Public Cloud Provider terms of use
+* EV_Process: processor code wrapping, processor integratin testing and validation, processor deployment to user Portal
 * EV_Resource: vmDeveloperCloudSandbox
-TBD
 
 <EV_Role> Data processing and Cloud bursting
 --------------------------------------------
@@ -65,7 +76,7 @@ TBD
 Users can instantiate (on-demand) a processing service appliance, provision the appliance on a pre-configured Cloud Provider and invoke the processing via the OGC Web Processing Service interface.
 Users define input data and select a results location (e.g. portal, cloud block storage, dropbox, google drive, ...)
 
-* EV_Policy:
+* EV_Policy: applicable Public Cloud Provider terms of use
 * EV_Process: runJob - On-demand cloud appliance
 
 .. uml::
@@ -109,7 +120,7 @@ Users define input data and select a results location (e.g. portal, cloud block 
 Users can run existing processing services (e.g. G-POD services) and and invoke the processing via the OGC Web Processing Service interface.
 Users define input data and select a results location (e.g. portal, cloud block storage, dropbox, google drive, ...)
 
-* EV_Policy:
+* EV_Policy: applicable Public Cloud Provider terms of use
 * EV_Process: runJob - On-demand computing element
 
 .. uml::
@@ -153,8 +164,8 @@ Users define input data and select a results location (e.g. portal, cloud block 
 <EV_Role> Data visualization and analysis
 -----------------------------------------
 
-* EV_Policy:
-* EV_Process:
+* EV_Policy: applicable EO data access and sharing policies, applicable Processor terms of use
+* EV_Process: data catalogue query, query results retrieval, results upload to shared storage
 * EV_Resource: vmCloudToolbox
 
 The platform is meant to allow users to perform data visualisation tasks:
@@ -166,8 +177,8 @@ The platform is meant to allow users to perform data visualisation tasks:
 <EV_Role> Reproducible Science collaboration
 --------------------------------------------
 
-* EV_Policy:
-* EV_Process:
+* EV_Policy: applicable EO data access and sharing policies
+* EV_Process: Job run sharing, code sharing via social coding platforms, Cloud bursting
 
 The Geohazards Platform is investigating on different collaborative eScience scenarios made available to users:
 
@@ -183,8 +194,8 @@ The Geohazards Web Portal is investigating on different work areas (or 'contexts
 <EV_Behaviour> EO Data exploitation
 +++++++++++++++++++++++++++++++++++
 
-* EV_Policy:
-* EV_Process:
+* EV_Policy: applicable EO data access and sharing policies
+* EV_Process: EO data catalogue access, Job run sharing, shared Search result referencing, Geobrowser interactions
 
 * dedicated to EO data collections available as input data for processing tasks
 * provides Portal links to automate the discovery allowing users to easily feed processing tasks
@@ -192,8 +203,8 @@ The Geohazards Web Portal is investigating on different work areas (or 'contexts
 <EV_Behaviour> EO-based products exploitation
 +++++++++++++++++++++++++++++++++++++++++++++
 
-* EV_Policy:
-* EV_Process:
+* EV_Policy: applicable EO data access and sharing policies
+* EV_Process: EO data catalogue access, Job run sharing, Job intermediate results detailed analysis, Geobrowser interactions
 
 * dedicated to GEP processors results (final and intermediate processing outputs) 
 * provides Portal links to processing jobs runs, to allow users understand a processor, and its possible improvements 
@@ -201,8 +212,8 @@ The Geohazards Web Portal is investigating on different work areas (or 'contexts
 <EV_Behaviour> Publication referencing
 ++++++++++++++++++++++++++++++++++++++
 
-* EV_Policy:
-* EV_Process:
+* EV_Policy: applicable EO data access and sharing policies
+* EV_Process: Web link referencing, shared Search result referencing, Geobrowser interactions
 
 * related to the scientific community curated results (scientific papers)
 * provides Portal links to collateral resources (like in GEP, data and processors) that allow researchers to understand and reproduce an experiment or a production
@@ -210,8 +221,8 @@ The Geohazards Web Portal is investigating on different work areas (or 'contexts
 <EV_Behaviour> Community sharing
 ++++++++++++++++++++++++++++++++
 
-* EV_Policy:
-* EV_Process:
+* EV_Policy: applicable EO data access and sharing policies, 
+* EV_Process: Offering description, Offering cataloguing, shared Search result referencing, Geobrowser interactions
 
 * dedicated to geotag and reference web accessible content that labs, institutes, agencies, ... are openly sharing on the web (articles and blog posts, products images delivered in web-browser compatible formats, ...)
 * provides a Portal integration mechanism based on the OGC standard "OWS Context" (http://www.opengeospatial.org/standards/owc)
