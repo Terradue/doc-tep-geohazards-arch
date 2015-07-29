@@ -432,7 +432,7 @@
       
   <div class="section" id="enterprise-viewpoint-interactions-between-roles">
 <h1>Enterprise Viewpoint - Interactions between roles<a class="headerlink" href="#enterprise-viewpoint-interactions-between-roles" title="Permalink to this headline">¶</a></h1>
-<p>The design contraints and the required interactions between roles are...</p>
+<p>This section introduces the design contraints and the required interactions between roles.</p>
 <div class="section" id="different-services">
 <h2>Different services<a class="headerlink" href="#different-services" title="Permalink to this headline">¶</a></h2>
 <p>The users of the platform are provided with several interaction points:</p>
@@ -442,8 +442,9 @@
 <li>a cloud dashboard for the monitoring of quotas consumption and cloud processing tasks for registered &#8220;end-users&#8221;</li>
 <li>a cloudSandbox environment for processor integration (or catalogue provisioning) activities for &#8220;expert&#8221; users</li>
 <li>a social media handle for registered users, with different levels of usage (within the website or towards third party social media platforms)</li>
+<li>a Control Panel for the administrators of the Platform&#8217;s resources (Data collections, Data Packages, Groups, Users, WPS providers, Web Processing Services, News, Banners)</li>
 </ul>
-<p>User profiles are defined to specialize the interactions, in order to map the underlying processes with community objectives.</p>
+<p>User profiles are defined to specialize the interactions between roles, in order to map the underlying processes with community objectives.</p>
 <p class="plantuml">
 <object data="../_images/plantuml-f9fcfce68e8c3bf628e87b53d3a8fdd32487a289.svg" type="image/svg+xml" style="width:353px;height:461px;">
 <img src="../_images/plantuml-f9fcfce68e8c3bf628e87b53d3a8fdd32487a289.png" alt="left to right direction
@@ -461,11 +462,18 @@ rectangle Platform {
 </div>
 <div class="section" id="constraints-on-data-providers-administrators-interactions">
 <h2>Constraints on Data providers | Administrators interactions<a class="headerlink" href="#constraints-on-data-providers-administrators-interactions" title="Permalink to this headline">¶</a></h2>
-<p>TBD</p>
+<ul class="simple">
+<li>Existing catalogues of EO Data Collections can be registered through a Catalogue Description Url, compliant with the OGC standard &#8220;OpenSearch Geo &amp; Time extension&#8221;. Collections are registered along with an identifier, a name and a description.</li>
+<li>Partner Data Admins are also provided with an organisational interface (handled through ESA RSS) which can setup a dedicated FTP resource (or access a provided one) and will migrate the uploaded data collections onto the Platforms storage, create the catalogue references, and make it registered on the Platform.</li>
+</ul>
 </div>
 <div class="section" id="constraints-on-processor-integrators-end-users-interactions">
 <h2>Constraints on Processor integrators | end-users interactions<a class="headerlink" href="#constraints-on-processor-integrators-end-users-interactions" title="Permalink to this headline">¶</a></h2>
-<p>TBD</p>
+<p>Different integration options are supported by the Platform:</p>
+<ul class="simple">
+<li>Single machine integration: the user is provided with a Virtual Machine acting as a desktop machine, but with enhanced capacities to access the Platform&#8217;s data collections. The user must access the VM through a VNC connexion, and has to use the resources made available from the Platform (GAMMA software, ESA toolboxes, ...).</li>
+<li>Hadoop Streaming API integration: the user is provided with a Developer Cloud Sandboc environment, offering APIs and tools to integrate an existing application code, and make it acknowledged by the Hadoop framework. Once integrated in the provided framework, the application can scale under the automatic management of the Hadoop framework (job distribution and task trackers over a compute cluster).</li>
+</ul>
 </div>
 </div>
 

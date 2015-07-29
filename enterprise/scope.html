@@ -477,38 +477,53 @@ In addition, users can also open their own accounts on a commercial Cloud Provid
 </div>
 <div class="section" id="roles-actions-and-interactions">
 <h2>Roles actions and interactions<a class="headerlink" href="#roles-actions-and-interactions" title="Permalink to this headline">¶</a></h2>
-<p>Roles on the Platform are complying to a community policy, and are defined as a set of actions and interactions (EV_Behaviours), observable in the system through process steps involving three types of Enterprise Objects: Actors (e.g. a user), Resources (e.g. a data processor) and Artefacts (e.g. data processing results).</p>
+<p>Roles on the Platform are complying to a community policy (e.g. the data access quota allocated to a Principal Investigator on-boarded on the Platform), and are defined as a set of actions and interactions (EV_Behaviours), observable in the system through process steps involving three types of Enterprise Objects: Actors (e.g. a user), Resources (e.g. datasets, data processors) and Artefacts (e.g. data processing results).</p>
 <p>&lt;&lt; Enterprise_Spec &gt;&gt;
-Community Roles</p>
+Community Roles:</p>
+<ul class="simple">
+<li>Data access</li>
+<li>Processor integration</li>
+<li>Data processing and Cloud bursting</li>
+<li>Data visualization and analysis</li>
+<li>Reproducible Science collaborations</li>
+<li>Capacity Building through Data Sharing</li>
+</ul>
 <p>&lt;&lt; Enterprise_Spec &gt;&gt;
-Community Policy</p>
+Community Policy:</p>
+<ul class="simple">
+<li>ESA EO data access and sharing policy</li>
+<li>Third-Party EO data provider data access and sharing policy</li>
+<li>Processor terms of use</li>
+<li>Public Cloud Provider terms of use</li>
+</ul>
 <p>&lt;&lt; Enterprise_Spec &gt;&gt;
-Community Processes</p>
-<p>&lt;&lt; Enterprise_Spec &gt;&gt;
-Enterprise Objects</p>
+Community Processes:</p>
+<ul class="simple">
+<li>On-demand provisioning of EO processor integration resource</li>
+<li>On-demand provisioning of compute cluster</li>
+</ul>
 <div class="section" id="ev-role-data-access">
 <h3>&lt;EV_Role&gt; Data access<a class="headerlink" href="#ev-role-data-access" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>EV_Policy:</li>
-<li>EV_Process:</li>
+<li>EV_Policy: applicable EO data access and sharing policies</li>
+<li>EV_Process: catalogue query, data package creation, EO product download</li>
+<li>EV_Resource: eoDataCatalogue</li>
 </ul>
-<p>TBD</p>
 </div>
 <div class="section" id="ev-role-processor-integration">
 <h3>&lt;EV_Role&gt; Processor integration<a class="headerlink" href="#ev-role-processor-integration" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>EV_Policy:</li>
-<li>EV_Process:</li>
+<li>EV_Policy: Processor terms of use, Public Cloud Provider terms of use</li>
+<li>EV_Process: processor code wrapping, processor integratin testing and validation, processor deployment to user Portal</li>
 <li>EV_Resource: vmDeveloperCloudSandbox</li>
 </ul>
-<p>TBD</p>
 </div>
 <div class="section" id="ev-role-data-processing-and-cloud-bursting">
 <h3>&lt;EV_Role&gt; Data processing and Cloud bursting<a class="headerlink" href="#ev-role-data-processing-and-cloud-bursting" title="Permalink to this headline">¶</a></h3>
 <p>Users can instantiate (on-demand) a processing service appliance, provision the appliance on a pre-configured Cloud Provider and invoke the processing via the OGC Web Processing Service interface.
 Users define input data and select a results location (e.g. portal, cloud block storage, dropbox, google drive, ...)</p>
 <ul class="simple">
-<li>EV_Policy:</li>
+<li>EV_Policy: applicable Public Cloud Provider terms of use</li>
 <li>EV_Process: runJob - On-demand cloud appliance</li>
 </ul>
 <p class="plantuml">
@@ -553,7 +568,7 @@ endUser -&gt; geoBrowser: share generated eO-based products" />
 <p>Users can run existing processing services (e.g. G-POD services) and and invoke the processing via the OGC Web Processing Service interface.
 Users define input data and select a results location (e.g. portal, cloud block storage, dropbox, google drive, ...)</p>
 <ul class="simple">
-<li>EV_Policy:</li>
+<li>EV_Policy: applicable Public Cloud Provider terms of use</li>
 <li>EV_Process: runJob - On-demand computing element</li>
 </ul>
 <p class="plantuml">
@@ -599,8 +614,8 @@ endUser -&gt; geoBrowser: share generated EO-based products" />
 <div class="section" id="ev-role-data-visualization-and-analysis">
 <h3>&lt;EV_Role&gt; Data visualization and analysis<a class="headerlink" href="#ev-role-data-visualization-and-analysis" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>EV_Policy:</li>
-<li>EV_Process:</li>
+<li>EV_Policy: applicable EO data access and sharing policies, applicable Processor terms of use</li>
+<li>EV_Process: data catalogue query, query results retrieval, results upload to shared storage</li>
 <li>EV_Resource: vmCloudToolbox</li>
 </ul>
 <p>The platform is meant to allow users to perform data visualisation tasks:</p>
@@ -613,8 +628,8 @@ endUser -&gt; geoBrowser: share generated EO-based products" />
 <div class="section" id="ev-role-reproducible-science-collaboration">
 <h3>&lt;EV_Role&gt; Reproducible Science collaboration<a class="headerlink" href="#ev-role-reproducible-science-collaboration" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>EV_Policy:</li>
-<li>EV_Process:</li>
+<li>EV_Policy: applicable EO data access and sharing policies</li>
+<li>EV_Process: Job run sharing, code sharing via social coding platforms, Cloud bursting</li>
 </ul>
 <p>The Geohazards Platform is investigating on different collaborative eScience scenarios made available to users:</p>
 <ul class="simple">
@@ -629,8 +644,8 @@ endUser -&gt; geoBrowser: share generated EO-based products" />
 <div class="section" id="ev-behaviour-eo-data-exploitation">
 <h4>&lt;EV_Behaviour&gt; EO Data exploitation<a class="headerlink" href="#ev-behaviour-eo-data-exploitation" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>EV_Policy:</li>
-<li>EV_Process:</li>
+<li>EV_Policy: applicable EO data access and sharing policies</li>
+<li>EV_Process: EO data catalogue access, Job run sharing, shared Search result referencing, Geobrowser interactions</li>
 <li>dedicated to EO data collections available as input data for processing tasks</li>
 <li>provides Portal links to automate the discovery allowing users to easily feed processing tasks</li>
 </ul>
@@ -638,8 +653,8 @@ endUser -&gt; geoBrowser: share generated EO-based products" />
 <div class="section" id="ev-behaviour-eo-based-products-exploitation">
 <h4>&lt;EV_Behaviour&gt; EO-based products exploitation<a class="headerlink" href="#ev-behaviour-eo-based-products-exploitation" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>EV_Policy:</li>
-<li>EV_Process:</li>
+<li>EV_Policy: applicable EO data access and sharing policies</li>
+<li>EV_Process: EO data catalogue access, Job run sharing, Job intermediate results detailed analysis, Geobrowser interactions</li>
 <li>dedicated to GEP processors results (final and intermediate processing outputs)</li>
 <li>provides Portal links to processing jobs runs, to allow users understand a processor, and its possible improvements</li>
 </ul>
@@ -647,8 +662,8 @@ endUser -&gt; geoBrowser: share generated EO-based products" />
 <div class="section" id="ev-behaviour-publication-referencing">
 <h4>&lt;EV_Behaviour&gt; Publication referencing<a class="headerlink" href="#ev-behaviour-publication-referencing" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>EV_Policy:</li>
-<li>EV_Process:</li>
+<li>EV_Policy: applicable EO data access and sharing policies</li>
+<li>EV_Process: Web link referencing, shared Search result referencing, Geobrowser interactions</li>
 <li>related to the scientific community curated results (scientific papers)</li>
 <li>provides Portal links to collateral resources (like in GEP, data and processors) that allow researchers to understand and reproduce an experiment or a production</li>
 </ul>
@@ -656,8 +671,8 @@ endUser -&gt; geoBrowser: share generated EO-based products" />
 <div class="section" id="ev-behaviour-community-sharing">
 <h4>&lt;EV_Behaviour&gt; Community sharing<a class="headerlink" href="#ev-behaviour-community-sharing" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>EV_Policy:</li>
-<li>EV_Process:</li>
+<li>EV_Policy: applicable EO data access and sharing policies,</li>
+<li>EV_Process: Offering description, Offering cataloguing, shared Search result referencing, Geobrowser interactions</li>
 <li>dedicated to geotag and reference web accessible content that labs, institutes, agencies, ... are openly sharing on the web (articles and blog posts, products images delivered in web-browser compatible formats, ...)</li>
 <li>provides a Portal integration mechanism based on the OGC standard &#8220;OWS Context&#8221; (<a class="reference external" href="http://www.opengeospatial.org/standards/owc">http://www.opengeospatial.org/standards/owc</a>)</li>
 </ul>
