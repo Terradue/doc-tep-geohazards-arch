@@ -8,7 +8,7 @@ This pilot represents a stepping-stone towards the long-term goals of the Santor
 3. daily observations at erupting volcanoes;
 4. development of novel measurements;
 5. 20-year sustainability;
-and 6. capacity-building.
+6. capacity-building.
 
 Specifically, the pilot aims to:
 
