@@ -14,15 +14,15 @@ They are brought to the design activity by a user community to be supported on t
 There are mainly 3 areas of policies driving the system design.
 
 << EV_PolicyEnvelope >>: EO data access and sharing policies (visualization and download) 
-- << EV_PolicyValue >>: ESA EO data access and sharing policy
-- << EV_PolicyValue >>: Third-Party EO data provider data access and sharing policy (DLR, ASI, JAXA)
+* << EV_PolicyValue >>: ESA EO data access and sharing policy
+* << EV_PolicyValue >>: Third-Party EO data provider data access and sharing policy (DLR, ASI, JAXA)
 NOTE: policies implementation on download and processing quotas are delegated to the future evolutions of the platform
 
 << EV_PolicyEnvelope >>: EO data processor terms of use
-- << EV_PolicyValue >>: a given Processor terms of use (Opensource, Commercial)
+* << EV_PolicyValue >>: a given Processor terms of use (Opensource, Commercial)
 
 << EV_PolicyEnvelope >>: Public Cloud Provider policies
-- << EV_PolicyValue >>: a given Public Cloud Provider terms of use
-- << EV_PolicyValue >>: a given Public Cloud Provider API capabilities
+* << EV_PolicyValue >>: a given Public Cloud Provider terms of use
+* << EV_PolicyValue >>: a given Public Cloud Provider API capabilities
 
 
