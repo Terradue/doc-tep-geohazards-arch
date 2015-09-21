@@ -41,20 +41,49 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<executions>
+					<execution>
+						<id>import-packages-sources</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>/bin/sh</executable>
+							<arguments>
+								<argument>packages/importsources.sh</argument>
+							</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.soebes.maven.plugins</groupId>
+				<artifactId>doxygen-maven-plugin</artifactId>
+				<version>1.1.0-SNAPSHOT</version>
+				<configuration>
+					<configurationFile>packages/doxygen-xml-tepqw.config</configurationFile>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.7</version>
 				<executions>
 					<execution>
-						<id>copy-sources-pre</id>
-						<phase>generate-sources</phase>
+						<id>copy-package-xmldoc</id>
+						<phase>process-sources</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
 							<resources>
 								<resource>
-									<directory>/Users/emathot/Workspace/Terradue/system/TepQW/build/xml/</directory>
+									<directory>build/xml/</directory>
+									<include>api.xml</include>
 									<include>group___atom.xml</include>
 									<include>group___auth___umsso.xml</include>
 									<include>group___authentication.xml</include>
@@ -91,39 +120,39 @@
 									<include>group___wps_provider.xml</include>
 									<include>group___wps_service.xml</include>
 									<include>class_terradue_1_1_portal_1_1_entity.xml</include>
-							        <include>class_terradue_1_1_portal_1_1_wps_process_offering.xml</include>
-							        <include>class_terradue_1_1_portal_1_1_wps_provider.xml</include>
-							        <include>class_terradue_1_1_portal_1_1_service.xml</include>
-							        <include>class_terradue_1_1_portal_1_1_user.xml</include>
-							        <include>class_terradue_1_1_portal_1_1_series.xml</include>
-							        <include>class_terradue_1_1_portal_1_1_group.xml</include>
-							        <include>class_terradue_1_1_portal_1_1_feature.xml</include>
-							        <include>class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model*</include>
-							        <include>class_terradue_1_1_cloud_1_1_virtual_machine_template.xml</include>
-							        <include>class_terradue_1_1_cloud_1_1_cloud_appliance.xml</include>
-							        <include>class_terradue_1_1_cloud_1_1_cloud_provider.xml</include>
-							        <include>class_terradue_1_1_tep_q_w_1_1_controller_1_1_cloud_wps_factory.xml</include>
-							        <include>namespace_terradue_1_1_open_search.xml</include>
-							        <include>namespace_terradue_1_1_portal.xml</include>
-							        <include>namespace_terradue_1_1_authentication_1_1_umsso.xml</include>
-							        <include>namespace_terradue_1_1_cloud.xml</include>
-							        <include>namespace_terradue_1_1_g_d_a_l_1_1_native.xml</include>
-							        <include>namespace_terradue_1_1_geo_json.xml</include>
-							        <include>namespace_terradue_1_1_github.xml</include>
-							        <include>namespace_terradue_1_1_hadoop.xml</include>
-							        <include>namespace_terradue_1_1_metadata_1_1_earth_observation.xml</include>
-							        <include>namespace_terradue_1_1_service_model_1_1_ogc_1_1_ows_context.xml</include>
-							        <include>namespace_terradue_1_1_service_model_1_1_syndication.xml</include>
-							        <include>namespace_terradue_1_1_news.xml</include>
-							        <include>namespace_terradue_1_1_open_nebula.xml</include>
-							        <include>namespace_terradue_1_1_open_search_1_1_data_analyzer.xml</include>
-							        <include>namespace_terradue_1_1_open_search_1_1_geo_json.xml</include>
-							        <include>namespace_terradue_1_1_open_search_1_1_tumblr.xml</include>
-							        <include>namespace_terradue_1_1_open_search_1_1_twitter.xml</include>
-							        <include>namespace_terradue_1_1_sandbox.xml</include>
-							        <include>namespace_terradue_1_1_tep_q_w.xml</include>
-							        <include>namespace_terradue_1_1_web_service_1_1_model.xml</include>
-							        <include>norm.xml</include>
+									<include>class_terradue_1_1_portal_1_1_wps_process_offering.xml</include>
+									<include>class_terradue_1_1_portal_1_1_wps_provider.xml</include>
+									<include>class_terradue_1_1_portal_1_1_service.xml</include>
+									<include>class_terradue_1_1_portal_1_1_user.xml</include>
+									<include>class_terradue_1_1_portal_1_1_series.xml</include>
+									<include>class_terradue_1_1_portal_1_1_group.xml</include>
+									<include>class_terradue_1_1_portal_1_1_feature.xml</include>
+									<include>class_terradue_1_1_service_model_1_1_ogc_1_1_ows_model*</include>
+									<include>class_terradue_1_1_cloud_1_1_virtual_machine_template.xml</include>
+									<include>class_terradue_1_1_cloud_1_1_cloud_appliance.xml</include>
+									<include>class_terradue_1_1_cloud_1_1_cloud_provider.xml</include>
+									<include>class_terradue_1_1_tep_q_w_1_1_controller_1_1_cloud_wps_factory.xml</include>
+									<include>namespace_terradue_1_1_open_search.xml</include>
+									<include>namespace_terradue_1_1_portal.xml</include>
+									<include>namespace_terradue_1_1_authentication_1_1_umsso.xml</include>
+									<include>namespace_terradue_1_1_cloud.xml</include>
+									<include>namespace_terradue_1_1_g_d_a_l_1_1_native.xml</include>
+									<include>namespace_terradue_1_1_geo_json.xml</include>
+									<include>namespace_terradue_1_1_github.xml</include>
+									<include>namespace_terradue_1_1_hadoop.xml</include>
+									<include>namespace_terradue_1_1_metadata_1_1_earth_observation.xml</include>
+									<include>namespace_terradue_1_1_service_model_1_1_ogc_1_1_ows_context.xml</include>
+									<include>namespace_terradue_1_1_service_model_1_1_syndication.xml</include>
+									<include>namespace_terradue_1_1_news.xml</include>
+									<include>namespace_terradue_1_1_open_nebula.xml</include>
+									<include>namespace_terradue_1_1_open_search_1_1_data_analyzer.xml</include>
+									<include>namespace_terradue_1_1_open_search_1_1_geo_json.xml</include>
+									<include>namespace_terradue_1_1_open_search_1_1_tumblr.xml</include>
+									<include>namespace_terradue_1_1_open_search_1_1_twitter.xml</include>
+									<include>namespace_terradue_1_1_sandbox.xml</include>
+									<include>namespace_terradue_1_1_tep_q_w.xml</include>
+									<include>namespace_terradue_1_1_web_service_1_1_model.xml</include>
+									<include>norm.xml</include>
 								</resource>
 							</resources>
 							<outputDirectory>${project.build.directory}/xml</outputDirectory>
@@ -131,7 +160,7 @@
 					</execution>
 					<execution>
 						<id>copy-sources</id>
-						<phase>process-resources</phase>
+						<phase>process-sources</phase>
 						<goals>
 							<goal>copy-resources</goal>
 						</goals>
@@ -155,9 +184,9 @@
 								<resource>
 									<directory>${project.build.directory}/rst/in</directory>
 									<includes>
-							          <include>class*.rst</include>
-							          <include>class*.iuml</include>
-							        </includes>
+										<include>class*.rst</include>
+										<include>class*.iuml</include>
+									</includes>
 								</resource>
 							</resources>
 							<outputDirectory>${project.build.directory}/source/information/classes</outputDirectory>
@@ -174,9 +203,9 @@
 								<resource>
 									<directory>${project.build.directory}/rst/in</directory>
 									<includes>
-							          <include>group*.rst</include>
-							          <include>group*.iuml</include>
-							        </includes>
+										<include>group*.rst</include>
+										<include>group*.iuml</include>
+									</includes>
 								</resource>
 							</resources>
 							<outputDirectory>${project.build.directory}/source/computational/components</outputDirectory>
@@ -193,8 +222,8 @@
 								<resource>
 									<directory>${project.build.directory}/rst/in</directory>
 									<includes>
-							          <include>page*.rst</include>
-							        </includes>
+										<include>page*.rst</include>
+									</includes>
 								</resource>
 							</resources>
 							<outputDirectory>${project.build.directory}/source/pages</outputDirectory>
@@ -211,9 +240,9 @@
 								<resource>
 									<directory>${project.build.directory}/rst/in</directory>
 									<includes>
-							          <include>namespace*.rst</include>
-							          <include>namespace*.iuml</include>
-							        </includes>
+										<include>namespace*.rst</include>
+										<include>namespace*.iuml</include>
+									</includes>
 								</resource>
 							</resources>
 							<outputDirectory>${project.build.directory}/source/technology/packages</outputDirectory>
@@ -275,65 +304,65 @@
 				</executions>
 			</plugin>
 			<plugin>
-	           <groupId>com.google.code.maven-replacer-plugin</groupId>
-	           <artifactId>replacer</artifactId>
-	           <version>1.5.3</version>
-	           <executions>
-	               <execution>
-	               	   <id>target-top</id>
-	                   <phase>process-classes</phase>
-	                   <goals>
-	                       <goal>replace</goal>
-	                   </goals>    
-	                   <configuration>
-			               <filesToInclude>${basedir}/_build/html/**/*.svg</filesToInclude>
-			               <replacements>
-			                   <replacement>
-			                       <token><![CDATA[<a]]></token>
-			                       <value><![CDATA[<a target="_top"]]></value>
-			                   </replacement>         
-			               </replacements>
-			           </configuration>               
-	               </execution>
-	               <execution>
-	               	   <id>placeholder</id>
-	                   <phase>generate-sources</phase>
-	                   <goals>
-	                       <goal>replace</goal>
-	                   </goals>    
-	                   <configuration>
-			               <filesToInclude>${project.build.directory}/xml/**/*.xml</filesToInclude>
-			               <replacements>
-			                   <replacement>
-			                       <token><![CDATA[<ref]]></token>
-			                       <value><![CDATA[[]<ref]]></value>
-			                   </replacement>         
-			                   <replacement>
-			                       <token><![CDATA[<xrefsect]]></token>
-			                       <value><![CDATA[[]<xrefsect]]></value>
-			                   </replacement>
-			                   <replacement>
-			                       <token><![CDATA[<itemizedlist]]></token>
-			                       <value><![CDATA[[]<itemizedlist]]></value>
-			                   </replacement> 
-			                   <replacement>
-			                       <token><![CDATA[<emphasis]]></token>
-			                       <value><![CDATA[[]<emphasis]]></value>
-			                   </replacement>   
-			                   <replacement>
-			                       <token><![CDATA[<plantuml]]></token>
-			                       <value><![CDATA[[]<plantuml]]></value>
-			                   </replacement>    
-			                   <replacement>
-			                       <token><![CDATA[<ulink]]></token>
-			                       <value><![CDATA[[]<ulink]]></value>
-			                   </replacement>    
-			               </replacements>
-			           </configuration>               
-	               </execution>
-	           </executions>
-	           
-	       </plugin>
+				<groupId>com.google.code.maven-replacer-plugin</groupId>
+				<artifactId>replacer</artifactId>
+				<version>1.5.3</version>
+				<executions>
+					<execution>
+						<id>target-top</id>
+						<phase>process-classes</phase>
+						<goals>
+							<goal>replace</goal>
+						</goals>    
+						<configuration>
+							<filesToInclude>${basedir}/_build/html/**/*.svg</filesToInclude>
+							<replacements>
+								<replacement>
+									<token><![CDATA[<a]]></token>
+									<value><![CDATA[<a target="_top"]]></value>
+								</replacement>         
+							</replacements>
+						</configuration>               
+					</execution>
+					<execution>
+						<id>placeholder</id>
+						<phase>process-sources</phase>
+						<goals>
+							<goal>replace</goal>
+						</goals>    
+						<configuration>
+							<filesToInclude>${project.build.directory}/xml/**/*.xml</filesToInclude>
+							<replacements>
+								<replacement>
+									<token><![CDATA[<ref]]></token>
+									<value><![CDATA[[]<ref]]></value>
+								</replacement>         
+								<replacement>
+									<token><![CDATA[<xrefsect]]></token>
+									<value><![CDATA[[]<xrefsect]]></value>
+								</replacement>
+								<replacement>
+									<token><![CDATA[<itemizedlist]]></token>
+									<value><![CDATA[[]<itemizedlist]]></value>
+								</replacement> 
+								<replacement>
+									<token><![CDATA[<emphasis]]></token>
+									<value><![CDATA[[]<emphasis]]></value>
+								</replacement>   
+								<replacement>
+									<token><![CDATA[<plantuml]]></token>
+									<value><![CDATA[[]<plantuml]]></value>
+								</replacement>    
+								<replacement>
+									<token><![CDATA[<ulink]]></token>
+									<value><![CDATA[[]<ulink]]></value>
+								</replacement>    
+							</replacements>
+						</configuration>               
+					</execution>
+				</executions>
+
+			</plugin>
 			<!--<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
