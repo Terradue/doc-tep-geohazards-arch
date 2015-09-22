@@ -19,6 +19,7 @@ The complete list of object is
   Terradue::Portal::Group <classes/class_terradue_1_1_portal_1_1_group>
   Terradue::Portal::Scheduler <classes/class_terradue_1_1_portal_1_1_scheduler>
   Terradue::Portal::Series <classes/class_terradue_1_1_portal_1_1_series>
+  Terradue::Portal::Service <classes/class_terradue_1_1_portal_1_1_service>
   Terradue::Portal::User <classes/class_terradue_1_1_portal_1_1_user>
   Terradue::Portal::WpsProcessOffering <classes/class_terradue_1_1_portal_1_1_wps_process_offering>
   Terradue::Portal::WpsProvider <classes/class_terradue_1_1_portal_1_1_wps_provider>
@@ -34,5 +35,6 @@ The complete list of object is
 
   Terradue::Cloud::CloudAppliance <classes/class_terradue_1_1_cloud_1_1_cloud_appliance>
   Terradue::Cloud::CloudProvider <classes/class_terradue_1_1_cloud_1_1_cloud_provider>
+  Terradue::Cloud::CloudProvider <classes/class_terradue_1_1_cloud_1_1_virtual_machine_template>
 
   Terradue::TepQW::Controller::CloudWpsFactory <classes/class_terradue_1_1_tep_q_w_1_1_controller_1_1_cloud_wps_factory>

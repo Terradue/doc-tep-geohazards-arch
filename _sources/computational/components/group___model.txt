@@ -15,11 +15,15 @@ Model
 
 
 
-Sub-Components
---------------
-- :ref:`group___atom`
-- :ref:`group___o_w_s_context`
-- :ref:`group___syndication`
+Sub-Modules
+-----------
+.. toctree::
+  :maxdepth: 2
+
+  group___o_w_s_context_atom_feed
+  group___o_w_s_context
+  group___atom
+  group___syndication
 
 
 Software Packages

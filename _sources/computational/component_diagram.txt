@@ -22,6 +22,10 @@
    
    !include target/rst/in/group___cloud_appliance.iuml
    !include target/rst/in/group___cloud_provider.iuml
+   !include target/rst/in/group___virtual_machine_template.iuml
+   !include target/rst/in/group___one_cloud_appliance.iuml
+   !include target/rst/in/group___one_cloud_provider.iuml
+   !include target/rst/in/group___one_v_m_template.iuml
    !include target/rst/in/group___cloud_wps_factory.iuml
    !include target/rst/in/group___data_package.iuml
    !include target/rst/in/group___one_client.iuml
@@ -42,6 +46,8 @@
 
    !include target/rst/in/group___syndication.iuml
 
+   !include target/rst/in/group___github_profile.iuml
+   !include target/rst/in/group___github_client.iuml
    
 
    !include target/rst/in/group___atom.iuml

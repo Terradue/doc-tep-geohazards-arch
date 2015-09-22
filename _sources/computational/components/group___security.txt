@@ -15,10 +15,13 @@ Security
 
 
 
-Sub-Components
---------------
-- :ref:`group___auth___umsso`
-- :ref:`group___authentication`
+Sub-Modules
+-----------
+.. toctree::
+  :maxdepth: 2
+
+  group___auth___umsso
+  group___authentication
 
 
 Software Packages

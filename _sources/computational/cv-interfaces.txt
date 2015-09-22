@@ -7,3 +7,4 @@ Computational Viewpoint - Interfaces
    SQL Connector <components/group___s_q_l_connector>
    Web Processing Service <components/group___w_p_s>
    OpenSearchable <components/group___open_searchable>
+   OpenNebula XML-RPC Interface <components/group___open_nebula_x_m_l_r_p_c>

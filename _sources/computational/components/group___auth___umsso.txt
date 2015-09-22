@@ -46,22 +46,22 @@ Following diagram depicts the User status when logging with UM-SSO.
 	      if (UM-SSO logged?) then (yes)
 	        if (user in DB?) then (yes)
 	          if (user pending activation?) then (yes)
-	            :reinvite user to confirm email
+	            :reinvite user to confirm email;
 	            stop
-	          endif
+	          endif 
 	        else (no)
-	          :create user account in db
-	          :set account status to **Pending Activation**
-	          :send confirmation email to user
-	          :invite user to confirm email
+	          :create user account in db;
+	          :set account status to **Pending Activation**;
+	          :send confirmation email to user;
+	          :invite user to confirm email;
 	          stop
 	        endif
 	      else (no)
-	        :redirect user to UM-SSO IDP
+	        :redirect user to UM-SSO IDP;
 	        stop
 	      endif
 	    endif
-	    :process service
+	    :process service;
 	stop
 	
 	footer
@@ -160,5 +160,10 @@ Next diagram depicts the scenarios that applies when a user perform an HTTP requ
 Interfaces
 ------------
 - implements :ref:`Authentication <group___authentication>` to enable UM-SSO Authentication.
+
+
+Normative References
+--------------------
+- EO op UM-SSO Interface Control Document [SIE-EO-OP-UM-SSO-ICD-002]
 
 

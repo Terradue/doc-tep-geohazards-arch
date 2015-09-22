@@ -14,25 +14,11 @@ Cloud Provider
 
 The component represents an abstract Cloud Provider available for provisiong ICT resources. Practically, a class that implements :ref:`Terradue.Cloud.CloudProvider <class_terradue_1_1_cloud_1_1_cloud_provider>` is in charge of implementing the actions that the API it implements offers.
 
-This component is an extension of :ref:`Computing Resource <group___computing_resource>` for providing with WPS Server as a processing resource. It has two main functions:
-
-- analyses the GetCapabilities() function of the WPS server to retrieve all the process offered.
-- submits, controls and montiors processing over a WPS Server
-
 Dependencies
 ------------
 - :ref:`Persistence of Data <group___persistence>` stores/loads persistently the series information in the database
 
 - :ref:`Authorisation <group___authorisation>` controls the access on the provider
-
-- core_DataModelAccess stores persistently the series information in the database
-
-- core_UserGroupACL controls the access on the series
-
-
-Interfaces
-------------
-- proxy data series items via :ref:`OpenSearch <group___open_search>`
 
 
 

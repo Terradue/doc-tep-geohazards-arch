@@ -1,14 +1,14 @@
 Enterprise Viewpoint - Requirements - CEOS Pilot on Volcanoes
 #############################################################
 
-This pilot represents a stepping-stone towards the long-term goals of the Santorini Report on satellite EO and geohazards with respect to volcanic activity, namely:
+This pilot represents a stepping-stone towards the long-term goals of the Santorini Report on satellite EO and geohazards with respect to volcanic activity, namely: 
 
-1. global background observations at all Holocene volcanoes;
-2. weekly observations at restless volcanoes;
-3. daily observations at erupting volcanoes;
-4. development of novel measurements;
-5. 20-year sustainability;
-6. capacity-building.
+1. global background observations at all Holocene volcanoes; 
+2. weekly observations at restless volcanoes; 
+3. daily observations at erupting volcanoes; 
+4. development of novel measurements; 
+5. 20-year sustainability; 
+and 6. capacity-building. 
 
 Specifically, the pilot aims to:
 

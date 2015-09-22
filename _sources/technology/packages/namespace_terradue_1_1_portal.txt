@@ -16,7 +16,7 @@ Terradue::Portal
 
 Software Page : `Terradue.Portal <https://git.terradue.com/sugar/terradue-portal>`_
 
-Version : 2.6.33
+Version : 2.6.41
 
 
 License : `incubating <https://git.terradue.com/sugar/terradue-portal>`_

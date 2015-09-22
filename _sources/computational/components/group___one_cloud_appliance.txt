@@ -1,0 +1,25 @@
+.. _group___one_cloud_appliance:
+
+OpenNebula Cloud Applicance
+###########################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___one_cloud_appliance.iuml
+
+The component represents a Cloud Appliance on :ref:`OpenNebula Cloud Provider <group___one_cloud_provider>` by extending the :ref:`Cloud Applicance <group___cloud_appliance>` module
+
+Dependencies
+------------
+- :ref:`OpenNebula Cloud Provider <group___one_cloud_provider>` controls the appliance on OpenNebula platform
+
+- implements :ref:`Cloud Applicance <group___cloud_appliance>` for OpenNebula appliance
+
+- calls :ref:`OneClient <group___one_client>` to performs the appliance operations on OpenNebula
+
+

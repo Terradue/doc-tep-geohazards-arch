@@ -12,17 +12,11 @@ Terradue::OpenSearch::Tumblr
   skinparam componentStyle uml2
   !include target/rst/in/namespace_terradue_1_1_open_search_1_1_tumblr.iuml
 
-DotNetOpenSearchTumblr Software Package
-
-Software Page : `DotNetOpenSearchTumblr <https://github.com/Terradue/DotNetOpenSearchTumblr>`_
-
-Version : 1.0.4
 
 
-License : `GPLv3 <https://github.com/Terradue/DotNetOpenSearchTumblr/blob/master/LICENSE.txt>`_
+Software Page : ` <>`_
 
+Version : 
 
-
-Requires :
-- :ref:`namespace_terradue_1_1_open_search`
+License : ` <>`_
 

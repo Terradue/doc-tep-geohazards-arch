@@ -8,4 +8,5 @@ Contents:
    
    Technology selection <tv-purpose>
    Software packages <tv-packages>
-   Implementation standards <tv-standards> 
+   Normative References <tv-standards> 
+   API References <tv-api>

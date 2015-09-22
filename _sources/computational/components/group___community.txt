@@ -15,8 +15,16 @@ Community
 
 
 
-Sub-Components
---------------
-- :ref:`group___github_client`
-- :ref:`group___github_profile`
+Sub-Modules
+-----------
+.. toctree::
+  :maxdepth: 2
+
+  group___github_client
+  group___github_profile
+
+
+Software Packages
+-----------------
+- :ref:`namespace_terradue_1_1_news`
 

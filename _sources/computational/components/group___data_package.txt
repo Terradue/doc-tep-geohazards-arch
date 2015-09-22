@@ -86,6 +86,6 @@ Dependencies
 ------------
 - uses :ref:`Series <group___series>` to define the datasets resources
 
-- implements :ref:`OpenSearch <group___open_search>` to be queryable and act as a subset catalogue
+- implements :ref:`OpenSearchable <group___open_searchable>` to be queryable and act as a catalogue subset
 
 

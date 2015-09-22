@@ -12,5 +12,12 @@ GithubClient
   skinparam componentStyle uml2
   !include target/rst/in/group___github_client.iuml
 
-"" 
+""
+
+Github Client makes requests to the interface exposed by Github platform. It performs all requests related to Users, Authentication, Repositories, Releases.
+
+API
+---
+- `GitHub API v3 <https://developer.github.com/v3/>`_
+
 

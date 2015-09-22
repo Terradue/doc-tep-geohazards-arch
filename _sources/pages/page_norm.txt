@@ -20,10 +20,6 @@ EO op UM-SSO Interface Control Document [SIE-EO-OP-UM-SSO-ICD-002]
 
 - :ref:`Auth_Umsso <group___auth___umsso>`
 
-`OpenNebula XML-RPC reference guide <http://docs.opennebula.org/4.12/integration/system_interfaces/api.html>`_. 
-
-- :ref:`OpenNebulaXMLRPC <group___open_nebula_x_m_l_r_p_c>`
-
 `OGC OWS Context Conceptual Model <https://portal.opengeospatial.org/files/?artifact_id=55182>`_
 
 - :ref:`OWSContext <group___o_w_s_context>`

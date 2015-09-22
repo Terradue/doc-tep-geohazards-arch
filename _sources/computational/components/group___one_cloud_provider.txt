@@ -1,0 +1,23 @@
+.. _group___one_cloud_provider:
+
+OpenNebula Cloud Provider
+#########################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___one_cloud_provider.iuml
+
+The component represents a Cloud Provider for an OpenNebula instance by extending the :ref:`Cloud Provider <group___cloud_provider>` module
+
+Dependencies
+------------
+- implements :ref:`Cloud Provider <group___cloud_provider>` for OpenNebula
+
+- calls :ref:`OneClient <group___one_client>` to performs the provider operations on OpenNebula
+
+

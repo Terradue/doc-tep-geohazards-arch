@@ -14,3 +14,10 @@ Atom Feed
 
 This is the representation in Atom of OpenSearch query results
 
+Normative References
+--------------------
+- `OpenSearch 1.1 <http://www.opensearch.org/Specifications/OpenSearch/1.1>`_
+
+- `The Atom Syndication Format RFC4287 <https://tools.ietf.org/html/rfc4287>`_
+
+

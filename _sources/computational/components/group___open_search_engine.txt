@@ -24,3 +24,8 @@ Interfaces
 - process :ref:`OpenSearchable <group___open_searchable>` entities to expose them in OpenSearch interface.
 
 
+Normative References
+--------------------
+- `OpenSearch 1.1 <http://www.opensearch.org/Specifications/OpenSearch/1.1>`_
+
+

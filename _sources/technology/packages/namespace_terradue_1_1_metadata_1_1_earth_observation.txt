@@ -16,7 +16,7 @@ DotNetEarthObservation Software Package
 
 Software Page : `DotNetEarthObservation <https://github.com/Terradue/DotNetEarthObservation>`_
 
-Version : 1.2.7
+Version : 1.3.1
 
 
 License : `GPLv3 <https://github.com/Terradue/Terradue.Metadata.EarthObservation/blob/master/LICENSE.txt>`_

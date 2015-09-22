@@ -1,0 +1,25 @@
+.. _group___one_v_m_template:
+
+OpenNebula Virtual Machine Template
+###################################
+
+
+
+.. uml::
+
+  !include includes/skins.iuml
+  skinparam backgroundColor #FFFFFF
+  skinparam componentStyle uml2
+  !include target/rst/in/group___one_v_m_template.iuml
+
+The component represents a Virtual Machine Template in OpenNebula to instantiate a OneCloudApppliance by extending :ref:`Virtual Machine Template <group___virtual_machine_template>`.
+
+Dependencies
+------------
+- :ref:`OpenNebula Cloud Provider <group___one_cloud_provider>` controls the appliance on OpenNebula platform
+
+- implements :ref:`Virtual Machine Template <group___virtual_machine_template>` for OpenNebula VM Template
+
+- calls :ref:`OneClient <group___one_client>` to performs the template operations on OpenNebula
+
+

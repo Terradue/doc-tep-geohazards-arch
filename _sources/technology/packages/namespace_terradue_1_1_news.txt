@@ -12,11 +12,21 @@ Terradue::News
   skinparam componentStyle uml2
   !include target/rst/in/namespace_terradue_1_1_news.iuml
 
+:ref:`Terradue.News <namespace_terradue_1_1_news>` Software Package
+
+Software Page : `Terradue.New <https://git.terradue.com/sugar/terradue-news>`_
+
+Version : 1.0.11
 
 
-Software Page : ` <>`_
+License : `incubating <https://git.terradue.com/sugar/terradue-news>`_
 
-Version : 
 
-License : ` <>`_
+
+Requires :
+- :ref:`namespace_terradue_1_1_open_search`
+- :ref:`namespace_terradue_1_1_open_search_1_1_tumblr`
+- :ref:`namespace_terradue_1_1_open_search_1_1_twitter`
+- :ref:`namespace_terradue_1_1_service_model_1_1_ogc_1_1_ows_context`
+- :ref:`namespace_terradue_1_1_portal`
 

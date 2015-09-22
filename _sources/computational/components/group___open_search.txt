@@ -15,10 +15,13 @@ OpenSearch
 
 
 
-Sub-Components
---------------
-- :ref:`group___open_search_engine`
-- :ref:`group___open_searchable`
+Sub-Modules
+-----------
+.. toctree::
+  :maxdepth: 2
+
+  group___open_search_engine
+  group___open_searchable
 
 
 Software Packages
@@ -26,6 +29,4 @@ Software Packages
 - :ref:`namespace_terradue_1_1_open_search`
 - :ref:`namespace_terradue_1_1_open_search_1_1_data_analyzer`
 - :ref:`namespace_terradue_1_1_open_search_1_1_geo_json`
-- :ref:`namespace_terradue_1_1_open_search_1_1_tumblr`
-- :ref:`namespace_terradue_1_1_open_search_1_1_twitter`
 

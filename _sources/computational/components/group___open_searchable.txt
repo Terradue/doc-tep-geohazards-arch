@@ -14,3 +14,8 @@ OpenSearchable
 
 This is the internal interface for any real world entity to be processed in OpenSearch Engine
 
+Normative References
+--------------------
+- `OpenSearch 1.1 <http://www.opensearch.org/Specifications/OpenSearch/1.1>`_
+
+
